@@ -6,7 +6,7 @@ summary:    Things to consider while making changes
 tags:       contributor foss kernel linux
 ---
 
-This is the second episode of my series on how to become a Linux kernel contributor, where I will show you some typical mistakes you should avoid while working on your first contributions. If you are looking for ideas to make your first contribution to the kernel, please take a look at the [first episode](/2024/01/01/kernel-contributor-1). If you just want to send your changes upstream, go for the third episode... but read this one fast just in case.
+This is the second episode of my series on how to become a Linux kernel contributor, where I will show you some typical mistakes you should avoid while working on your first contributions. If you are looking for ideas to make your first contribution to the kernel, please take a look at the [first episode](/2024/01/01/kernel-contributor-1). If you just want to send your changes upstream, go for the [third episode](/2024/01/05/kernel-contributor-3)... but read this one fast just in case.
 
 #### Content:
 
@@ -113,4 +113,4 @@ Simply save the script as *post-commit* in the *.git/hooks/* directory.
 
 ### 7. My code is flawless, how do I send it upstream?
 
-Even flawless code can require modifications and extensions, but you will learn that during the process that you are about to trigger. The next chapter of the series will walk you through the steps you will have to follow. Stay tuned and share knowledge!
+Even flawless code can require modifications and extensions, but you will learn that during the process that you are about to trigger. The [last episode](/2024/01/05/kernel-contributor-3) of the series will walk you through the steps you will have to follow. Stay tuned and share knowledge!
