@@ -1,3 +1,4 @@
+Copyright (c) 2023 Javier Carrasco
 Copyright (c) 2014-2021 John Otander
 Copyright (c) 2014 Daniel Eden for animate.css
 Copyright (c) 2014 Brent Jackson for Basscss
