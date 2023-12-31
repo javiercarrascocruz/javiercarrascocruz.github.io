@@ -64,13 +64,39 @@ layout: default
 {% endif %}
 
 {% if site.show_related_posts %}
-  <h3 class="related-post-title">{{ site.text.post.related_posts | default: "Related Posts" }}</h3>
-  {% for post in site.related_posts %}
-    <div class="post ml2">
-      <a href="{{ post.url | relative_url }}" class="post-link">
-        <h4 class="post-title">{{ post.title }}</h4>
-        <p class="post-summary">{{ post.summary }}</p>
-      </a>
-    </div>
+  <div class="relatedPosts">
+  <h3>Related Posts</h3>
+  
+  {% assign maxRelated = 5 %}
+  {% assign minCommonTags = 2 %}
+  {% assign maxRelatedCounter = 0 %}
+  
+  {% for post in site.posts %}
+    {% assign sameTagCount = 0 %}
+    {% assign commonTags = '' %}
+  
+    {% for tag in post.tags %}
+      {% if post.url != page.url %}
+        {% if page.tags contains tag %}
+          {% assign sameTagCount = sameTagCount | plus: 1 %}
+          {% capture tagmarkup %} <span class="label label-default">{{ tag }}</span> {% endcapture %}
+          {% assign commonTags = commonTags | append: tagmarkup %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  
+    {% if sameTagCount >= minCommonTags %}
+      <div class="post ml2">
+        <a href="{{ post.url | relative_url }}" class="post-link">
+          <h4 class="post-title">{{ post.title }}</h4>
+          <p class="post-summary">{{ post.summary }}</p>
+        </a>
+      </div>
+      {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+        {% if maxRelatedCounter >= maxRelated %}
+          {% break %}
+        {% endif %}
+    {% endif %}
   {% endfor %}
+  </div>
 {% endif %}
