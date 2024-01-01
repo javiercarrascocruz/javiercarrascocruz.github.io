@@ -22,7 +22,6 @@ bing_verification:
 # Optional features
 animated:             true
 show_related_posts:   true
-show_post_footers:    false
 show_social_icons:    true
 ajaxify_contact_form: true
 enable_mathjax: false
