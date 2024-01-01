@@ -74,6 +74,9 @@ layout: default
         {% endif %}
     {% endif %}
   {% endfor %}
+  {% if maxRelatedCounter == 0 %}
+    <label>Unicorn post! No related posts yet</label>
+  {% endif %}
   </div>
 {% endif %}
 
