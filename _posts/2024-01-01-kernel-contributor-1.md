@@ -102,4 +102,4 @@ Although some subsystems provide lists of TODOs, they are not always up-to-date,
 
 ### 7. I found my way, what's next?
 
-You are not far from becoming a kernel contributor, so just work on your patches until you think they are ready. If you want to avoid some typical and often silly mistakes, [the second episode](/2024/01/03/kernel-contributor-2) will save you some time. Then you will start the submission process to get your changes accepted upstream. Ok, but how do I trigger that process and how does it work? Be patient, that is exactly the topic of the [third and last episode](/2024/01/05/kernel-contributor-3) :wink:
+You are not far from becoming a kernel contributor, so just work on your patches until you think they are ready. If you want to avoid some typical and often silly mistakes, [the second episode](/kernel-contributor-2) will save you some time. Then you will start the submission process to get your changes accepted upstream. Ok, but how do I trigger that process and how does it work? Be patient, that is exactly the topic of the [third and last episode](/kernel-contributor-3) :wink:

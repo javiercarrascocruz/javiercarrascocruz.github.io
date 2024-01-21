@@ -72,7 +72,7 @@ Signed-off-by: Javier Carrasco <javier.carrasco.cruz@gmail.com>
 
 I don't need to explain the content, because b4 does it pretty well. It even added a *Signed-off-by* to the cover letter. Is b4 not beginner-friendly? It will even refuse to send the series if you don't edit the cover letter :smiley:
 
-Now let's introduce some changes. If you followed the example from the [third episode](/2024/01/06/kernel-contributor-3) about how to become a Linux kernel contributor, this will look familiar:
+Now let's introduce some changes. If you followed the example from the [third episode](/kernel-contributor-3) about how to become a Linux kernel contributor, this will look familiar:
 
 ![dummy-series](/images/posts/2024-01-06-b4-for-kernel-contributors/dummy-series.jpg)
 
