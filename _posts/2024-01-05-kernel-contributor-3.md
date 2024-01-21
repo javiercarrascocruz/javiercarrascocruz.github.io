@@ -8,7 +8,7 @@ tags:       contributor foss kernel linux
 
 This is the third and last episode of my series about how to become a Linux kernel contributor. It is a bit longer than the others because it shows step by step the whole submission process. Nowadays few people can still read or pay attanetion for 15 minutes straight, but try your best. Otherwise, be ready to spend hours fixing what you ignored here :wink:
 
-If you are looking for ideas to make your first contribution to the kernel, please take a look at the [first episode](/2024/01/01/kernel-contributor-1). If you want to avoid beginner mistakes in your first contribution, the [second episode](/2024/01/03/kernel-contributor-2) may be helpful. If you read the two first episodes, or you think you don't need them (<span style="color:darkorange"><b>you will miserably fail!</b></span>), welcome to the last episode.
+If you are looking for ideas to make your first contribution to the kernel, please take a look at the [first episode](/kernel-contributor-1). If you want to avoid beginner mistakes in your first contribution, the [second episode](/kernel-contributor-2) may be helpful. If you read the two first episodes, or you think you don't need them (<span style="color:darkorange"><b>you will miserably fail!</b></span>), welcome to the last episode.
 
 Getting your changes accepted upstream might be a complex and frustrating process if you don't know how it works. If you are expecting a simple PR on GitHub, this article was made for you.
 
