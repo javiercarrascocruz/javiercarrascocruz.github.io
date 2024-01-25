@@ -4,6 +4,7 @@ title:      Become a Linux kernel contributor - Part 1
 date:       2024-01-01 10:00:00
 updated:    2024-11-29 10:00:00
 summary:    Finding something useful for your first contribution
+permalink:  /:title
 tags:       contributor foss kernel linux
 ---
 

@@ -4,6 +4,7 @@ title:      b4 for Linux kernel contributors
 date:       2024-01-06 10:00:00
 updated:    2024-11-25 10:00:00
 summary:    An awesome tool to speed up the submission process
+permalink:  /:title
 tags:       b4 contributor foss kernel linux
 ---
 

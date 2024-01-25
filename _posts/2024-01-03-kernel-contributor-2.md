@@ -3,6 +3,7 @@ layout:     post
 title:      Become a Linux kernel contributor - Part 2
 date:       2024-01-03 10:00:00
 summary:    Things to consider while making changes
+permalink:  /:title
 tags:       contributor foss kernel linux
 ---
 
