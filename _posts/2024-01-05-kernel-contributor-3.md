@@ -3,6 +3,7 @@ layout:     post
 title:      Become a Linux kernel contributor - Part 3
 date:       2024-01-05 10:00:00
 summary:    Submit your first patch upstream safely
+permalink:  /:title
 tags:       contributor foss kernel linux
 ---
 
