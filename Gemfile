@@ -8,3 +8,6 @@ gem 'github-pages'
 gem "webrick", "~> 1.8"
 
 gem 'jemoji'
+
+gem 'jekyll-sitemap'
+
