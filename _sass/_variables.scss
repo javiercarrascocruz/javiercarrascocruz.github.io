@@ -41,6 +41,7 @@ $purple: #f92080 !default;
 $dark-blue: #00369f !default;
 $green: #00ab37 !default;
 $dark-green: #009f06 !default;
+$darker-green: #005f06 !default;
 $light-pink: #ffdddd !default;
 $light-green: #ddffdd !default;
 $dark-gray: #333 !default;
@@ -116,7 +117,7 @@ $hljs-chunk: $light-gray;
 $header-border-top: thin solid #f3f3f3;
 $header-color: $dark-gray;
 $header-bg-color: #fafafa;
-$header-font-weight: 300;
+$header-font-weight: $bold-font-weight;
 
 // Nav
 $nav-color: $mid-gray;
