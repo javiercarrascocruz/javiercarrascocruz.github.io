@@ -8,7 +8,7 @@ layout: default
 {% endif %}
 
 <div class="post-header mb2">
-  <h1>{{ page.title }}</h1>
+  <h2>{{ page.title }}</h2>
   <span class="post-meta">{{ page.date | date: site.date_format }}</span><br>
   {% if page.updated %}
     <span class="post-meta">{{ site.text.post.updated | default: "Updated" }}: {{ page.updated | date: site.date_format }}</span><br>
