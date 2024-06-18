@@ -13,4 +13,4 @@ But I guess you could not care less about my hobbies, so I will tell you what th
 
 Over the years I have come up with some good practices as well as nasty hacks to improve the quality of my work in those areas, and that is what I would like to share with everyone who is interested. I will also talk about projects I am working on and from time to time I would like to wander a bit and write about stuff that has nothing to do with technology. Sorry about that, but in the end that is my personal blog, isn't it? :wink:
 
-![Profile](/images/profile.jpg)
+![Profile](/images/profile.webp)

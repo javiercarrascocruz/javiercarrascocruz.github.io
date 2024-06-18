@@ -12,8 +12,8 @@ layout: null
       "sizes": "512x512"
     },
     {
-      "src": "{{ '/favicon-192x192.png' | relative_url }}",
-      "type": "image/png",
+      "src": "{{ '/favicon-192x192.webp' | relative_url }}",
+      "type": "image/webp",
       "sizes": "192x192"
     }
   ],
