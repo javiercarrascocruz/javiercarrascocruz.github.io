@@ -14,6 +14,13 @@ layout: default
 	    {% else %}
 	      {{ post.date | date: "%b %-d, %Y" }}
 	    {% endif %}
+	    {% if post.updated %}
+	      {% if site.date_format %}
+	        - updated: {{ post.updated | updated: site.date_format }}
+	      {% else %}
+	        - updated: {{ post.updated | updated: "%b %-d, %Y" }}
+	      {% endif %}
+	    {% endif %}
 	  </p>
           <a href="{{ post.url | relative_url }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
           <span class="post-summary">
