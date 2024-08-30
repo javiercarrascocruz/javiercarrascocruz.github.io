@@ -4,7 +4,7 @@ title:      Catching runtime bugs with Valgrind and (HW)ASan
 date:       2024-08-19 15:00:00 +0200
 summary:    Easy to use, yet powerful tools for C/C++ developers
 permalink:  /:title
-tags:       bugfixing sanitizers
+tags:       bugfixing sanitizers tools
 ---
 
 Without setting a precedent, this time I am going to talk about some userland tools. In particular, I would like to discuss how to catch memory-related runtime bugs with Valgrind and AddressSanitizer (ASan). How come? Because I have mentioned equivalent tools for the Linux kernel in other articles, and I would like to cover them in more detail. But I have noticed that many beginners were completely unaware of *any* dynamic analysis tool, and that must be fixed immediately.
