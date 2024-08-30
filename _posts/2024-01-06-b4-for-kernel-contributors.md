@@ -4,7 +4,7 @@ title:      b4 for Linux kernel contributors
 date:       2024-01-06 10:00:00
 summary:    An awesome tool to speed up the submission process
 permalink:  /:title
-tags:       b4 contributor foss kernel linux
+tags:       b4 contributor foss kernel linux tools
 ---
 
 [b4](https://github.com/mricon/b4) is a free and open-source tool I use every day as a Linux kernel contributor. It has made my workflow more consistent and efficient, which I value a lot. Even though I send patches to the kernel mailing lists regularly, it has been long since the last time I called `git format-patch` and `git send-email`. Still reluctant? Here I will try to convince you.
