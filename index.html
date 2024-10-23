@@ -16,9 +16,9 @@ layout: default
 	    {% endif %}
 	    {% if post.updated %}
 	      {% if site.date_format %}
-	        - updated: {{ post.updated | updated: site.date_format }}
+	        - updated: {{ post.updated | date: site.date_format }}
 	      {% else %}
-	        - updated: {{ post.updated | updated: "%b %-d, %Y" }}
+	        - updated: {{ post.updated | date: "%b %-d, %Y" }}
 	      {% endif %}
 	    {% endif %}
 	  </p>
