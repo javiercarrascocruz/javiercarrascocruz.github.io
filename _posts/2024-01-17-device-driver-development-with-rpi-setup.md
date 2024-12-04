@@ -1,5 +1,6 @@
 ---
 layout:     post
+categories: tech
 title:      Device Driver Development with Raspberry Pi - Setup
 date:       2024-01-17 10:00:00
 summary:    Simple and cost-sensitive

@@ -1,5 +1,6 @@
 ---
 layout:     post
+categories: tech
 title:      Linux Kernel Development - Automatic Cleanup 2/2
 date:       2024-06-17 21:00:00 +0200
 summary:    More advanced uses of this magic and ongoing work

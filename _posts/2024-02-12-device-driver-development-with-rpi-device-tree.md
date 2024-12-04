@@ -1,5 +1,6 @@
 ---
 layout:     post
+categories: tech
 title:      Device Driver Development with Raspberry Pi - Device Tree
 date:       2024-02-12 10:00:00
 summary:    Describe your devices and let the kernel know

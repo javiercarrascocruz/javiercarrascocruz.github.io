@@ -1,5 +1,6 @@
 ---
 layout:     post
+categories: tech
 title:      Linux Kernel Development - Extending Drivers for new Devices
 date:       2024-04-25 10:00:00
 summary:    Recycling drivers is faster and safer

@@ -1,5 +1,6 @@
 ---
 layout:     post
+categories: tech
 title:      Linux Kernel Development - Device Tree Bindings
 date:       2024-03-16 10:00:00
 summary:    Don't fear them, but respect them

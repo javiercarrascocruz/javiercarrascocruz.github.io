@@ -12,7 +12,7 @@ layout: null
       "sizes": "512x512"
     },
     {
-      "src": "{{ '/favicon-192x192.webp' | relative_url }}",
+      "src": "{{ '/hacker-bikepacker-logo-192x192.webp' | relative_url }}",
       "type": "image/webp",
       "sizes": "192x192"
     }
