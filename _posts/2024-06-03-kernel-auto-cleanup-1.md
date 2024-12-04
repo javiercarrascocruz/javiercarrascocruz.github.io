@@ -1,5 +1,6 @@
 ---
 layout:     post
+categories: tech
 title:      Linux Kernel Development - Automatic Cleanup 1/2
 date:       2024-06-03 10:00:00
 summary:    New (in fact, old) magic to increase code safety

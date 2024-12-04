@@ -1,5 +1,6 @@
 ---
 layout:     post
+categories: tech
 title:      Rust in the Linux Kernel - Configuration
 date:       2024-06-22 15:00:00 +0200
 summary:    Step by step to success

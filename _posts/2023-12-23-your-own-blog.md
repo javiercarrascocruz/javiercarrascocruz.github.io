@@ -1,5 +1,6 @@
 ---
 layout:     post
+categories: tech
 title:      A free blog within minutes with GitHub Pages
 date:       2023-12-23 18:00:00
 summary:    Don't reinvent the wheel and spend your time writing good posts

@@ -1,5 +1,6 @@
 ---
 layout:     post
+categories: tech
 title:      Tips and Tricks to Build the Linux Kernel
 date:       2024-09-02 22:00:00 +0200
 summary:    Optimize time and memory usage

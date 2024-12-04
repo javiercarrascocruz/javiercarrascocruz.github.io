@@ -1,5 +1,6 @@
 ---
 layout:     post
+categories: tech
 title:      Linux Kernel Development - Firmware API
 date:       2024-05-30 00:00:00
 summary:    Making drivers load firmware for their devices

@@ -1,5 +1,6 @@
 ---
 layout:     post
+categories: tech
 title:      Smoothing out Communication in FOSS Projects
 date:       2024-11-06 10:00:00 +0200
 summary:    From newcomers to community leaders

@@ -1,5 +1,6 @@
 ---
 layout:     post
+categories: tech
 title:      b4 for Linux kernel contributors
 date:       2024-01-06 10:00:00
 updated:    2024-11-25 10:00:00

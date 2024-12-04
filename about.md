@@ -4,6 +4,7 @@ title: About me
 permalink: /about/
 tags: about
 footer: footer_no_image.html
+emoji: "🌍"
 ---
 
 My name is Javier, although all my friends call me Javi (it is more or less pronounced 'Khabi'). I am Spanish, but I moved to Austria a few years ago because I wanted to live in the Alps. I also lived in England (in Portsmouth) for a year, so feel free to choose your favourite language to speak to me among Spanish, English and German.
