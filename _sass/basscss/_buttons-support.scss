@@ -1,0 +1,85 @@
+.support-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.paypal-button,
+.support-buttons script {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: normal;
+}
+
+.paypal-button {
+  background-color: #FFFFFF;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 26px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.paypal-button:active,
+.paypal-button:focus {
+  background-color: #005b8d;
+  color: white;
+  box-shadow: none;
+  border: none;
+}
+
+.paypal-button:hover {
+  background-color: #DDDDDD;
+  color: white;
+  text-decoration: lighter;
+  box-shadow: none;
+  border-bottom: none;
+  background-image: none;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.support-buttons .bmc-btn {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 38px !important;
+  width: auto;
+}
+
+.bmc-btn,
+.bmc-btn:active,
+.bmc-button:focus {
+  align-items: center;
+  color: white;
+  font-weight: normal !important;
+  background-image: none !important;
+  text-shadow: none !important;
+  padding: 12px 38px !important;
+  justify-content: center;
+  min-height: 70px;
+  max-width: 220px;
+}
+
+.bmc-btn:hover {
+  align-items: center;
+  color: black;
+  font-weight: normal !important;
+  background-image: none;
+  text-shadow: none !important;
+  padding: 12px 38px !important;
+  justify-content: center;
+}
+
