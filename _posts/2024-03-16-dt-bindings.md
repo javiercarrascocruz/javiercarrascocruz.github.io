@@ -247,7 +247,3 @@ arch/arm64/boot/dts/rockchip/rk3588s-orangepi-5.dts:154.30-160.4: Warning (i2c_b
 ```
 
 If you ever find yourself writing device trees, you will be glad you know this tool :wink:
-
-
- <br/><br/>
-Enjoy and share knowledge!

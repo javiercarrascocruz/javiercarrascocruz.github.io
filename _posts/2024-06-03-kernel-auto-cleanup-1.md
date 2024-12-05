@@ -324,6 +324,3 @@ Anyway, competition is always good (like having GCC and Clang competing to becom
 This article is getting a bit long, and there are still many macros and use cases I did not mention: classes (yes, *classes* in C!), scoped loops, usage with mutexes... Some of that stuff is so new in the kernel that there is still not much real code to use as an example, but fortunately enough to learn the key concepts and stay up-to-date when it comes to Linux kernel development.
 
 That's all for today. Please send me a message if you find any inaccuracy, and I will fix it as soon as possible. Stay tuned and don't miss the next chapter, whenever I get it finished...
-
- <br/><br/>
-Enjoy and share knowledge!

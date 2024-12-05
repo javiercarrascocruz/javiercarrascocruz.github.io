@@ -350,7 +350,3 @@ In my particular case, which is probably not the most optimal one (only one serv
 If you are planning to use *distcc* on a regular basis, and potentially over a large number of servers, I would recommend you to read its man page carefully. You will find valuable information about the `-j` option we discussed before. Another interesting option might be the **pump mode** via *distcc-pump*, which will make *distcc* send the included header files as well to allow for on-sever preprocessing. According to the man page, by using the pump mode, the compilation could be an order of magnitude faster. I gave it a quick try to see what happens, and it did not even work on my machines with the version I have. But I did not invest any time on it, so maybe you will make it work. If you do, please let me know how.
 
 And now it's your turn to tell me your best tricks to build the Linux kernel quickly, and efficiently. This article is already very long, but I will be pleased to add another section. Whatever it takes for the community!
-
-
-<br/><br/>
-Enjoy and share knowledge!

@@ -118,6 +118,3 @@ But why don't you optimize your time and let bots reply to anything that does no
 
 
 That's it for today. If you would like to share some positive interactions in a FOSS community, please leave a comment!
-
-<br/><br/>
-Enjoy and share knowledge!

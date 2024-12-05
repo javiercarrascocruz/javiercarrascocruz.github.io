@@ -160,7 +160,3 @@ Even if you ignore my advice and start writing a new driver right away, you will
 <u>Tip 3:</u> even if you are sure that two devices are identical, asking the manufacturer is not a bad idea. For example, I did so to ensure that the max30101 was a 1:1 replacement for the max30105 from the point of view of a driver because the pinout was slightly different, and the device description too. I received a reply within a couple of days (manufacturers usually reply promptly, either via email or in their forums) that confirmed my assumption.
 
 ---
-
-
- <br/><br/>
-Enjoy and share knowledge!

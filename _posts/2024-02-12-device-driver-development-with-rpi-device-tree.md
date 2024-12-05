@@ -386,7 +386,3 @@ I think we are done for today. Just a few tricks more... I ended up writing a la
 1. You can enable extra debugging messages by adding `dtdebug=1` to your config.txt.
 
 2. If you have dtc on the target, `dtc -I fs /proc/device-tree` will print the current complete device tree. Awesome! :star:
-
-
- <br/><br/>
-Enjoy and share knowledge!

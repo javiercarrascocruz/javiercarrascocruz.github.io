@@ -160,6 +160,3 @@ Given that we are using a **host** (again, your development machine, probably x8
 Now that you have a decent setup, I would recommend you to update the system, play a bit with [<b>raspi-config</b>](https://www.raspberrypi.com/documentation/computers/configuration.html) or edit the **config.txt** file to enable some interfaces you might use to connect to external devices (again: I2C, SPI, etc.) and tweak other settings to your needs. I am planning to write some follow-up articles about how to program device drivers by taking real examples I sent upstream, so you will learn how to work with such interfaces as well.
 
 But until then, you might want to continue learning by yourself. Why don't you take a look at simple drivers in the kernel repo? Did you find a device you want to use and the kernel does not support yet? If that's the case, nothing is keeping you from programming your first Linux device driver... anymore.
-
- <br/><br/>
-Enjoy and share knowledge!
