@@ -286,7 +286,3 @@ To be honest, I understand why some maintainers are pushing back. I refactored s
 Apart from the ongoing work I mentioned, I suppose there is much more being discussed in multiple mailing lists. I will let you investigate on your own. Maybe you are even working on some extensions I don't know... I would love to hear about it!
 
 Hopefully the ongoing work will continue increasing code quality and above all, delivering a better kernel to the end user.
-
-
- <br/><br/>
-Enjoy and share knowledge!

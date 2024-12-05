@@ -231,6 +231,3 @@ Just a few tips from the official documentation for the sake of completeness bef
  - If you use the `rust-analyzer` language server, you probably want to generate the `rust-project.json` configuration file: `make LLVM=1 rust-analyzer`
 
 I still don't know what I am going to do with Rust, but as I like learning in depth before taking action, I will be busy with the existing code for a while. Nonetheless, if you have something in mind where we could collaborate, I will be pleased to learn about your projects.
-
-<br/><br/>
-Enjoy and share knowledge!

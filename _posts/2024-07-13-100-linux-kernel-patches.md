@@ -112,6 +112,3 @@ On the other hand, I would never criticize someone who counts every patch and wa
 ---
 
 That's all for today. Reviewing my contributions so far was interesting for me to see what I have been doing lately. It is not that long that I sent my first patch, and I am happy about my learning curve and the variety of my patches. But this analysis was enough for good; time to hack again!
-
- <br/><br/>
-Enjoy and share knowledge!

@@ -35,6 +35,8 @@ layout: default
   {{ content }}
 </article><br>
 
+<center><script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="hacker_bikepacker" data-color="#5F7FFF" data-emoji="🐧"  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script></center>
+
 {% if site.show_sharing_icons %}
   {% include share_buttons.html %}<br>
 {% endif %}
@@ -42,15 +44,15 @@ layout: default
 {% if site.show_related_posts %}
   <div class="relatedPosts">
   <h3>Related Posts</h3>
-  
+
   {% assign maxRelated = 5 %}
   {% assign minCommonTags = 2 %}
   {% assign maxRelatedCounter = 0 %}
-  
+
   {% for post in site.posts %}
     {% assign sameTagCount = 0 %}
     {% assign commonTags = '' %}
-  
+
     {% for tag in post.tags %}
       {% if post.url != page.url %}
         {% if page.tags contains tag %}
@@ -60,7 +62,7 @@ layout: default
         {% endif %}
       {% endif %}
     {% endfor %}
-  
+
     {% if sameTagCount >= minCommonTags %}
       <div class="post ml2">
         <a href="{{ post.url | relative_url }}" class="post-link">

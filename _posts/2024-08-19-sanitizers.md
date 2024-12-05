@@ -227,6 +227,3 @@ In order to ease and enforce their usage, many tools have integrated support for
  - Meson provides the `b_sanitize` base option (e.g. `-Db_sanitize=undefined` for UBSAn), and of course you could pass the `-fsanitize` argument "manually" with something like `add_project_arguments('-fsanitize=undefined', language: 'c')` for UBSan in a C project.
 
 As you can see, the only excuse you really have to refuse using sanitizers is laziness. And if you still decide not to use them, don't complain the next time you find yourself looking for a needle in a haystack!
-
-<br/><br/>
-Enjoy and share knowledge!
