@@ -12,6 +12,7 @@ header_pages:
  - tech.html
  - about.html
  - contact.html
+ - newsletter.html
 
 # Google services
 google_verification:
