@@ -1,0 +1,13 @@
+<div class="post-tags">
+  {% assign current_item = post | default: page %}
+  {% if current_item.tags %}
+    {% for tag in current_item.tags %}
+      {% assign tag_slug = tag | slugify: "raw" %}
+      <a class="tag-link"
+         href="{{ site.baseurl | append: '/tag/' | append: tag_slug | append: '/' }}"
+         rel="category tag">
+         #{{ tag }}
+      </a>
+    {% endfor %}
+  {% endif %}
+</div>

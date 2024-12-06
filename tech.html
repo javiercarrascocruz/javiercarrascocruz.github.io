@@ -32,6 +32,7 @@ emoji: "🐧"
           {% else %}
             {{ post.excerpt }}
           {% endif %}
+	  {% include tags.html %}
         </span>
       </div>
     {% endfor %}
