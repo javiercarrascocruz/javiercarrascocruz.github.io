@@ -66,6 +66,9 @@ paypal_url:
 flattr_button:
 telegram_username:
 vk_id:
+youtube_url: https://www.youtube.com/channel/UCJXP_sSQhMQqzId3E10oN6Q
+youtube_username: "Hacker Bikepacker"
+
 
 # Post sharing icons
 show_sharing_icons: false
