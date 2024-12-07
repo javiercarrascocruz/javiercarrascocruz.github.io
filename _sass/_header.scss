@@ -1,6 +1,11 @@
 .site-header {
-  padding-top: $space-1;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  padding-top: $space-0;
   padding-bottom: $space-2;
+  transition: all 0.6s ease;
 }
 
 .site-header a {
@@ -10,8 +15,36 @@
   background-image: none;
 }
 
+.site-header.shrink {
+  padding-top: $space-0;
+  padding-bottom: $space-1;
+  font-size: 0.6em;
+  transition: all 0.6s ease;
+}
+
 .site-header .site-title {
-  font-size: $h2;
+  display: flex;
+  align-items: center;
+  font-size: $h3;
+  transition: font-size 0.6s ease, margin 0.6s ease;
+}
+
+.site-header.shrink .site-title {
+  font-size: $h5;
+  transition: font-size 0.6s ease, margin 0.6s ease;
+  margin: 0;
+}
+
+.site-header .site-title img {
+  width: 124px;
+  height: 124px;
+  margin-right: 10px;
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.site-header.shrink .site-title img {
+  width: 40px;
+  height: 40px;
 }
 
 .site-nav {
@@ -20,6 +53,19 @@
 
 .site-header nav a {
   color: $darker-green;
+  transition: font-size 0.6s ease, padding 0.6s ease, color 0.6s ease;
+}
+
+.site-header.shrink nav a {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: $h5;
+  transition: all 0.6s ease;
+}
+
+.site-header.shrink .site-nav {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .site-header nav a:hover,
