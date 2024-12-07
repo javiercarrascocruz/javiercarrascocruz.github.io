@@ -3,6 +3,9 @@
     {% if site.facebook_username %}
     <a class="fa fa-facebook" href="https://www.facebook.com/{{ site.facebook_username }}" aria-label="Facebook de {{ site.facebook_username }}"></a>
     {% endif %}
+    {% if site.youtube_url %}
+      <a class="fa fa-youtube" href="{{ site.youtube_url }}" aria-label="{{ site.youtube_username }} YouTube channel"></a>
+    {% endif %}
     {% if site.linkedin_username %}
     <a class="fa fa-linkedin" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" aria-label="LinkedIn de {{ site.linkedin_username }}"></a>
     {% endif %}
