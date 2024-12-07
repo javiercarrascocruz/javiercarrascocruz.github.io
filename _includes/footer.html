@@ -19,40 +19,43 @@
 </head>
 <body>
 
-    <footer class="center">
-      <div class="measure">
-        <small>
-        </small>
-      </div>
-      <div class="footer-foot">
-        <img src="{{ site.baseurl }}/hacker-bikepacker-logo-192x192.webp" alt="Javier Carrasco Cruz" class="avatar" width="192" height="192" loading="lazy">
-         <p>
-           Follow me on <a href="https://linkedin.com/in/javiercarrascocruz" class="linkedin-link">LinkedIn</a>
-         </p>
-         <p>
-           Javier Carrasco Cruz, 2023-24.
-         </p>
-         <p xmlns:cc="http://creativecommons.org/ns#">
-           <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0</a>
-           <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="" width="22" height="22" loading="lazy">
-           <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="" width="22" height="22" loading="lazy">
-           <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="" width="22" height="22" loading="lazy">
-           <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="" width="22" height="22" loading="lazy">
-         </p>
-      </div>
-    </footer>
+<footer class="center">
+  <div class="measure">
+    <small>
+    </small>
+  </div>
+  <div class="footer-foot">
+    <img src="{{ site.baseurl }}/hacker-bikepacker-logo-192x192.webp" alt="Javier Carrasco Cruz" class="avatar" width="192" height="192" loading="lazy">
+     <p>
+       Javier Carrasco Cruz, 2023-24
+     </p>
+     <div class="social-icons">
+       <a class="fas fa-rss" href="{{ "/feed.xml" | relative_url }}" aria-label="RSS"></a>
+       {% if site.email %}
+         <a class="fas fa-envelope" href="mailto:{{ site.email }}" aria-label="Email me"></a>
+       {% endif %}
+     </div>
+     <p xmlns:cc="http://creativecommons.org/ns#">
+       <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0</a>
+       <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="" width="22" height="22" loading="lazy">
+       <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="" width="22" height="22" loading="lazy">
+       <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="" width="22" height="22" loading="lazy">
+       <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="" width="22" height="22" loading="lazy">
+     </p>
+  </div>
+</footer>
 
-    {% if site.enable_anchorjs %}<!-- AnchorJS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.0.0/anchor.min.js"></script>
-    <script>
-        anchors.options.visible = 'always';
-        anchors.add('article h2, article h3, article h4, article h5, article h6');
-    </script>
-    {% endif %}
-    <script type="text/javascript">
-        if ("serviceWorker" in navigator) {
-          navigator.serviceWorker.register("{{ '/sw.js' | relative_url }}")
-        }
-    </script>
+{% if site.enable_anchorjs %}<!-- AnchorJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.0.0/anchor.min.js"></script>
+<script>
+    anchors.options.visible = 'always';
+    anchors.add('article h2, article h3, article h4, article h5, article h6');
+</script>
+{% endif %}
+<script type="text/javascript">
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("{{ '/sw.js' | relative_url }}")
+    }
+</script>
 </body>
 </html>

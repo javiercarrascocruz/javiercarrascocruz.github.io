@@ -4,7 +4,7 @@
 }
 
 .social-icons {
-  font-size: 1.25rem;
+  font-size: 1.5em;
   padding: 0.5em 0 0 0;
   width: 100%;
 }
@@ -13,14 +13,52 @@
   cursor: pointer;
   opacity: 0.8;
   padding: 0.2em;
+  font-size: 1.25em;
+}
+
+.social-icons a.fab {
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 0.2em;
   font-size: 1.10em;
 }
 
-.social-icons a.fa:hover {
-  opacity: 1;
+.social-icons a.fas {
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 0.2em;
+  font-size: 1.25em;
 }
 
 .social-icons iframe[title=Flattr] {
   position: relative;
   top: 0.1em;
+}
+
+.social-icons a.fab.fa-facebook {
+  color: #3b5998;
+}
+
+.social-icons a.fab.fa-youtube {
+  color: #ff0000;
+}
+
+.social-icons a.fab.fa-linkedin {
+  color: #0077b5;
+}
+
+.social-icons a.fab.fa-github {
+  color: #333333;
+}
+
+.social-icons a.fas.fa-rss {
+  color: #ff6600;
+}
+
+.social-icons a.fas.fa-envelope {
+  color: #333333;
+}
+
+.social-icons a:hover {
+  opacity: 0.5;
 }
