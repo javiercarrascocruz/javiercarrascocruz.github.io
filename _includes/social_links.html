@@ -1,61 +1,57 @@
 <div class="social-icons">
   <div class="social-icons-right">
     {% if site.facebook_username %}
-    <a class="fa fa-facebook" href="https://www.facebook.com/{{ site.facebook_username }}" aria-label="Facebook de {{ site.facebook_username }}"></a>
+    <a class="fab fa-facebook" href="https://www.facebook.com/{{ site.facebook_username }}" aria-label="Facebook de {{ site.facebook_username }}"></a>
     {% endif %}
     {% if site.youtube_url %}
-      <a class="fa fa-youtube" href="{{ site.youtube_url }}" aria-label="{{ site.youtube_username }} YouTube channel"></a>
+      <a class="fab fa-youtube" href="{{ site.youtube_url }}" aria-label="{{ site.youtube_username }} YouTube channel"></a>
     {% endif %}
     {% if site.linkedin_username %}
-    <a class="fa fa-linkedin" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" aria-label="LinkedIn de {{ site.linkedin_username }}"></a>
+    <a class="fab fa-linkedin" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" aria-label="LinkedIn de {{ site.linkedin_username }}"></a>
     {% endif %}
     {% if site.github_username %}
-      <a class="fa fa-github" href="https://github.com/{{ site.github_username }}" aria-label="GitHub de {{ site.github_username }}"></a>
+      <a class="fab fa-github" href="https://github.com/{{ site.github_username }}" aria-label="GitHub de {{ site.github_username }}"></a>
     {% endif %}
     {% if site.reddit_username %}
-    <a class="fa fa-reddit" href="https://reddit.com/user/{{ site.reddit_username }}"></a>
+    <a class="fab fa-reddit" href="https://reddit.com/user/{{ site.reddit_username }}"></a>
     {% endif %}
     {% if site.bitbucket_username %}
-      <a class="fa fa-bitbucket" href="https://bitbucket.org/{{ site.bitbucket_username }}"></a>
+      <a class="fab fa-bitbucket" href="https://bitbucket.org/{{ site.bitbucket_username }}"></a>
     {% endif %}
     {% if site.stackoverflow_id %}
-      <a class="fa fa-stack-overflow" href="https://stackoverflow.com/users/{{ site.stackoverflow_id }}"></a>
+      <a class="fab fa-stack-overflow" href="https://stackoverflow.com/users/{{ site.stackoverflow_id }}"></a>
     {% endif %}
-    <a class="fa fa-rss" href="{{ "/feed.xml" | relative_url }}" aria-label="RSS"></a>
     {% if site.twitter_username %}
-      <a class="fa fa-twitter" href="https://twitter.com/{{ site.twitter_username }}"></a>
+      <a class="fab fa-twitter" href="https://twitter.com/{{ site.twitter_username }}"></a>
     {% endif %}
     {% if site.skype_username %}
-      <a class="fa fa-skype" href="skype:{{ site.skype_username }}?userinfo"></a>
+      <a class="fab fa-skype" href="skype:{{ site.skype_username }}?userinfo"></a>
     {% endif %}
     {% if site.steam_nickname %}
-      <a class="fa fa-steam-square" href="https://steamcommunity.com/id/{{ site.steam_nickname }}"></a>
+      <a class="fab fa-steam-square" href="https://steamcommunity.com/id/{{ site.steam_nickname }}"></a>
     {% endif %}
     {% if site.google_plus_id %}
-      <a class="fa fa-google-plus" href="https://plus.google.com/{{ site.google_plus_id }}/posts"></a>
-    {% endif %}
-    {% if site.email %}
-      <a class="fa fa-envelope" href="mailto:{{ site.email }}" aria-label="Email me"></a>
+      <a class="fab fa-google-plus" href="https://plus.google.com/{{ site.google_plus_id }}/posts"></a>
     {% endif %}
     {% if site.angellist_username %}
-      <a class="fa fa-angellist" href="https://angel.co/{{ site.angellist_username }}"></a>
+      <a class="fab fa-angellist" href="https://angel.co/{{ site.angellist_username }}"></a>
     {% endif %}
     {% if site.medium_id %}
-      <a class="fa fa-medium" href="https://medium.com/@{{ site.medium_id }}"></a>
+      <a class="fab fa-medium" href="https://medium.com/@{{ site.medium_id }}"></a>
     {% endif %}
     {% if site.telegram_username %}
-      <a class="fa fa-telegram" href="https://t.me/{{ site.telegram_username }}"></a>
+      <a class="fab fa-telegram" href="https://t.me/{{ site.telegram_username }}"></a>
     {% endif %}
     {% if site.vk_id %}
-      <a class="fa fa-vk" href="https://vk.com/{{ site.vk_id }}"></a>
+      <a class="fab fa-vk" href="https://vk.com/{{ site.vk_id }}"></a>
     {% endif %}
   </div>
   <div class="right">
     {% if site.bitcoin_url %}
-      <a class="fa fa-bitcoin" href="{{ site.bitcoin_url }}"></a>
+      <a class="fab fa-bitcoin" href="{{ site.bitcoin_url }}"></a>
     {% endif %}
     {% if site.paypal_url %}
-      <a class="fa fa-paypal" href="{{ site.paypal_url }}"></a>
+      <a class="fab fa-paypal" href="{{ site.paypal_url }}"></a>
     {% endif %}
     {% if site.flattr_button %}
       {{ site.flattr_button }}
