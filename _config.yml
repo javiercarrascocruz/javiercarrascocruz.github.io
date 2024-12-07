@@ -125,6 +125,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+  - jekyll-target-blank
 # https://github.com/jekyll/jekyll/issues/2938
 exclude:
   - Gemfile
