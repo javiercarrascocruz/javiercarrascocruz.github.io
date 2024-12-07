@@ -27,3 +27,27 @@ footer {
   padding: $footer-padding;
   text-align: center;
 }
+
+footer .footer-foot p {
+  margin: 0.1em 0;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 0.1em;
+}
+
+footer .social-icons a {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+footer .social-icons a.fas {
+  margin-bottom: 0.2em;
+}
+
+footer .footer-foot img.avatar {
+  margin-bottom: 0.8em;
+}
