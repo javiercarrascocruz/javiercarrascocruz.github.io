@@ -1,7 +1,10 @@
 <header class="site-header px2 px-responsive" style="background-color: #f0f8f5;">
     <div class="mt2 wrap">
         <div class="measure">
-            <a href="{{ "/" | relative_url }}" class="site-title">{{ site.title }}</a>
+	    <a href="{{ "/" | relative_url }}" class="site-title">
+             <img src="{{ site.baseurl }}/hacker-bikepacker-logo-192x192.webp" alt="Javier Carrasco Cruz" class="avatar" width="124" height="124" loading="lazy">
+              {{ site.title }}
+            </a>
             {% if site.show_social_icons %}
                 {% include social_links.html %}
             {% endif %}
