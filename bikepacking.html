@@ -6,11 +6,14 @@ emoji: "🚵"
 
 <h2><center>🚵 For Bikepackers 🏕️</center></h2>
 <p class="section-description">My articles about bikepacking: my adventure, tips and more</p>
-<div class="home">
+<center><div class="home">
   <div class="posts">
     {% assign bikepacking_posts = site.posts | where: "categories", "bikepacking" %}
     {% for post in bikepacking_posts %}
       <div class="post py3">
+       {% if post.image %}
+         <img src="{{ post.image }}" class="post-title-image">
+       {% endif %}
         <p class="post-meta">
           {% if site.date_format %}
             {{ post.date | date: site.date_format }}
@@ -37,4 +40,4 @@ emoji: "🚵"
       </div>
     {% endfor %}
   </div>
-</div>
+</div></center>
