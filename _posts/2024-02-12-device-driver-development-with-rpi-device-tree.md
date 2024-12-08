@@ -5,6 +5,7 @@ title:      Device Driver Development with Raspberry Pi - Device Tree
 date:       2024-02-12 10:00:00
 summary:    Describe your devices and let the kernel know
 permalink:  /:title
+image:      /images/posts/2024-02-12-ddd-rpi-dt/devicetree-example.webp
 tags:       devicetree drivers i2c kernel linux raspberrypi soc
 ---
 
@@ -60,7 +61,7 @@ We are going to use `i2c-sensor` as an example, because it includes many sensors
 Fortunately, I have one of the sensors included in that overlay: the humidity and temperature sensor htu21.
 
 <figure>
-    <img src="/images/posts/2024-02-12-ddd-rpi-dt/htu21.jpg"
+    <img src="/images/posts/2024-02-12-ddd-rpi-dt/htu21.webp"
          alt="htu21">
     <figcaption><i>Describing this little thing can't be difficult!</i></figcaption>
 </figure>
@@ -165,7 +166,7 @@ We are ready to write our own overlay for a new device. For this example, I am g
 You will not find kernel support for the Chipcap 2 until v6.8 because my driver was accepted upstream a few days ago. If you want to give it a try, you can find it in the [hwmon git repo](https://git.kernel.org/pub/scm/linux/kernel/git/groeck/linux-staging.git/) until it gets merged.
 
 <figure>
-    <img src="/images/posts/2024-02-12-ddd-rpi-dt/chipcap2.jpg"
+    <img src="/images/posts/2024-02-12-ddd-rpi-dt/chipcap2.webp"
          alt="chipcap2">
     <figcaption><i>A few more pins, and some extra soldering required.</i></figcaption>
 </figure>

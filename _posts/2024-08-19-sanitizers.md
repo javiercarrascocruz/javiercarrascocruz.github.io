@@ -5,6 +5,7 @@ title:      Catching runtime bugs with Valgrind and (HW)ASan
 date:       2024-08-19 15:00:00 +0200
 summary:    Easy to use, yet powerful tools for C/C++ developers
 permalink:  /:title
+image:      /images/posts/2024-08-19-sanitizers/valgrind-clang-logo.webp
 tags:       bugfixing sanitizers tools
 ---
 

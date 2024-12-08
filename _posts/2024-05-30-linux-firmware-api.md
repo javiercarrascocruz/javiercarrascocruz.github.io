@@ -5,6 +5,7 @@ title:      Linux Kernel Development - Firmware API
 date:       2024-05-30 00:00:00
 summary:    Making drivers load firmware for their devices
 permalink:  /:title
+image:      /images/posts/2024-05-30-linux-firmware-api/tps65987d-fw-update.webp
 tags:       contributor drivers kernel linux
 ---
 

@@ -5,6 +5,7 @@ title:      Linux Kernel Development - Automatic Cleanup 1/2
 date:       2024-06-03 10:00:00
 summary:    New (in fact, old) magic to increase code safety
 permalink:  /:title
+image:      /images/posts/2024-06-03-auto-cleanup-1/free-macro.webp
 tags:       bugfixing kernel linux
 ---
 
@@ -226,7 +227,7 @@ If you have a function that returns a pointer to some memory, but only if nothin
 <span style="font-size:0.85em;"><span style="color:green"><b>\*</b></span> Technically, `no_free_ptr()` uses a second macro for it, called `__get_and_null_ptr()`. This is where the real black magic happens by means of two GCC extensions: [({})](https://gcc.gnu.org/onlinedocs/gcc/Statement-Exprs.html) and [\_\_auto_type](https://gcc.gnu.org/onlinedocs/gcc-8.2.0/gcc/Typeof.html). The first extension is used to define an expression that "returns" a value (\_\_val), and the second one, more obvious, increases flexibility to work with different pointers. This second macro is only used internally, and as I mentioned, it just moves the content of the pointer with automatic cleanup to a new variable. You will find `__get_and_null_ptr()` in `include/linux/cleanup.h` as well.<span>
 <center>
 <figure>
-    <img src="/images/posts/2024-06-03-auto-cleanup-1/get_and_null_ptr_macro.jpg"
+    <img src="/images/posts/2024-06-03-auto-cleanup-1/get_and_null_ptr_macro.webp"
          alt="get and null ptr macro">
     <figcaption><i>The Linux kernel uses GCC extensions A LOT.</i></figcaption>
 </figure>
@@ -281,7 +282,7 @@ Shit! What happened? The `goto` does not change the scope/reach of the variable 
 By the way, that issue was obvious to me because **clangd** complained about it:
 
 <figure>
-    <img src="/images/posts/2024-06-03-auto-cleanup-1/clangd-goto-error.jpg"
+    <img src="/images/posts/2024-06-03-auto-cleanup-1/clangd-goto-error.webp"
          alt="clangd goto error">
     <figcaption><i>I wonder why LSPs are not mandatory...</i></figcaption>
 </figure>

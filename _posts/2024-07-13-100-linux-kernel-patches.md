@@ -5,6 +5,7 @@ title:      Linux Kernel - Mi first 100 patches in the mainline kernel
 date:       2024-07-13 10:00:00
 summary:    How to track the status of your contributions
 permalink:  /:title
+image:      /images/posts/2024-07-13-100-linux-kernel-patches/geek-party.webp
 tags:       contributor kernel linux
 ---
 

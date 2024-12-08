@@ -5,6 +5,7 @@ title:      Become a Linux kernel contributor - Part 3
 date:       2024-01-05 10:00:00
 summary:    Submit your first patch upstream safely
 permalink:  /:title
+image:      /images/posts/2024-01-05-kernel-contributor-3/contribution-cycle.webp
 tags:       contributor foss kernel linux
 ---
 
@@ -78,7 +79,7 @@ NAME = Hurr durr I'ma ninja sloth
 My *EXTRAVERSION* will be <span style="color:green"><i>-rc1</i></span> and the *NAME* will be <span style="color:green"><i>wannabe</i></span>. I will commit the changes separately, so we have an extremely simple **series**:
 
 <figure>
-    <img src="/images/posts/2024-01-05-kernel-contributor-3/dummy-series.jpg"
+    <img src="/images/posts/2024-01-05-kernel-contributor-3/dummy-series.webp"
          alt="dummy series">
     <figcaption><i>If you ever send anything like that upstream, a lightning bolt will strike you down.</i></figcaption>
 </figure>
