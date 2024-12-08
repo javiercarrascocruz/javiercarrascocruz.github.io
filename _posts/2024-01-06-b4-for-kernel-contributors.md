@@ -6,6 +6,7 @@ date:       2024-01-06 10:00:00
 updated:    2024-11-25 10:00:00
 summary:    An awesome tool to speed up the submission process
 permalink:  /:title
+image:      /images/posts/2024-01-06-b4-for-kernel-contributors/b4-reflect.webp
 tags:       b4 contributor foss kernel linux tools
 ---
 
@@ -75,7 +76,7 @@ I don't need to explain the content, because b4 does it pretty well. It even add
 
 Now let's introduce some changes. If you followed the example from the [third episode](/kernel-contributor-3) about how to become a Linux kernel contributor, this will look familiar:
 
-![dummy-series](/images/posts/2024-01-06-b4-for-kernel-contributors/dummy-series.jpg)
+![dummy-series](/images/posts/2024-01-06-b4-for-kernel-contributors/dummy-series.webp)
 
 Now that I added some dummy changes, b4 can populate the CC and CCo lists with the relevant email addresses (call it automated `get_maintainer.pl`):
 
@@ -157,8 +158,8 @@ Reflected 3 messages
 
 Let's open Thunderbird and see if the series was sent to me, and only to me...
 
-![thunderbird-series](/images/posts/2024-01-06-b4-for-kernel-contributors/thunderbird-series.jpg)
-![thunderbird-cover-letter](/images/posts/2024-01-06-b4-for-kernel-contributors/thunderbird-cover-letter.jpg)
+![thunderbird-series](/images/posts/2024-01-06-b4-for-kernel-contributors/thunderbird-series.webp)
+![thunderbird-cover-letter](/images/posts/2024-01-06-b4-for-kernel-contributors/thunderbird-cover-letter.webp)
 
 Awesome! I can even see all email addresses, even though they were only sent to me. If you are subscribed to a mailing list where the series would have been sent to, you will see that the series (fortunately and of course) does not show up.
 

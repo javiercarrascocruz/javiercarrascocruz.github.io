@@ -8,6 +8,9 @@ layout: default
 {% endif %}
 
 <div class="post-header mb2">
+  {% if page.image %}
+  <center><img src="{{ page.image }}" class="post-title-image"></center>
+  {% endif %}
   <h2>{{ page.title }}</h2>
   <span class="post-meta">{{ page.date | date: site.date_format }}</span><br>
   {% if page.updated %}

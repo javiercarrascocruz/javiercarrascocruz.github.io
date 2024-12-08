@@ -5,6 +5,7 @@ title:      Linux Kernel Development - Device Tree Bindings
 date:       2024-03-16 10:00:00
 summary:    Don't fear them, but respect them
 permalink:  /:title
+image:      /images/posts/2024-03-16-dt-bindings/shark-in-bindings.webp
 tags:       contributor devicetree kernel linux
 ---
 
@@ -111,18 +112,12 @@ properties:
     const: vishay,veml6075
 ```
 
-You might think that DT bindings are not the right place to show your creativity. And even though that is almost always the case, sometimes you can provide some more elaborate descriptions including drawings for clarification, like for example in *video-interface-devices.yaml*:
-
-<figure>
-    <img src="/images/posts/2024-03-16-dt-bindings/shark-in-bindings.jpg"
-         alt="shark-in-bindings">
-    <figcaption><i>Awesome shark! This is the kernel, what did you expect?</i></figcaption>
-</figure>
+You might think that DT bindings are not the right place to show your creativity. And even though that is almost always the case, sometimes you can provide some more elaborate descriptions including drawings for clarification. The picture at the top of this article is actually a screenshot of *media/video-interface-devices.yaml*, which features an amazing shark.
 
 I used a similar approach (unfortunately, with much less fantasy) [in this patch](https://lore.kernel.org/linux-input/20240119-feature-ts_virtobj_patch-v7-1-eda70985808f@wolfvision.net/) I sent to extend *touchscreen.yaml*:
 
 <figure>
-    <img src="/images/posts/2024-03-16-dt-bindings/overlay-bindings.jpg"
+    <img src="/images/posts/2024-03-16-dt-bindings/overlay-bindings.webp"
          alt="overlay-bindings">
     <figcaption><i>I should have drawn a T-Rex on the screen</i></figcaption>
 </figure>
@@ -156,7 +151,7 @@ Ready to go!
 Before we start using dtschema to check stuff, I would like to mention that there are some tools you can use to avoid silly mistakes and save some time. For example, you can use linters to report typos, but also to meet style requirements. Personally, I included [yamllint](https://github.com/adrienverge/yamllint) to my workflow, and I am happy with it. It follows the rules defined in a .yamllint file, like the one you will find under `Documentation/devicetree/bindings`.
 
 <figure>
-    <img src="/images/posts/2024-03-16-dt-bindings/yamllint.jpg"
+    <img src="/images/posts/2024-03-16-dt-bindings/yamllint.webp"
          alt="yamllint">
     <figcaption><i>Thanks for the hint, yamllint</i></figcaption>
 </figure>

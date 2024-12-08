@@ -5,6 +5,7 @@ title:      A free blog within minutes with GitHub Pages
 date:       2023-12-23 18:00:00
 summary:    Don't reinvent the wheel and spend your time writing good posts
 permalink:  /:title
+image:      /images/posts/2023-12-23-your-own-blog/github-io-page.webp
 tags: blog foss github-page
 ---
 
@@ -22,7 +23,7 @@ Enough talk, let's get on with it. Just follow these steps and in a few minutes 
 
 The goal is to avoid that you reinvent the wheel if you don't want to. Please close any tutorial that shows you how to program a blog from a scratch and stick with me. You might have noticed that many blogs look rather similar: they are just forks of the themes that look good and that is exactly what you need. This blog is simply a fork of [pixyll](https://github.com/johno/pixyll) with a few minimal customizations. If this theme suits your needs, fork the repo and if it does not, search for another one on GitHub and fork it.
 
-![Fork](/images/posts/2023-12-23-your-own-blog/fork.png)
+![Fork](/images/posts/2023-12-23-your-own-blog/fork.webp)
 
 For this post I will use [minima](https://github.com/jekyll/minima) (Jekyll's default theme) as an example. The workflow is always the same.
 
@@ -48,7 +49,7 @@ If you name the fork **bar** instead, your URL will be:
 
 As I used the first approach for my real blog, this time I will use the second one:
 
-![Fork-Name](/images/posts/2023-12-23-your-own-blog/fork-name.png)
+![Fork-Name](/images/posts/2023-12-23-your-own-blog/fork-name.webp)
 
 Easy question: what URL will I get for the new blog? If your answer is not *https://javiercarrascocruz.github.io/test*, please read this section again.
 
@@ -57,7 +58,7 @@ Easy question: what URL will I get for the new blog? If your answer is not *http
 
 If you followed the steps, by now you should have something like this:
 
-![Test-Repo](/images/posts/2023-12-23-your-own-blog/test-repo.png)
+![Test-Repo](/images/posts/2023-12-23-your-own-blog/test-repo.webp)
 
 We still need to tell GitHub what branch we want to deploy i.e. what branch will contain the blog we want to upload.
 
@@ -65,11 +66,11 @@ I am using a second branch called **deploy** to keep **master** synchronized wit
 
 Simply click on **Settings** and then on **Pages**. You will then see a menu to select the branch you will be deploying:
 
-![Pages](/images/posts/2023-12-23-your-own-blog/pages.png)
+![Pages](/images/posts/2023-12-23-your-own-blog/pages.webp)
 
 Save and wait until the page is built (you will see the following message: *Your GitHub Pages site is currently being built from the master branch*). Refresh the site and eventually you will see something like this:
 
-![Live](/images/posts/2023-12-23-your-own-blog/live.png)
+![Live](/images/posts/2023-12-23-your-own-blog/live.webp)
 
 Now that I think about it, the minima theme is actually great... but I can't be bothered with changing my theme :grin:
 

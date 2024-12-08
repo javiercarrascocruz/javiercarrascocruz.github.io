@@ -5,13 +5,9 @@ title:      Rust in the Linux Kernel - Configuration
 date:       2024-06-22 15:00:00 +0200
 summary:    Step by step to success
 permalink:  /:title
+image:      /images/posts/2024-06-22-rust-in-linux-kernel-configuration/rust-for-linux-logo.webp
 tags:       kernel linux rust
 ---
-
-<center><figure>
-    <img src="/images/posts/2024-06-22-rust-in-linux-kernel-configuration/rust-for-linux-logo.webp"
-         alt="Rust for Linux logo">
-</figure></center>
 
 After spending some days learning how some compiler attributes (\_\_cleanup, \_\_counted\_by) work in the Linux kernel, and fixing multiple bugs by using them properly, I have decided to move on, and start learning how Rust is used in the Linux kernel.
 

@@ -5,6 +5,7 @@ title:      Linux Kernel Development - Extending Drivers for new Devices
 date:       2024-04-25 10:00:00
 summary:    Recycling drivers is faster and safer
 permalink:  /:title
+image:      /images/posts/2024-04-25-extending-drivers/as73211-as7331.webp
 tags:       drivers kernel linux
 ---
 
@@ -24,7 +25,7 @@ Sometimes you will find devices that are produced by different manufacturers wit
 Let's see an example, where I added [support for The Maxim MAX30101](https://lore.kernel.org/linux-iio/20240321-max30101-v1-0-00b83e966824@gmail.com/), which is a replacement for the already supported –but no longer recommended for new designs– MAX30105. The "support" consists of literally two new lines in the driver, which is actually the new compatible in two structures: one for `i2c_device_id` (I2C IDs, where we also indicate that it is treated as a max30105), and one for `of_device_id` (the strings used in a device tree). Don't panic just yet, more about these structures in the next section!
 
 <figure>
-    <img src="/images/posts/2024-04-25-extending-drivers/max30101.jpg"
+    <img src="/images/posts/2024-04-25-extending-drivers/max30101.webp"
          alt="support max30101">
     <figcaption><i>The whole patch to support a new device (but don't forget to update bindings!)</i></figcaption>
 </figure>
@@ -34,12 +35,6 @@ Let's see an example, where I added [support for The Maxim MAX30101](https://lor
 As you can imagine, hardware designers are also happy when they can recycle existing blocks to produce a new device with minimal effort. Why would you design a 3-channel UV light sensor from scratch, when you have already designed a 3-channel RGB color sensor? Instead, you can change the photodiodes and keep the rest: I2C interface, registers, conversion block, etc. That is not only faster, but also safer: the previous device has already been tested by the customers for months/years.
 
 Faster and safer sounds good, and we also want to recycle stuff. If we have a driver for that RGB sensor, we have at least 90% of the driver for the UV sensor. We just need to add the gains for the new photodiodes, and the rest should just work as it did before. I did not choose a random example, so let's see this in action with two real devices that the Linux kernel supports: the [AMS AS73211 XYZ color sensor](https://github.com/torvalds/linux/blob/master/drivers/iio/light/as73211.c), which has been supported since 2020, and the AMS AS7331 UV light sensor, which I recently [added to the original driver](https://lore.kernel.org/linux-iio/20240103-as7331-v2-0-6f0ad05e0482@gmail.com/).
-
-<figure>
-    <img src="/images/posts/2024-04-25-extending-drivers/as73211-as7331.jpg"
-         alt="as73211 vs as7331">
-    <figcaption><i>Would you really write a second driver??</i></figcaption>
-</figure>
 
 In a case like this, we will need a new *compatible* again, but also some device-specific code (e.g. the new gains aka scales). The infrastructure to provide that code is already there, and it makes use of good old pointers for it. I have already mentioned structures used to provide compatibles like `of_device_id` and `i2c_device_id`, which include a field to pass custom data:
 

@@ -5,6 +5,7 @@ title:      Tips and Tricks to Build the Linux Kernel
 date:       2024-09-02 22:00:00 +0200
 summary:    Optimize time and memory usage
 permalink:  /:title
+image:      /images/posts/2024-09-02-kernel-build-tricks/zram-config.webp
 tags:       kernel linux tools
 ---
 

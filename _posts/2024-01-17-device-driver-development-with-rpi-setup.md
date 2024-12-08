@@ -3,8 +3,10 @@ layout:     post
 categories: tech
 title:      Device Driver Development with Raspberry Pi - Setup
 date:       2024-01-17 10:00:00
+updated:    2024-12-09 18:00:00
 summary:    Simple and cost-sensitive
 permalink:  /:title
+image:      /images/posts/2024-01-17-ddd-rpi-setup/imager.webp
 tags:       drivers kernel linux raspberrypi soc
 ---
 
@@ -41,29 +43,23 @@ Rolling your own distro with Yocto is amazing, but overkill for a beginner. So l
 
 There is a friendly tool for that called Raspberry Pi Imager (available [here](https://www.raspberrypi.com/software/) if your distro does not have the package, or you want the latest version) and that is exactly what we are looking for: friendly tools for a beginner-friendly workflow.
 
-1. Install: `sudo apt install rpi-imager`. I got version 1.7.3.
+1. Install: `sudo apt install rpi-imager`. I got version 1.8.5.
 
-2. Open: `rpi-imager`. The version I got looks like this:
+2. Open: type `rpi-imager` in the terminal, or look for an app called **Imager**.
 
-    <figure>
-        <img src="/images/posts/2024-01-17-ddd-rpi-setup/imager.jpg"
-             alt="Imager">
-        <figcaption><i>Your version might look a bit different. The worklow will be almost identical</i></figcaption>
-    </figure>
-
-3. Click on **CHOOSE OS** → Raspberry Pi OS (other) → Raspberry Pi OS Lite (64-bit).
+3. Click on **CHOOSE DEVICE** (older versions like 1.7.3 don't have this option, it does not really matter) and select your board, in my case Raspberry Pi Zero 2 w. Then Click on **CHOOSE OS** → Raspberry Pi OS (other) → Raspberry Pi OS Lite (64-bit).
 
 4. Insert the microSD card and click on **CHOOSE STORAGE** → select the microSD.
 
-5. Click on **Settings** (the gearwheel). Set username and password, configure wireless LAN, and enable SSH (not mandatory if you connect a spare monitor and keyboard).
+5. Click on **NEXT**. You will be prompted with a new window to to set username and password, configure wireless LAN, and enable SSH (not mandatory if you connect a spare monitor and keyboard). There used to be a **Settings** (gearwheel) button to do that on older versions, so click on it and configure what you need if it applies to your version.
 
-6. Click on **WRITE**. Two partitions will be created -usually named sd{a,b,c}1 and sd{a,b,c}2- for the FAT filesystem (boot) and the ext4 filesystem (root), respectively. We will talk about them again later. Extract the microSD when it finishes, then insert it into the slot on the Raspberry Pi.
+6. The application will start writing data. Older versions had a **WRITE** button, so click on it if that's your case. Two partitions will be created –usually named sd{a,b,c}1 and sd{a,b,c}2– for the FAT filesystem (boot) and the ext4 filesystem (root), respectively. We will talk about them again later. Extract the microSD when it finishes, then insert it into the slot on the Raspberry Pi.
 
-    <figure>
-        <img src="/images/posts/2024-01-17-ddd-rpi-setup/writing.jpg"
-             alt="Imager">
-        <figcaption><i>The Answer to the Ultimate Question of Life, the Universe, and Everything</i></figcaption>
-    </figure>
+<figure>
+    <center><img src="/images/posts/2024-01-17-ddd-rpi-setup/writing.webp"
+         alt="Imager is writing"></center>
+    <center><figcaption><i>99% used to take longer than any other percentage. Not anymore :)</i></figcaption></center>
+</figure>
 
 7. Power on your fully functional SoC. If you only have access via SSH, you can either find out what IP address was assigned to your Raspberry Pi (easy to google, beyond this article) or simply run (for default username, hostname and a single Raspberry Pi):
 

@@ -5,6 +5,7 @@ title:      Smoothing out Communication in FOSS Projects
 date:       2024-11-06 10:00:00 +0200
 summary:    From newcomers to community leaders
 permalink:  /:title
+image:      /images/posts/2024-11-06-communication-in-open-source/good-example.webp
 tags:       contributor foss
 ---
 

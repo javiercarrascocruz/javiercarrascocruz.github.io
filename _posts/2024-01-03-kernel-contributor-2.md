@@ -3,8 +3,9 @@ layout:     post
 categories: tech
 title:      Become a Linux kernel contributor - Part 2
 date:       2024-01-03 10:00:00
-summary:    Things to consider while making changes
+summary:    Things to consider for better patches
 permalink:  /:title
+image:      /images/posts/2024-01-03-kernel-contributor-2/watchmaker.webp
 tags:       contributor foss kernel linux
 ---
 
@@ -56,7 +57,7 @@ Like most of the projects where code is involved, the Linux kernel has some [cod
 Sometimes it is a bit challenging if the function you are calling has a long name, but in general it improves readability by avoiding crazy nested statements and endless operations or comparisons in a single line. That is seldom required in the kernel, and usually there is a cleaner solution. Sticking to this coding style will make your code look better, and your changes will be much easier to understand at first sight, which will also increase the chances that they get accepted upstream.
 
 <figure>
-    <img src="/images/posts/2024-01-03-kernel-contributor-2/hadouken-indent.jpeg"
+    <img src="/images/posts/2024-01-03-kernel-contributor-2/hadouken-indent.webp"
          alt="Hadouken indent">
     <figcaption><i>If your code looks like this, you are in trouble</i></figcaption>
 </figure>
