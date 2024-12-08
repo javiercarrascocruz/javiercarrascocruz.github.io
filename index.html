@@ -7,11 +7,14 @@ layout: default
 
 {% assign posts_count = paginator.posts | size %}
 
-<div class="home">
+<center><div class="home">
   {% if posts_count > 0 %}
     <div class="posts">
       {% for post in paginator.posts %}
         <div class="post py3">
+          {% if post.image %}
+            <img src="{{ post.image }}" class="post-title-image">
+          {% endif %}
           <p class="post-meta">
 	    {% if site.date_format %}
 	      {{ post.date | date: site.date_format }}
@@ -37,7 +40,7 @@ layout: default
 	  {% include tags.html %}
         </div>
       {% endfor %}
-    </div>
+    </div></center>
 
     {% include pagination.html %}
   {% else %}
