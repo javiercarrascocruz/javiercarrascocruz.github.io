@@ -13,7 +13,7 @@ button,
   padding: $button-padding-y $button-padding-x;
   margin: 0;
   height: auto;
-  border: 1px solid transparent;
+  border: 1px solid black !important;
   vertical-align: middle;
   -webkit-appearance: none;
 }
@@ -25,5 +25,5 @@ button,
 
 .button:hover {
   text-decoration: none;
-  border: 1px solid transparent;
+  border: 1px solid black;
 }
