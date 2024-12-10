@@ -11,6 +11,11 @@
   font-style: italic;
 }
 
+.highlight .cp {
+  color: $hljs-keyword;
+  font-style: italic;
+}
+
 .highlight .k,
 .highlight .kc,
 .highlight .kd,
@@ -19,20 +24,33 @@
 .highlight .kt,
 .highlight .kp {
   color: $hljs-keyword;
+  font-weight: bold;
+}
+
+.highlight .n {
+  color: #ffffff;
 }
 
 .highlight .na,
+.highlight .nf,
+.highlight .nx {
+  color: $hljs-function-name;
+  font-weight: bold;
+}
+
 .highlight .nb,
 .highlight .nc,
 .highlight .no,
 .highlight .nd,
 .highlight .ni,
 .highlight .ne,
-.highlight .nf,
 .highlight .nl,
-.highlight .nn,
-.highlight .nx {
+.highlight .nn {
   color: $hljs-name;
+}
+
+.highlight .nl {
+  color: $red;
 }
 
 .highlight .mi,
@@ -62,8 +80,8 @@
   font-weight: bold;
 }
 
-.highlight .k {
-  font-weight: normal;
+.highlight .cpf {
+  color: $hljs-string;
 }
 
 .highlight .nc,
@@ -103,15 +121,15 @@
 }
 
 .hljs-deletion {
-  background: $hljs-deletion;
+  background-color: $hljs-deletion;
 }
 
 .hljs-addition {
-  background: $hljs-addition;
+  background-color: $hljs-addition;
 }
 
 .diff .hljs-change {
-  background: $hljs-change;
+  background-color: $hljs-change;
 }
 
 .hljs-chunk {

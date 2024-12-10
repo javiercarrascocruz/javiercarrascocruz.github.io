@@ -95,25 +95,26 @@ $form-field-padding-y: .5rem;
 $form-field-padding-x: .5rem;
 
 // Code
-$pre-border-radius: 0;
-$pre-background-color: #fafafa;
-$hljs-comment: $mid-gray;
-$hljs-keyword: $dark-blue;
-$hljs-name: $dark-gray;
-$hljs-number: $dark-green;
-$hljs-string: $red;
-$hljs-title: $red;
-$hljs-type: $dark-blue;
-$hljs-tag: $dark-blue;
-$hljs-attribute: $dark-green;
-$hljs-regexp: $dark-green;
-$hljs-symbol: $purple;
-$hljs-built-in: $dark-blue;
-$hljs-preprocessor: $mid-gray;
-$hljs-deletion: $light-pink;
-$hljs-addition: $light-green;
-$hljs-change: $dark-blue;
-$hljs-chunk: $light-gray;
+$pre-border-radius: 6px;
+$pre-background-color: #1a1b26;
+$hljs-comment: #767fa9;
+$hljs-keyword: #00bcd4;
+$hljs-name: #7dcfff;
+$hljs-number: #e0af68;
+$hljs-string: #9ece6a;
+$hljs-title: #7aa2f7;
+$hljs-type: #bb9af7;
+$hljs-tag: #f7768e;
+$hljs-attribute: #ff9e64;
+$hljs-regexp: #ff9e64;
+$hljs-symbol: #7aa2f7;
+$hljs-built-in: #bb9af7;
+$hljs-preprocessor: #646cee;
+$hljs-deletion: #f7768e;
+$hljs-addition: #9ece6a;
+$hljs-change: #7dcfff;
+$hljs-chunk: #a9b1d6;
+$hljs-function-name: #32cd32;
 
 // Header
 $header-border-top: thin solid #f3f3f3;

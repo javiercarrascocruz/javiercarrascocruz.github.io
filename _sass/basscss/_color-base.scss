@@ -14,9 +14,16 @@ a:hover {
   text-decoration: underline;
 }
 
-pre,
+pre code {
+  background-color: #282c34;
+  color: #f8f8f8;
+  border-radius: $border-radius;
+  overflow-x: auto;
+}
+
 code {
-  background-color: $lighter-gray;
+  background-color: #f4f4f4;
+  color: #333;
   border-radius: $border-radius;
 }
 
