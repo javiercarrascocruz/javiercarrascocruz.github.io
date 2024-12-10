@@ -3,4 +3,13 @@
     height: auto;
     max-height: 300px;
     object-fit: cover;
+    border-radius: 8px;
+    outline: none;
+}
+
+.post-title-image-link:active,
+.post-title-image-link:focus,
+.post-title-image-link:hover {
+  text-decoration: none;
+  background-image: none;
 }

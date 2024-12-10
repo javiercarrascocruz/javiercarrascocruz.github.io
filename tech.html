@@ -12,7 +12,9 @@ emoji: "🐧"
     {% for post in tech_posts %}
       <div class="post py3">
        {% if post.image %}
-         <img src="{{ post.image }}" class="post-title-image">
+         <a href="{{ post.url | relative_url }}" class="post-title-image-link">
+           <img src="{{ post.image }}" class="post-title-image">
+         </a>
        {% endif %}
         <p class="post-meta">
           {% if site.date_format %}
