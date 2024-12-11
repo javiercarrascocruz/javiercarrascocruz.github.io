@@ -13,6 +13,7 @@ header_pages:
  - about.html
  - contact.html
  - newsletter.html
+ - search.html
 
 # Google services
 google_verification:
