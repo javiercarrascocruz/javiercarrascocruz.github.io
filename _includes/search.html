@@ -1,0 +1,95 @@
+<form id="searchform">
+  <p>
+    <input
+      type="search"
+      id="search-input"
+      class="form-control"
+      name="q"
+      value=""
+      autofocus
+    />
+  </p>
+</form>
+<ul id="searchresults" class="post-list"></ul>
+
+<script src="{{ site.baseurl }}/js/search.js" type="text/javascript"></script>
+
+<script>
+  var sjs = SimpleJekyllSearch({
+    searchInput: document.getElementById("searchform"),
+    resultsContainer: document.getElementById("searchresults"),
+    json: "{{ site.baseurl }}/posts.json",
+    templateMiddleware: function (prop, value, template) {
+      if (prop === "title") {
+        value = value.replace(/&amp;/g, "&");
+      }
+      if (prop === "url") {
+        return value;
+      }
+      if (prop === "content") {
+        const query = document.getElementById("search-input").value;
+        const regex = new RegExp(query, "gi");
+        const match = value.match(regex);
+        if (match) {
+          const matchIndex = value.indexOf(match[0]);
+          const contextStart = Math.max(matchIndex - 70, 0);
+          const contextEnd = Math.min(matchIndex + 150, value.length);
+          const excerpt = `...${value.slice(contextStart, contextEnd).trim()}...`;
+          return excerpt.replace(regex, '<span class="search-highlight">$&</span>');
+        } else {
+          return "";
+        }
+      }
+      return value.replace(
+        new RegExp(document.getElementById("search-input").value, "gi"),
+        '<span class="search-highlight">$&</span>'
+      );
+    },
+    sortMiddleware: function (a, b) {
+      aPrio = matchPriority(a.matchedField);
+      bPrio = matchPriority(b.matchedField);
+      return bPrio - aPrio;
+    },
+searchResultTemplate: `
+       <a href="{url}" class="post-link search-result">
+         <div class="post py3">
+           <p class="post-meta">
+             <span class="post-date">{date}</span><br>
+             <span class="post-tags">{tags}</span>
+           </p>
+           <h3 class="h2 post-title">{title}</h3>
+           <span class="post-content">{content}</span>
+         </div>
+       </a>
+     `,
+  });
+
+  function matchPriority(fieldMatched) {
+    switch (fieldMatched) {
+      case "title":
+        return 3;
+      case "tags":
+        return 2;
+      case "content":
+        return 1;
+      default:
+        return 0;
+    }
+  }
+
+  window.addEventListener(
+    "load",
+    function () {
+      var searchParam = new URLSearchParams(window.location.search).get("q");
+      if (searchParam != null) {
+        document.getElementById("search-input").value = searchParam;
+        setTimeout(() => {
+          sjs.search(searchParam);
+        }, 100);
+      }
+      document.getElementById("search-input").placeholder =
+        "Type your search here 🔍";
+    },
+    false
+  );
+</script>
