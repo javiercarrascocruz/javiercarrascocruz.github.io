@@ -2,50 +2,57 @@
 layout: default
 ---
 
-<h2><center>List of all my articles: 🚵 + 🐧</center></h2>
-<p class="section-description">Here you will find all my articles in chronological order. If you are only interested in a specific area (Bikepacking or Tech), you can select it on the main menu</p>
+<h2>
+	<center>List of all my articles: 🚵 + 🐧</center>
+</h2>
+<p class="section-description">Here you will find all my articles in chronological order. If you are only interested in
+	a specific area (Bikepacking or Tech), you can select it on the main menu</p>
 
 {% assign posts_count = paginator.posts | size %}
 
-<center><div class="home">
-  {% if posts_count > 0 %}
-    <div class="posts">
-      {% for post in paginator.posts %}
-        <div class="post py3">
-          {% if post.image %}
-            <a href="{{ post.url | relative_url }}" class="post-title-image-link">
-              <img src="{{ post.image }}" class="post-title-image">
-            </a>
-          {% endif %}
-          <p class="post-meta">
-	    {% if site.date_format %}
-	      {{ post.date | date: site.date_format }}
-	    {% else %}
-	      {{ post.date | date: "%b %-d, %Y" }}
-	    {% endif %}
-	    {% if post.updated %}
-	      {% if site.date_format %}
-	        - updated: {{ post.updated | date: site.date_format }}
-	      {% else %}
-	        - updated: {{ post.updated | date: "%b %-d, %Y" }}
-	      {% endif %}
-	    {% endif %}
-	  </p>
-          <a href="{{ post.url | relative_url }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
-          <span class="post-summary">
-            {% if post.summary %}
-              {{ post.summary }}
-            {% else %}
-              {{ post.excerpt }}
-            {% endif %}
-          </span>
-	  {% include tags.html %}
-        </div>
-      {% endfor %}
-    </div></center>
+<center>
+	<div class="home">
+		{% if posts_count > 0 %}
+		<div class="posts">
+			{% for post in paginator.posts %}
+			<div class="post py3">
+				{% if post.image %}
+				<a href="{{ post.url | relative_url }}" class="post-title-image-link">
+					<img src="{{ post.image }}" class="post-title-image">
+				</a>
+				{% endif %}
+				<p class="post-meta">
+					{% if site.date_format %}
+					{{ post.date | date: site.date_format }}
+					{% else %}
+					{{ post.date | date: "%b %-d, %Y" }}
+					{% endif %}
+					{% if post.updated %}
+					{% if site.date_format %}
+					- updated: {{ post.updated | date: site.date_format }}
+					{% else %}
+					- updated: {{ post.updated | date: "%b %-d, %Y" }}
+					{% endif %}
+					{% endif %}
+				</p>
+				<a href="{{ post.url | relative_url }}" class="post-link">
+					<h3 class="h2 post-title">{{ post.title }}</h3>
+				</a>
+				<span class="post-summary">
+					{% if post.summary %}
+					{{ post.summary }}
+					{% else %}
+					{{ post.excerpt }}
+					{% endif %}
+				</span>
+				{% include tags.html %}
+			</div>
+			{% endfor %}
+		</div>
+</center>
 
-    {% include pagination.html %}
-  {% else %}
-    <h1 class='center'>{{ site.text.index.coming_soon }}</h1>
-  {% endif %}
+{% include pagination.html %}
+{% else %}
+<h1 class='center'>{{ site.text.index.coming_soon }}</h1>
+{% endif %}
 </div>
