@@ -110,7 +110,7 @@ text:
     email:    'Email Address'
     content:  'Any question, idea, feedback or greeting is more than welcome :)'
     subject:  'New submission!'
-    submit:   'Say Hello'
+    submit:   'Send'
     ajax:
       sending:  'sending..'
       sent:     'Message sent!'
