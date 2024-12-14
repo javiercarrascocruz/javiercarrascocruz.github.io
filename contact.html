@@ -25,7 +25,7 @@ emoji: "💬"
 		<input type="text" name="_gotcha" style="display:none" />
 
 		<button type='submit' class="button button-blue button-big mobile-block">{{ site.text.contact.submit |
-			default: "Say Hello" }}</button>
+			default: "Send" }}</button>
 	</form>
 	{% else %}
 	<form action="https://formspree.io/f/mkndwpay" method="POST" class="form-stacked">
@@ -47,7 +47,7 @@ emoji: "💬"
 		<input type="text" name="_gotcha" style="display:none" />
 
 		<input type="submit" class="button button-blue button-big mobile-block"
-			value="{{ site.text.contact.submit | default: " Say Hello" }}">
+			value="{{ site.text.contact.submit | default: "Send" }}">
 	</form>
 	{% endif %}
 </div>
