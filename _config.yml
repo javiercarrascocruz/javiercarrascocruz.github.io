@@ -4,7 +4,7 @@ email:       hackerbikepacker@gmail.com
 author:      Javier Carrasco
 description: "My blog about embedded Linux"
 baseurl:     ""
-url:         "https://javiercarrascocruz.github.io"
+url:         "https://hackerbikepacker.com"
 date_format: "%b %-d, %Y"
 header_pages:
  - support.html
