@@ -2,7 +2,7 @@
 layout:     post
 categories: bikepacking
 title:      New Lifestyle - Hacker Bikepacker
-date:       2024-12-09 10:00:00 +0200
+date:       2024-12-15 10:00:00 +0200
 summary:    Breaking free through coding and cycling
 permalink:  /:title
 image:      /images/posts/2024-12-15-hacker-bikepacker/bikepacker.webp
