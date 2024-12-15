@@ -7,7 +7,7 @@ layout: null
   "description": "{{ site.description | replace: '"', '\"' }}",
   "icons": [
     {
-      "src": "{{ '/splash-512x512.png' | relative_url }}",
+      "src": "{{ '/images/logos/hacker-bikepacker-logo.webp' | relative_url }}",
       "type": "image/png",
       "sizes": "512x512"
     },
