@@ -130,3 +130,15 @@ html, body {
 .site-header .site-nav {
   text-align: center;
 }
+@media (max-width: 600px) {
+  .site-header .avatar-container {
+    width: 60px;
+    height: 60px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .site-header.shrink .avatar-container {
+    width: 30px;
+    height: 30px;
+  }
+}
