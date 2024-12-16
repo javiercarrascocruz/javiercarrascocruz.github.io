@@ -9,7 +9,8 @@ layout: default
 
 <div class="post-header mb2">
   {% if page.image %}
-  <center><img src="{{ page.image }}" class="post-title-image"></center>
+    {% assign image_name = page.image | split: '/' | last | remove: '.webp' %}
+    <center><img src="{{ page.image }}" class="post-title-image" alt="{{ image_name }}"></center>
   {% endif %}
   <h2>{{ page.title }}</h2>
   <span class="post-meta">{{ page.date | date: site.date_format }}</span><br>
