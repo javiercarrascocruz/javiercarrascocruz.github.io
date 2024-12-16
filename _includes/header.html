@@ -1,9 +1,15 @@
 <header class="site-header px2 px-responsive" style="background-color: #f0f8f5;">
     <div class="mt2 wrap">
         <div class="measure">
-	    <a href="{{ "/" | relative_url }}" class="site-title">
-             <img src="{{ site.baseurl }}/images/logos/hacker-bikepacker-logo-124x124.webp" Carrasco Cruz" class="avatar">
-              {{ site.title }}
+            <a href="{{ '/' | relative_url }}" class="site-title">
+                <!-- Contenedor para la imagen -->
+                <div class="avatar-container">
+                    <img src="{{ site.baseurl }}/images/logos/hacker-bikepacker-logo-124x124.webp"
+                         alt="logo"
+                         class="avatar"
+                         onload="imageLoaded(this)">
+                </div>
+                {{ site.title }}
             </a>
             {% if site.show_social_icons %}
                 {% include social_links.html %}
@@ -15,3 +21,9 @@
         </div>
     </div>
 </header>
+
+<script>
+  function imageLoaded(image) {
+    image.classList.add('loaded');
+  }
+</script>
