@@ -51,3 +51,24 @@ window.onscroll = function () {
     scrollCount = 0;
   }, 100);
 };
+
+const links = document.querySelectorAll('a[href^="#"]');
+
+function adjustScroll(event) {
+  event.preventDefault();
+  const targetId = event.target.getAttribute('href').substring(1);
+  const targetElement = document.getElementById(targetId);
+
+  if (!targetElement) return;
+
+  const headerHeight = header.classList.contains('shrink') ? header.offsetHeight : header.offsetHeight;
+
+  window.scrollTo({
+    top: targetElement.offsetTop - headerHeight,
+    behavior: 'smooth'
+  });
+}
+
+links.forEach(link => {
+  link.addEventListener('click', adjustScroll);
+});
