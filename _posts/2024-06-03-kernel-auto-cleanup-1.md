@@ -11,15 +11,12 @@ tags:       bugfixing kernel linux
 
 One of the most common criticisms of the C programming language is that dynamically allocated objects are not automatically released. And those who say this are right: memory leaks are a very common issue in C code, including the Linux kernel. Does that mean that C is useless, and the whole kernel should be rewritten in Rust as soon as possible? Definitely not, and even though some code is being rewritten in Rust, the great majority of the new code added with every release is still in C, and that will not change any soon. Instead, we should try to mitigate current pitfalls with new solutions... or simply start using the existing ones, like the Linux kernel recently did.
 
-#### Content:
+---
+<h2 class="content-heading">Content:</h2>
 
-1. [Background: underutilized cleanup compiler attribute](#1-background-underutilized-cleanup-compiler-attribute)
-2. [Walkthrough: the \_\_free() macro step by step](#2-walkthrough-the-__free-macro-step-by-step)
-3. [Return valid memory, but keep on using auto cleanup!](#3-return-valid-memory-but-keep-on-using-auto-cleanup)
-4. [Initialize your variables, and fear any "goto"](#4-initialize-your-variables-and-fear-any-goto)
-5. [Why Rust then?](#5-why-rust-then)
-6. [Why 1/2?](#6-why-12)
-
+* TOC
+{:toc}
+---
 ### 1. Background: underutilized cleanup compiler attribute
 
 <u>Note:</u> this section *paraphrases/plagiarizes/summarizes* some code from `include/linux/cleanup.h` as well as [this article](https://lwn.net/Articles/934679/?ref=upstract.com) by Jonathan Corbet on LWN.net, which I strongly recommend. Here I will just digest the key points and add some code snippets for complete noobs :wink:

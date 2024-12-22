@@ -15,13 +15,12 @@ Documenting a device in the Linux kernel requires you to describe the device pro
 
 Even though it is not as trivial as it used to be (txt files are history, and they are being converted to YAML files), writing DT bindings is not that difficult: they follow a pretty regular structure, and their verification is rather simple. In this article, I will show you how to write simple bindings and validate them.
 
-#### Content:
+---
+<h2 class="content-heading">Content:</h2>
 
-1. [Writing DT bindings: a lot of plagiarism](#1-writing-dt-bindings-a-lot-of-plagiarism)
-2. [Installing dtschema](#2-installing-dtschema)
-3. [Checking your bindings: no errors/warnings allowed](#3-checking-your-bindings-no-errorswarnings-allowed)
-4. [Is it really worth all the hassle?](#4-is-it-really-worth-all-the-hassle)
-
+* TOC
+{:toc}
+---
 ### 1. Writing DT bindings: a lot of plagiarism
 
 As you can imagine, there are many DT bindings upstream that you can use as examples. Often you will only need to copy existing bindings, adapt a couple of lines to your specific case, and rename the rest. You are not supposed to reinvent the wheel every time you write bindings (in fact, it is desired that they look like the existing ones), so feel free to "borrow" anything you need.

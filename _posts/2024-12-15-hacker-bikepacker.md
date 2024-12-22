@@ -12,11 +12,12 @@ tags:       adventure blog foss
 
 I'm packing my bags and off to discover the world by bike. And no, I haven't hit my head! I've been thinking about this for a long time, and now I'm going to make it a reality.
 
-**Content:**
+---
+<h2 class="content-heading">Content:</h2>
 
 * TOC
 {:toc}
-
+---
 ### 1. WTF??
 
 I have a stable life, both personal and professional. Why would I then change everything to live day to day, without knowing where I will be the next day? At this point, one would expect that the changes in my life would be less radical and more oriented towards what is usually considered "successful", such as a bigger house, a more buoyant bank account, or a better-paid job. In fact, for an engineer like me, you are almost socially pressured to follow that path: success means working for a big company and having a 6-figure salary. I have nothing against those goals and maybe one day they will attract my attention, but that is not the case yet. I am looking for time and freedom.

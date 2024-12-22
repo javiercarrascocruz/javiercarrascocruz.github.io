@@ -17,12 +17,11 @@ On the other hand, programming a custom tool to load firmware for a specific dev
 
 Fortunately, the kernel provides an API to integrate firmware updates into device drivers, offering update automation, fallback mechanisms, and even control via *sysfs*. No nasty hacks or closed-source tools required! In this article I will discuss how the Firmware API works, and how you can integrate it in your device driver development.
 
-#### Content:
+---
+<h2 class="content-heading">Content:</h2>
 
-1. [How does it work?](#1-how-does-it-work)
-2. [Real example: TPS6598x PD controller driver](#2-real-example-tps6598x-pd-controller-driver)
-3. [Other things to consider](#3-other-things-to-consider)
-
+* TOC
+{:toc}
 ---
 
 <span style="font-size:0.85em;"><u>Note:</u> the [official documentation](https://www.kernel.org/doc/html/latest/driver-api/firmware/index.html) is a much more complete source. It covers many more uses cases (like [UEFI support](https://www.kernel.org/doc/html/latest/driver-api/firmware/efi/index.html)), but it might be a bit overwhelming if you know nothing about this magic. Here I just summarized the key points to grasp the mechanism at a glance and understand a real example with mainline kernel code.</span>

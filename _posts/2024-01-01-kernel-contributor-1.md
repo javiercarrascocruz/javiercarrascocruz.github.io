@@ -16,11 +16,12 @@ The Linux kernel is a **<u>huge</u>** project and to make it more manageable, it
 
 If you couldn't figure out what subsystem would suit you, there are some tasks you could pick until you find your way. I will cover some of them too, so you have no excuses.
 
-**Content:**
+---
+<h2 class="content-heading">Content:</h2>
 
 * TOC
 {:toc}
-
+---
 ### 1. Prerequisites: nothing fancy
 
 You don't need much to start contributing: your preferred **text editor**, **git** and an **email account**.

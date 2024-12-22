@@ -19,6 +19,12 @@ I know absolutely nothing about web design and to be honest that is not a topic 
 
 Enough talk, let's get on with it. Just follow these steps and in a few minutes you will have your own blog online. If then you want to get deeper and learn more advanced stuff, you will have a working blog to play around.
 
+---
+<h2 class="content-heading">Content:</h2>
+
+* TOC
+{:toc}
+---
 ### 1. Fork a decent repository
 
 The goal is to avoid that you reinvent the wheel if you don't want to. Please close any tutorial that shows you how to program a blog from a scratch and stick with me. You might have noticed that many blogs look rather similar: they are just forks of the themes that look good and that is exactly what you need. This blog is simply a fork of [pixyll](https://github.com/johno/pixyll) with a few minimal customizations. If this theme suits your needs, fork the repo and if it does not, search for another one on GitHub and fork it.

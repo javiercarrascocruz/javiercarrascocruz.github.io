@@ -13,13 +13,12 @@ This second and last episode about the automatic cleanup mechanisms in the Linux
 
 The goal is to ensure that even beginners with only basic knowledge of C are not left behind, while also providing useful information for experienced developers who may not be familiar with the topics covered in this article. I have included very basic examples for the beginners, and slightly more advanced mechanisms for the experienced developers. Please pick whatever you find useful for your level, and if you notice anything I could improve to make things clearer, please provide your feedback!
 
-#### Content:
+---
+<h2 class="content-heading">Content:</h2>
 
-1. [Classes in the kernel](#1-classes-in-the-kernel)
-2. [Automatic mutex handling](#2-automatic-mutex-handling)
-3. [Other cleanup macros in the Linux kernel](#3-other-cleanup-macros-in-the-linux-kernel)
-4. [Ongoing work](#4-ongoing-work)
-
+* TOC
+{:toc}
+---
 ### 1. Classes in the kernel
 
 Don't get scared (or too excited), the Linux kernel has not adopted C++. Classes in the Linux kernel are not exactly what you might know from other programming languages: they are built upon the concepts we have seen so far to increase resource management automation.

@@ -12,13 +12,12 @@ tags:       drivers kernel linux raspberrypi soc
 
 Would you like to write your first Linux device driver? Awesome! Don't you know where to start? Say no more, I am going to show you a very basic development environment with cheap hardware.
 
-#### Content:
+---
+<h2 class="content-heading">Content:</h2>
 
-1. [Requirements](#1-requirements)
-2. [Installing Raspberry Pi OS](#2-installing-raspberry-pi-os)
-3. [Cross-compiling and loading a newer kernel](#3-cross-compiling-and-loading-a-newer-kernel)
-4. [Ready to hack. Next steps?](#4-ready-to-hack-next-steps)
-
+* TOC
+{:toc}
+---
 ### 1. Requirements
 
 For this tutorial we are going to use a **System-on-Chip (SoC)**. Could you program and test drivers with your PC? Of course, but a SoC will offer you more interfaces (I2C, SPI, etc.) out of the box and connections to custom hardware will be easier. Furthermore, learning how to deal with embedded systems is both fun and very useful for your future career as a kernel developer, professionally and/or as a hobbyist.

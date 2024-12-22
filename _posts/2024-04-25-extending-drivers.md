@@ -13,11 +13,12 @@ Although writing a new device driver is fun, it is often time-consuming (program
 
 But what if the device is so similar to a supported one that you find yourself doing nothing but renaming functions and variables, modifying a couple of values, and feeling that you just plagiarized an existing driver? In that case, there is no need to re-invent the wheel, and there are easy ways to add support for new devices in existing drivers. Let's see how it works with real examples.
 
-**Content:**
+---
+<h2 class="content-heading">Content:</h2>
 
 * TOC
 {:toc}
-
+---
 ### 1. The trivial case: identical hardware
 
 Sometimes you will find devices that are produced by different manufacturers with no modifications beyond the device name. Other devices are just replacements for discontinued ones, being 100% compatible from a software point of view. In such cases, you could even use an existing driver that supports the same device with a different name. But doing things right in this case is straightforward: usually adding a new *compatible* string is enough.

@@ -28,11 +28,12 @@ That's an area where you won't see many techies showing up, although that is cha
 I will split this article into two sections: a first one for those who just joined a FOSS community, and a second one for experienced community members who might profit
 from smoother discussions upstream.
 
-**Content:**
+---
+<h2 class="content-heading">Content:</h2>
 
 * TOC
 {:toc}
-
+---
 ### 1. Newcomers
 
 I am not going to show bad examples to keep them from getting publicity, but let's suppose you have sent a patch upstream with the best intentions, and you get a reply that you consider aggressive or even offensive. You might have never received such replies in your professional or academic interactions, and maybe they are almost impossible to happen where you come from. It should have never happened, but there it is. Let's see what you could/should do at this point.

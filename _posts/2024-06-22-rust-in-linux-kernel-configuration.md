@@ -17,17 +17,12 @@ In this article, I am going to show you some very simple steps you can follow to
 
 Most of the steps are distro-agnostic, but everything is mainly tailored for myself (Debian/Ubuntu). If you have a non-debian-based distro, simply install the latest builds wherever a script uses *apt* under the hood.  Let's get into it!
 
-#### Content:
+---
+<h2 class="content-heading">Content:</h2>
 
-1. [Requirements](#1-requirements)
-    - [1.1. LLVM/Clang](#11-llvmclang)
-    - [1.2. Rust](#12-rust)
-    - [1.3. bindgen](#13-bindgen)
-    - [1.4. New worktree](#14-new-worktree)
-2. [Configuration](#2-configuration)
-3. [Build kernel and Rust documentation](#3-build-kernel-and-rust-documentation)
-4. [Start playing around](#4-start-playing-around)
-
+* TOC
+{:toc}
+---
 ### 1. Requirements
 
 I am going to assume that you have installed all requirements to build the Linux kernel without Rust. If you haven't, you are probably putting the cart before the horse. Anyway, please refer to the [official documentation](https://docs.kernel.org/process/changes.html).

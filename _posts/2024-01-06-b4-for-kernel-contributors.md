@@ -12,11 +12,12 @@ tags:       b4 contributor foss kernel linux tools
 
 [b4](https://github.com/mricon/b4) is a free and open-source tool I use every day as a Linux kernel contributor. It has made my workflow more consistent and efficient, which I value a lot. Even though I send patches to the kernel mailing lists regularly, it has been long since the last time I called `git format-patch` and `git send-email`. Still reluctant? Here I will try to convince you.
 
-**Content:**
+---
+<h2 class="content-heading">Content:</h2>
 
 * TOC
 {:toc}
-
+---
 ### 1. Are git format-patch and git send-email not good enough?
 
 Of course, they are. Actually, **b4** uses `git format-patch` and `git send-email` heavily, often acting as a wrapper with some extra features. So even if you switch to b4, you will still be using the same tools behind the scenes.

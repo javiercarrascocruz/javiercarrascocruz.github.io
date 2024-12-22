@@ -15,11 +15,12 @@ If you are looking for ideas to make your first contribution to the kernel, plea
 
 Getting your changes accepted upstream might be a complex and frustrating process if you don't know how it works. If you are expecting a simple PR on GitHub, this article was made for you.
 
-**Content:**
+---
+<h2 class="content-heading">Content:</h2>
 
 * TOC
 {:toc}
-
+---
 ### 1. Understanding the submission process
 
 The process to get changes accepted in the mainline kernel is well known and pretty simple once you learn the few steps involved. On the other hand, it is not a state-of-the-art process, and it is not what new generations are used to. That is actually a common critic, especially among young developers. But in the end it has been around for decades with obvious success (just take a look at the number of contributors involved in every release) and it does not seem that it will change any soon. It is it what it is and the sooner you get used to it, the sooner you will be able to get your changes applied.
