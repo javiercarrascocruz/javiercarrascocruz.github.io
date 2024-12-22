@@ -35,13 +35,12 @@ Look at mine:
 
 Jokes aside, I believe that tracking the status of your patchsets as well as your overall progression is not a bad idea as long as you don't get obsessed with it. In this article I would like to summarize what I have done so far, show some simple mechanisms to follow your contributions, and my opinion about the value of having *X* patches applied to the Linux kernel.
 
-#### Content:
+---
+<h2 class="content-heading">Content:</h2>
 
-1. [Following the status of your contributions](#1-following-the-status-of-your-contributions)
-2. [Simple metrics: what do my contributions look like?](#2-simple-metrics-what-do-my-contributions-look-like)
-3. [Quantity vs Quality: hard to measure](#3-quantity-vs-quality-hard-to-measure)
-4. [My opinion about such metrics](#4-my-opinion-about-such-metrics)
-
+* TOC
+{:toc}
+---
 ## 1. Following the status of your contributions
 
 That is something you should aim for. Sending series and forgetting about them 10 minutes later is not a great idea because receiving feedback is highly probable, but by no means guaranteed. Not only because your series could be ignored for a number of reasons, but also because it could have been applied without you being told. That does not happen often, but a few of my patches went that way. Spam filters and other issues related to the email provider are also a real thing. Therefore, I would recommend you to check the status of your work upstream from time to time.

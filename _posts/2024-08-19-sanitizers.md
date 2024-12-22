@@ -13,11 +13,12 @@ Without setting a precedent, this time I am going to talk about some userland to
 
 These tools are almost **a must** if you code in C/C++, and if you use them wisely, they will save you from rewriting thousands (potentially millions) of lines of C/C++ code in Rust :laughing: Believe it or not, that's not the only way to fix existing code, even if some *rustaceans* tell you otherwise. Apparently, some sorts of crabs are able to process words like *lifetime* and *trait*, but not **realistic** or **overkill**...
 
-**Content:**
+---
+<h2 class="content-heading">Content:</h2>
 
 * TOC
 {:toc}
-
+---
 ### 1. A buggy program
 
 I have prepared [this](code/to-sanitize/bug-generator.c) very simple program in C that generates a number of memory-related bugs on demand: use-after-free, buffer overflows, etc. You can use it to trigger the bug you are interested in, and see what the reports look like and what information you can expect. All bugs will be caught by Valgrind/ASan, and it should be easy to apply what you learned to any other program, simple or complex.

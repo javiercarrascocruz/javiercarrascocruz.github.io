@@ -15,11 +15,12 @@ That should be enough to generate a new kernel image, and many developers never 
 
 In this article, I discuss some basic notions every kernel developer should have as well as a few tricks/tools to compile the kernel faster, and potentially with a not-so-powerful machine.
 
-**Content:**
+---
+<h2 class="content-heading">Content:</h2>
 
 * TOC
 {:toc}
-
+---
 ### 1. Basics from the basics: use make properly
 
 First things first: the *Makefile* in the root directory contains a **help** section, and `make help` is the first command you should use. There is no need to google the different configurations, how to compile with LLVM, or how to build the documentation. Everything is there, including what `make clean`, `make mrproper`, and `make distclean` mean:

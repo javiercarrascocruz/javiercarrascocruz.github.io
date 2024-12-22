@@ -15,13 +15,12 @@ Writing a complete device tree that describes a SoC is a big endeavor and defini
 
 I don't want to leave complete beginners behind, so let's see what device trees and overlays are in the first place.
 
-#### Content:
+---
+<h2 class="content-heading">Content:</h2>
 
-1. [Bare minimum aout device trees](#1-bare-minimum-about-device-trees)
-2. [Analyzing a real overlay: htu21 I2C humidity sensor](#2-analyzing-a-real-overlay-htu21-i2c-humidity-sensor)
-3. [Enough theory: applying overlays to the Raspberry Pi](#3-enough-theory-applying-overlays-to-the-raspberry-pi)
-4. [Writing a new overlay: step by step](#4-writing-a-new-overlay-step-by-step)
-
+* TOC
+{:toc}
+---
 ### 1. Bare minimum about device trees
 
 In this section, I am going to summarize the key points we are going to need later for the examples, which are mainly tailored for Raspberry Pi. If you want to get deeper (at some point, you should), please take a look at proper documentation, and let me focus on the fun stuff. What is proper documentation?

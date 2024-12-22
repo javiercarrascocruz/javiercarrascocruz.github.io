@@ -11,11 +11,12 @@ tags:       contributor foss kernel linux
 
 This is the second episode of my series on how to become a Linux kernel contributor, where I will show you some typical mistakes you should avoid while working on your first contributions. If you are looking for ideas to make your first contribution to the kernel, please take a look at the [first episode](/kernel-contributor-1). If you just want to send your changes upstream, go for the [third episode](/kernel-contributor-3)... but read this one fast just in case.
 
-**Content:**
+---
+<h2 class="content-heading">Content:</h2>
 
 * TOC
 {:toc}
-
+---
 ### 1. Make sure no one is doing the same
 
 Working on something that has already been sent upstream is a waste of time you want to avoid. It could even happen that a solution to your problem has been accepted and you did not notice, because you didn't look carefully. Typical example: you aim to fix a bug that has already been fixed and it is available in the subsystem's tree, but not in the mainline kernel yet. Bear in mind that the mainline repo will only get the changes applied in the merge window (unless it is a relevant fix or something urgent).
