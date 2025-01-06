@@ -7,7 +7,7 @@ const requiredScrolls = 5;
 let scrollTimeout;
 
 window.onscroll = function () {
-  if (document.documentElement.scrollHeight <= 2 * window.innerHeight) {
+  if (document.documentElement.scrollHeight <= 2.5 * window.innerHeight) {
     return;
   }
 
