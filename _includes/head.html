@@ -68,32 +68,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Open Graph -->
 <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
 <meta property="og:locale" content="{{ site.text.og_locale | default: "en_US" }}">
-<meta property="og:type" content="article">
+<meta property="og:type" content="{% if page.layout == "post" %}article{% else %}website{% endif %}">
 <meta property="og:title" content="{% if page.title %}{{ page.title | xml_escape }}{% else %}{{ site.title | xml_escape }}{% endif %}">
-<meta property="og:description" content="{% if page.description %}{{ page.description | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
+<meta property="og:description" content="{% if page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title | xml_escape }}">
 {% if site.post_preview_image %}
-<meta property="og:image" content="{{ site.url }}/images/me.jpeg">
-{% endif %}
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary" />
-{% if site.twitter_username %}
-    <meta name="twitter:site" content="@{{ site.twitter_username }}" />
-    <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
-{% endif %}
-<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-<meta name="twitter:description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}" />
-<meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
-{% if site.post_preview_image %}
-<meta name="twitter:image" content="{{ site.url }}/images/me.jpeg" />
+<meta property="og:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}/images/logos/hacker-bikepacker-logo-400x400.webp{% endif %}">
 {% endif %}
 
 <!-- Icons -->
 <link rel="apple-touch-icon" sizes="180x180" href="/images/logos/hacker-bikepacker-simple.webp">
 <link rel="icon" type="image/webp" sizes="512x512" href="/images/logos/hacker-bikepacker-logo.webp">
-<link rel="icon" type="image/webp" sizes="192x192" href="/images/logos/hacker-bikepacker-simple.webp">
+<link rel="icon" type="image/webp" sizes="192x192" href="/images/logos/hacker-bikepacker-logo-192x192.webp">
 <link rel="icon" type="image/webp" sizes="32x32" href="/images/logos/hacker-bikepacker-simple.webp">
 <link rel="icon" type="image/webp" sizes="16x16" href="/images/logos/hacker-bikepacker-simple.webp">
 <link rel="manifest" href="/site.webmanifest">
