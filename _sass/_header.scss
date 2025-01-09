@@ -55,11 +55,10 @@ html, body {
   transition: opacity 0.8s ease;
 }
 
-.site-header .avatar.loaded {
+.site-header .avatar[loading="eager"] {
   visibility: visible;
   opacity: 1;
 }
-
 .site-header.shrink .avatar-container {
   width: 40px;
   height: 40px;
