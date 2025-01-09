@@ -2,12 +2,11 @@
     <div class="mt2 wrap">
         <div class="measure">
             <a href="{{ '/' | relative_url }}" class="site-title">
-                <!-- Contenedor para la imagen -->
                 <div class="avatar-container">
                     <img src="{{ site.baseurl }}/images/logos/hacker-bikepacker-logo-124x124.webp"
                          alt="logo"
                          class="avatar"
-                         onload="imageLoaded(this)">
+			 width="124" height="124" loading="eager">
                 </div>
                 {{ site.title }}
             </a>
@@ -21,9 +20,3 @@
         </div>
     </div>
 </header>
-
-<script>
-  function imageLoaded(image) {
-    image.classList.add('loaded');
-  }
-</script>
