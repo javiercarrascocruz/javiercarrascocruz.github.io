@@ -3,15 +3,16 @@ layout:     post
 categories: tech
 title:      Become a Linux kernel contributor - Part 3
 date:       2024-01-05 10:00:00
+updated:    2025-01-13 10:00:00
 summary:    Submit your first patch upstream safely
 permalink:  /:title
 image:      /images/posts/2024-01-05-kernel-contributor-3/contribution-cycle.webp
 tags:       contributor foss kernel linux
 ---
 
-This is the third and last episode of my series about how to become a Linux kernel contributor. It is a bit longer than the others because it shows step by step the whole submission process. Nowadays few people can still read or pay attanetion for 15 minutes straight, but try your best. Otherwise, be ready to spend hours fixing what you ignored here :wink:
+This is the third and last episode of my series about how to become a Linux kernel contributor. It is a bit longer than the others because it shows step by step the whole submission process. Nowadays, few people can still read or pay attention for 15 minutes straight, but try your best. Otherwise, be ready to spend hours fixing what you ignored here :wink:
 
-If you are looking for ideas to make your first contribution to the kernel, please take a look at the [first episode](/kernel-contributor-1). If you want to avoid beginner mistakes in your first contribution, the [second episode](/kernel-contributor-2) may be helpful. If you read the two first episodes, or you think you don't need them (<span style="color:darkorange"><b>you will miserably fail!</b></span>), welcome to the last episode.
+If you are looking for ideas to make your first contribution to the kernel, please take a look at the [first episode](/kernel-contributor-1). If you want to avoid beginner mistakes in your first contribution, the [second episode](/kernel-contributor-2) may be helpful. And if you read the two first episodes, or you think you don't need them (<span style="color:darkorange"><b>you will miserably fail!</b></span>), welcome to the last episode.
 
 Getting your changes accepted upstream might be a complex and frustrating process if you don't know how it works. If you are expecting a simple PR on GitHub, this article was made for you.
 
@@ -27,7 +28,7 @@ The process to get changes accepted in the mainline kernel is well known and pre
 
 In a nutshell, the submission process consists of the following steps:
 
- 1. <u>Patch formatting:</u> your changes should consist of a series of git commits, which must be sent via email in a well-defined format. Every commit will become an email, and you will end up with a **series** covering a specific **topic**. If the series contains multiple patches, you will add a **cover letter** (an informative patch to present your series). For a single patch it is not required because the patch should be self explanatory.
+ 1. <u>Patch formatting:</u> your changes should consist of a series of git commits, which must be sent via email in a well-defined format. Every commit will become an email, and you will end up with a **series** covering a specific **topic**. If the series contains multiple patches, you will add a **cover letter** (an informative patch to present your series). For a single patch it is not required because the patch should be self-explanatory.
  2. <u>Series submission:</u> your series has to be sent upstream, i.e. you will send your emails to a public **mailing list** where everyone will have the chance to review your changes, propose modifications or ask for missing information. The whole communication runs via public emails. <span style="color:green"><b>Hint:</b></span> always 'reply to all'.
  3. <u>Review and feedback:</u> usually you will get feedback from one or more **reviewers,** either to propose modifications and improvements or to give an OK to your patches. It is perfectly normal that some patches of the series are accepted without further discussion and some others require a new version.
  4. <u>Series versioning:</u> if any of the patches requires a new version, you will be expected to send a new version of the series. The patches that were ok should include the code-review trailers you received (typically *Reviewed-by*, sometimes *Acked-by*) and no further modifications, and the rest should include the modifications agreed in the previous discussions, which will have to be documented (more on that later).
@@ -217,9 +218,9 @@ The last parameter is, once again, the directory where you saved the patches.
 
 In theory, you should get some feedback within two weeks, but that varies a lot depending on the subsystem and how busy the reviewers and maintainers are. That feedback will consist of public replies (i.e. to you and to the involved mailing list(s)) with either inline comments or summaries and code-review trailers at the bottom. Your replies should follow that pattern as well, removing irrelevant paragraphs in long emails to avoid that your comments are overlooked.
 
-If the feedback you get asks you to modify your patches, feel free to discuss if you disagree or require additional information. That is always better than sending an unnecessary additional version. On the other hand, if you get a trailer like <span style="color:blue">Reviewed-by: somename &lt;some email&gt;</span>, your patch would be considered good to go. Sometimes a second reviewer finds something that is not completely right, and the first review might not be relevant anymore, so be ready for that as well. But if that does not happen, you can add the trailer to the next version of the patch if the series does not get accepted as it is. Obviously, if the series gets accepted as it is, you do not need to send a new version with the trailers you got and no further changes. In that case, you are basically done.
+If the feedback you get asks you to modify your patches, feel free to discuss if you disagree or require additional information. That is always better than sending an unnecessary additional version. On the other hand, if you get a trailer like <span style="color:blue">Reviewed-by: some-name &lt;some email&gt;</span>, your patch would be considered good to go. Sometimes a second reviewer finds something that is not completely right, and the first review might not be relevant anymore, so be ready for that as well. But if that does not happen, you can add the trailer to the next version of the patch if the series does not get accepted as it is. Obviously, if the series gets accepted as it is, you do not need to send a new version with the trailers you got and no further changes. In that case, you are basically done.
 
-If you do not get any reply within two weeks (the merge window is a special period of time when you should be more patient, though), do not send your series again. Just send an email replying to your series as a ping. A simple "Gentle ping" message should be enough.
+If you do not get any reply within two weeks (the merge window is a special period of time when you should be more patient, though), do not send your series again. Personally, I would wait a bit longer because kernel communication is not fast unless you are fixing an important bug. But if you can't wait for some good reason, or you have been waiting for way too long (i.e. *many* weeks) just send a respectful email replying to your series and asking for a review, telling that the series is still relevant. Don't send anything like a plain "ping", because no one likes that, and you might get negative feedback. You could get some very polite feedback like [this one](https://lore.kernel.org/all/cd396e7a-3861-42ea-9e02-c4701e684df2@sirena.org.uk/) by Mark Brown, but it could be way less friendly as well.
 
 <u>One reminder that could save your life:</u> I have already mentioned that you **could** get some abrupt reply you did not expect. <span style="color:red"><b>NEVER FIRE BACK!</b></span> There is nothing to win and much to lose, especially because you are a newbie that might have made an obvious mistake, something that is documented, and you should know, but ignored. In the end, no one knows you, you are a newcomer with no experience in the kernel and simply nothing to back you up.
 If you feel offended, just keep your hands away from the keyboard, drink some water and stay calm. Make sure you did not mess up (you probably did) and always reply politely, but keeping your point if you think you are right. Some maintainers are under stress and pressure (you are involved in a couple of patches, not in hundreds like some of them), and they get fed up with repeating the same things over and over again. Maybe they had a bad day... Who cares, stay focused and work on your next version. You are here to collaborate, not to argue. Even the *not-so-friendly* maintainers are fair, and if your next version is good and useful, they will eventually send you an **applied, thanks**.
@@ -232,7 +233,7 @@ If your changes are not very simple, you will probably not find the perfect solu
  - You are expected to provide a list of the modifications. People want to know what changed and also if you addressed the feedback you got.
  -  Read the reviews carefully. From the previous point, it should be clear that you should address all the points from the reviewers, not just a few.
 
-Let's continue with our little example. The series has been reviewed, and **miraculously** the *EXTRAVERSION* was considered good and a reviewer replied with the following trailer:
+Let's continue with our little example. The series has been reviewed, and **miraculously** the *EXTRAVERSION* was considered good, and a reviewer replied with the following trailer:
 `Reviewed-by: Dummy Reviewer <dummy-reviewer@foo.com>`
 We were not that lucky with the *NAME* and the reviewer found a mistake: <span style="color:brown">wannabeee</span> instead of <span style="color:green">wannabe</span>. We will have to send a new version.
 
@@ -280,7 +281,7 @@ Javier Carrasco (2):
 
 If you have to send a v3 later, make sure that you add a 'Changes in v3' right above the 'Changes in v2', so everyone can see all changes, but the latest first.
 
-Alright, the patches have been double checked, (hopfeully) no new errors were introduced, and a new `git send-email` will send them upstream. I will keep the `--dry-run` in case you are copying and pasting without paying attention, though...
+Alright, the patches have been double-checked, (hopefully) no new errors were introduced, and a new `git send-email` will send them upstream. I will keep the `--dry-run` in case you are copying and pasting without paying attention, though...
 
 ```sh
 git send-email --dry-run \
