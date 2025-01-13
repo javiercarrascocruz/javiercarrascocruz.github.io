@@ -50,7 +50,7 @@ There is a friendly tool for that called Raspberry Pi Imager (available [here](h
 
 4. Insert the microSD card and click on **CHOOSE STORAGE** → select the microSD.
 
-5. Click on **NEXT**. You will be prompted with a new window to to set username and password, configure wireless LAN, and enable SSH (not mandatory if you connect a spare monitor and keyboard). There used to be a **Settings** (gearwheel) button to do that on older versions, so click on it and configure what you need if it applies to your version.
+5. Click on **NEXT**. You will be prompted with a new window to set username and password, configure wireless LAN, and enable SSH (not mandatory if you connect a spare monitor and keyboard). There used to be a **Settings** (gearwheel) button to do that on older versions, so click on it and configure what you need if it applies to your version.
 
 6. The application will start writing data. Older versions had a **WRITE** button, so click on it if that's your case. Two partitions will be created –usually named sd{a,b,c}1 and sd{a,b,c}2– for the FAT filesystem (boot) and the ext4 filesystem (root), respectively. We will talk about them again later. Extract the microSD when it finishes, then insert it into the slot on the Raspberry Pi.
 
