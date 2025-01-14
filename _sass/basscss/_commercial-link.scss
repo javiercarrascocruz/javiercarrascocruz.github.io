@@ -1,0 +1,27 @@
+.commercial-link-image {
+    max-width: 80%;
+    height: auto;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 8px;
+    outline: none;
+}
+
+.commercial-link:active,
+.commercial-link:focus,
+.commercial-link:hover {
+  background-image: none;
+}
+
+.commercial-link span {
+  margin-top: 5px;
+  font-size: 18px !important;
+  color: #007bff !important;
+  font-weight: bold !important;
+  display: block;
+  text-decoration: none;
+}
+
+.commercial-link span:hover {
+  text-decoration: underline;
+}
