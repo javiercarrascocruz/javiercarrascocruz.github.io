@@ -72,47 +72,45 @@ But if you're looking for a low-power, low-price solution, the Raspberry Pi Zero
 
 By the way, often a kit is the only way to get the Raspberry Pi 5 due to supply shortages.
 
-<center>
-<a href="https://amzn.to/4jef7mm" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/raspi4.webp" alt="Raspberry Pi 4 model B" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: Raspberry Pi 4 model B</span>
-</a>
-</center>
+{% include affiliate_link.html
+  url="https://amzn.to/4jef7mm"
+  image="/images/posts/2025-01-15-hw-emb-dev/raspi4.webp"
+  text="Raspberry Pi 4 model B" %}
+
 ---
-<center>
-<a href="https://amzn.to/40hVG39" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/raspi4-kit.webp" alt="Raspberry Pi 4 model B Kit" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: Raspberry Pi 4 model B Kit</span>
-</a>
-</center>
+
+{% include affiliate_link.html
+  url="https://amzn.to/40hVG39"
+  image="/images/posts/2025-01-15-hw-emb-dev/raspi4-kit.webp"
+  text="Raspberry Pi 4 model B Kit" %}
+
 ---
-<center>
-<a href="https://amzn.to/4j8uvR4" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/raspi5.webp" alt="Raspberry Pi 5" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: Raspberry Pi 5</span>
-</a>
-</center>
+
+{% include affiliate_link.html
+  url="https://amzn.to/4j8uvR4"
+  image="/images/posts/2025-01-15-hw-emb-dev/raspi5.webp"
+  text="Raspberry Pi 5" %}
+
 ---
-<center>
-<a href="https://amzn.to/4hcxLcs" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/raspi5-kit.webp" alt="Raspberry Pi 5 Kit" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: Raspberry Pi 5 Kit</span>
-</a>
-</center>
+
+{% include affiliate_link.html
+  url="https://amzn.to/4hcxLcs"
+  image="/images/posts/2025-01-15-hw-emb-dev/raspi5-kit.webp"
+  text="Raspberry Pi 5 Kit" %}
+
 ---
-<center>
-<a href="https://amzn.to/3C9MAh2" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/raspi-zero-2w.webp" alt="Raspberry Pi zero 2 w" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: Raspberry Pi Zero 2 w</span>
-</a>
-</center>
+
+{% include affiliate_link.html
+  url="https://amzn.to/3C9MAh2"
+  image="/images/posts/2025-01-15-hw-emb-dev/raspi-zero-2w.webp"
+  text="Raspberry Pi zero 2 w" %}
+
 ---
-<center>
-<a href="https://amzn.to/3WfHBSM" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/raspi-zero-2w-kit.webp" alt="Raspberry Pi zero 2 w Kit" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: Raspberry Pi Zero 2 w Kit</span>
-</a>
-</center>
+
+{% include affiliate_link.html
+  url="https://amzn.to/3WfHBSM"
+  image="/images/posts/2025-01-15-hw-emb-dev/raspi-zero-2w-kit.webp"
+  text="Raspberry Pi zero 2 w Kit" %}
 
 #### BeagleBoard
 
@@ -128,21 +126,17 @@ These SoCs offer much more power and features than the ones I mentioned before. 
 
 Many of those cheap SBCs are built upon Rockchip SoCs, and I have professional experience with ARM64 Rockchip-based SoCs. They are well suited for commercial projects because of their lower cost and many features, but I can tell you that the documentation and customer support is way worse than the other ARM64 SoCs. In the end, everything will work with some extra effort from your side and the community, but be ready to stumble upon unexpected issues from time to time. If you would like to get one of the most powerful SBCs for a consumer level, the following Orange Pi 5 Plus is even more powerful than many consumer workstations: 8 cores (Quad Core CortexA76 + Quad Core CortexA55), 16 GB LPDD4 RAM, 8K codec... a beast, really.
 
-<center>
-<a href="https://amzn.to/4fXiqvd" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/orangepi5-kit.webp" alt="GeekPi Orange Pi 5 Plus" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: Orange Pi 5 Plus Kit</span>
-</a>
-</center>
+{% include affiliate_link.html
+  url="https://amzn.to/4fXiqvd"
+  image="/images/posts/2025-01-15-hw-emb-dev/orangepi5-kit.webp"
+  text="GeekPi Orange Pi 5 Plus" %}
 
 Another SBC I would also like to mention in this section are the Radxa Rock, which is based on Rockchip as well. I have been able to run Armbian (and even Ubuntu) on the 5B at work, and most of their features worked out of the box, but as soon as you delve into specific hardware features, you notice that there is still a lot of work in progress upstream. But maybe that's exactly what you are looking for! As a cheaper and simpler alternative, the Radxa 4SE from the link below features the RK3339 SoC, which has been supported by the Linux kernel for quite a while. This SBC is probably one of the most interesting ones to have something powerful in the middle-range price, featuring an Arm Mali T860 MP4 GPU.
 
-<center>
-<a href="https://amzn.to/4gTU5Ib" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/radxa-rock4cplus.webp" alt="Radxa Rock 4C+" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: Radxa Rock 4C+</span>
-</a>
-</center>
+{% include affiliate_link.html
+  url="https://amzn.to/4gTU5Ib"
+  image="/images/posts/2025-01-15-hw-emb-dev/radxa-rock4cplus.webp"
+  text="Radxa Rock 4C+" %}
 
 Attention on Radxa products has been increasing for some time, and not only due to the Rock models. The latest hit is without a doubt the Radxa Orion O6, which is out of the scope of this article, as it is a more advanced board and relatively new. My advice: if you are new to the Linux embedded world, be realistic and stick to simpler devices!
 
@@ -154,19 +148,17 @@ There is an increasing number of RISC-V boards entering the market, catering to 
 
 What board do I have then? One of those xxxFive, the one that is getting more and more attention these days, and it's available: the StarFive VisionFive 2 (link below). It features a quad-core StarFive JH7110 RISC-V processor running at up to 1.5 GHz, paired with 8 GB of LPDDR4 RAM. There should be a 4GB version according to the specs, but I could not find it on the market. Linux support is ever–growing, with distributions like Debian and Ubuntu offering compatibility. I have to admit that installing Ubuntu required some work (apparently, some revisions don't, check [here](https://wiki.ubuntu.com/RISC-V/StarFive%20VisionFive%202) if it would apply to yours), and a few core blocks like the GPU did not work the last time I tried. It will come, but it might take some time. Who knows, maybe you will be the one who brings more support for the whole community!
 
-<center>
-<a href="https://amzn.to/3DYyOi0" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/visionfive-2.webp" alt="StarFive VisionFive 2" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: StarFive VisionFive 2</span>
-</a>
-</center>
+{% include affiliate_link.html
+  url="https://amzn.to/3DYyOi0"
+  image="/images/posts/2025-01-15-hw-emb-dev/visionfive-2.webp"
+  text="StarFive VisionFive 2" %}
+
 ---
-<center>
-<a href="https://amzn.to/4jeoRNs" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/visionfive-2-kit.webp" alt="StarFive VisionFive 2 Kit" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: StarFive VisionFive 2 Kit</span>
-</a>
-</center>
+
+{% include affiliate_link.html
+  url="https://amzn.to/4jeoRNs"
+  image="/images/posts/2025-01-15-hw-emb-dev/visionfive-2-kit.webp"
+  text="StarFive VisionFive 2 Kit" %}
 
 ### Power Supply
 
@@ -174,70 +166,58 @@ Having a bench power supply on your desk is awesome: you can select a wide range
 
 If you are going to rely on the SoC to feed the rest of the system, then you will just need an AC/DC converter with ~18W USB output, and depending on what you want to develop, maybe a lithium battery, which I will leave out of this article because it would be a topic on its own. If you bought a starter kit like the ones I mentioned, you will have received a power supply as well. For those who have acquired a bare SoC, I would recommend you one with an integrated switch for convenience. Believe me, you will regret saving a couple of bucks here and having to connect and disconnect the power supply every time.
 
-<center>
-<a href="https://amzn.to/4gQCq43" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/power-supply-switch.webp" alt="Power Supply 5V with ON/OFF switch" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: Power Supply 5V with ON/OFF switch</span>
-</a>
-</center>
+{% include affiliate_link.html
+  url="https://amzn.to/4gQCq43"
+  image="/images/posts/2025-01-15-hw-emb-dev/power-supply-switch.webp"
+  text="Power Supply 5V with ON/OFF switch" %}
 
 Should you prefer a bench power supply, I would recommend you a simple, digital one that will cover almost all cases. For more professional environments, I would opt for the typical device you will find in an electronics lab: one with three independent, high-precision outputs (10mV/10mA is more than enough), and additional measurement/analysis features.
 
-<center>
-<a href="https://amzn.to/4hbvKgD" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/power-supply-1output.webp" alt="DC Power Supply one output" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: DC Power Supply, single output (0-30V,0-5A)</span>
-</a>
-</center>
+{% include affiliate_link.html
+  url="https://amzn.to/4hbvKgD"
+  image="/images/posts/2025-01-15-hw-emb-dev/power-supply-1output.webp"
+  text="DC Power Supply one output" %}
+
 ---
-<center>
-<a href="https://amzn.to/4j94QId" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/power-supply-3outputs.webp" alt="DC Power Supply three outputs" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: DC Power Supply, multi-output, high precission</span>
-</a>
-</center>
+
+{% include affiliate_link.html
+  url="https://amzn.to/4j94QId"
+  image="/images/posts/2025-01-15-hw-emb-dev/power-supply-3outputs.webp"
+  text="DC Power Supply three outputs" %}
 
 ### Breadboards
 
 One of those things where you don't have to spend much money, or even think what model would suit your needs. Apart from their size, they are all more or less the same. Just get a kit with a couple of boards and a bunch of jumper wires, and you will be good to go.
 
-<center>
-<a href="https://amzn.to/4g1k9Qh" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/breadboards.webp" alt="Breadboards + Jumper wires" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: Breadboards + Jumper wires</span>
-</a>
-</center>
+{% include affiliate_link.html
+  url="https://amzn.to/4g1k9Qh"
+  image="/images/posts/2025-01-15-hw-emb-dev/breadboards.webp"
+  text="Breadboards + Jumper wires" %}
 
 ### Multimeter
 
 This is a very important device that you should have from the beginning. There are many different models out there, but in general you will not need anything special. A super basic multimeter will be able to measure current, voltage, resistance and continuity (audible is always nicer), and you will seldom need anything else.
 
-<center>
-<a href="https://amzn.to/3PBv6NK" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/multimeter.webp" alt="Cost-effective multimeter" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: Cost-effective multimeter</span>
-</a>
-</center>
+{% include affiliate_link.html
+  url="https://amzn.to/3PBv6NK"
+  image="/images/posts/2025-01-15-hw-emb-dev/multimeter.webp"
+  text="Cost-effective multimeter" %}
 
 It's also true that better models don't cost a fortune either, and you will get a more robust and compact device with a few more cool functions like frequency and duty cycle measurements, which are even more useful if you don't have an oscilloscope. These devices should last many years, and the first you buy will stay around long. Personally, I have a **Crenova MS8233D**, and I am very happy with it:
 
-<center>
-<a href="https://amzn.to/3WiyPU6" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/MS8233D.webp" alt="Crenova MS8233D" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: Crenova MS8233D multimeter</span>
-</a>
-</center>
+{% include affiliate_link.html
+  url="https://amzn.to/3WiyPU6"
+  image="/images/posts/2025-01-15-hw-emb-dev/MS8233D.webp"
+  text="Crenova MS8233D multimeter" %}
 
 ### Wiring/Connectivity
 
 Every project has its own connectivity requirements, and I can't cover all kinds of cables, adapters, and wireless modules. My advice: take some time to evaluate what you are going to need from the very beginning, and order it as soon as possible. And don't forget debugging capabilities! For example, SSH is often enough to debug an embedded system, but I like serial communication to see early messages as they are generated or get easy and quick access to the bootloader. And oh surprise, not all embedded systems are capable of wireless communication! The cable I always use for serial communication is the following one, which has two different connectors on the TTL-side, and the color code described on the USB-side.
 
-<center>
-<a href="https://amzn.to/4he20je" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/usb-ttl-cable.webp" alt="USB to TTL cable" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: USB to TTL cable</span>
-</a>
-</center>
+{% include affiliate_link.html
+  url="https://amzn.to/4he20je"
+  image="/images/posts/2025-01-15-hw-emb-dev/usb-ttl-cable.webp"
+  text="USB to TTL cable" %}
 
 For quick prototyping, some jumper wires (like the ones I mentioned when I talked about [Breadboards](#breadboards)) are always nice to have, and they are really cheap.
 
@@ -245,73 +225,61 @@ For quick prototyping, some jumper wires (like the ones I mentioned when I talke
 
 This is another simple item unless you really want to solder small and complex stuff, which at least in the beginning will seldom be the case. Just get a regular, inexpensive soldering kit with the bare-minimum features: adjustable temperature, interchangeable iron tips and a stable base to put the soldering iron when you are doing something else. I can guarantee you that you, and especially your desk, will regret getting a soldering iron with no base. Here's a low-budget kit that will be enough for easy tasks:
 
-<center>
-<a href="https://amzn.to/4fWhCXq" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/basic-soldering-set.webp" alt="Basic soldering set" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: Basic soldering set</span>
-</a>
-</center>
+{% include affiliate_link.html
+  url="https://amzn.to/4fWhCXq"
+  image="/images/posts/2025-01-15-hw-emb-dev/basic-soldering-set.webp"
+  text="Basic soldering set" %}
 
 If you are planning to solder more often, of if you want to suffer less while desoldering, you could (and probably should) get something slightly more advanced. But really, there is no need to get too fancy, as there are other elements where investing some extra money will make a bigger difference. A soldering station with a hot air tool and digital adjustment will be enough for almost everyone. This one will be a perfect tool for almost everyone:
 
-<center>
-<a href="https://amzn.to/3CcBJ5Z" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/advanced-soldering-set.webp" alt="Advanced soldering set" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: Advanced soldering set</span>
-</a>
-</center>
+{% include affiliate_link.html
+  url="https://amzn.to/3CcBJ5Z"
+  image="/images/posts/2025-01-15-hw-emb-dev/advanced-soldering-set.webp"
+  text="Advanced soldering set" %}
 
 Additionally, I would recommend you to get *helping hands* because they are worthy of their name and make soldering a bit easier. Other cheap but useful items like flux paste and solder wick will also come in handy to make soldering and desoldering even easier.
 
-<center>
-<a href="https://amzn.to/3PxOStz" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/helping-hand.webp" alt="Helping hand soldering" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: helping hand</span>
-</a>
-</center>
+{% include affiliate_link.html
+  url="https://amzn.to/3PxOStz"
+  image="/images/posts/2025-01-15-hw-emb-dev/helping-hand.webp"
+  text="Helping hand soldering" %}
+
 ---
-<center>
-<a href="https://amzn.to/40uRvm6" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/flux.webp" alt="Flux" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: flux</span>
-</a>
-</center>
+
+{% include affiliate_link.html
+  url="https://amzn.to/40uRvm6"
+  image="/images/posts/2025-01-15-hw-emb-dev/flux.webp"
+  text="Flux" %}
+
 ---
-<center>
-<a href="https://amzn.to/3PxOStz" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/solder-wick.webp" alt="Solder wick" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: solder wick</span>
-</a>
-</center>
+
+{% include affiliate_link.html
+  url="https://amzn.to/4fXxTeZ"
+  image="/images/posts/2025-01-15-hw-emb-dev/solder-wick.webp"
+  text="Solder wick" %}
 
 ### Oscilloscope
 
 This is one of the most expensive items. They are great to have, and once you have one, you will be using it all the time. But if you don't need to measure digital signals, or only DC, leave this device for the future. Not having any means to measure clocks, data signals and combinations of them is not optimal, but many hobbyists do as much as they can with the multimeter and hope for the best. As I mentioned before when I discussed [multimeters](#multimeter), many offer basic information like frequency and duty cycle for low-frequency signals. On the other hand, there are nowadays relatively cheap oscilloscopes with a bandwidth of ~100MHz and sample rates around 500Msa/s, like the one below:
 
-<center>
-<a href="https://amzn.to/4gL3iCt" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/oscilloscope.webp" alt="Oscilloscope" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: cost-efficient oscilloscope</span>
-</a>
-</center>
+{% include affiliate_link.html
+  url="https://amzn.to/4gL3iCt"
+  image="/images/posts/2025-01-15-hw-emb-dev/oscilloscope.webp"
+  text="Cost-efficient oscilloscope" %}
 
 That will be alright for low-frequency —and most medium-frequency– applications. If you would like to invest in a better device with many more analysis features and higher sample rates for better resolution, I could recommend you Siglent, which is the brand I use at work. The oscilloscopes we have cost at least 2 grand, some of them much more, but there are also more affordable models from the same manufacturer that will have you well covered. For example, the Siglent SDS1104X-E provides 4 channels, it reaches 1Gsa/s, and you will be able to analyze several serial protocols like I2C and SPI.
 
-<center>
-<a href="https://amzn.to/4heYPYv" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/siglent-sds1104x-e.webp" alt="Siglent SDS1104X-E" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: Siglent SDS1104X-E</span>
-</a>
-</center>
+{% include affiliate_link.html
+  url="https://amzn.to/4heYPYv"
+  image="/images/posts/2025-01-15-hw-emb-dev/siglent-sds1104x-e.webp"
+  text="Siglent SDS1104X-E" %}
 
 If you have enough with 2 channels, and you would rather have a bandwidth of 200 MHz and save some money, the Siglent SDS1202X-E would be a great option:
 
-<center>
-<a href="https://amzn.to/3PB7wAx" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/siglent-sds1202x-e.webp" alt="Siglent SDS1202X-E" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: Siglent SDS1202X-E</span>
-</a>
-</center>
+{% include affiliate_link.html
+  url="https://amzn.to/3PB7wAx"
+  image="/images/posts/2025-01-15-hw-emb-dev/siglent-sds1202x-e.webp"
+  text="Siglent SDS1202X-E" %}
 
 ### Matrix boards and SMD adapters
 
@@ -319,19 +287,17 @@ The SMD equivalent to the breadboard we saw before. As I said before, you will n
 
 Needless to say, you will need access to a soldering iron, but as we saw before when we discussed[soldering stations](#soldering-station), there are affordable options out there.
 
-<center>
-<a href="https://amzn.to/3C9c0va" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/matrix-boards.webp" alt="Matrix boards" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: Matrix boards</span>
-</a>
-</center>
+{% include affiliate_link.html
+  url="https://amzn.to/3C9c0va"
+  image="/images/posts/2025-01-15-hw-emb-dev/matrix-boards.webp"
+  text="Matrix boards" %}
+
 ---
-<center>
-<a href="https://amzn.to/3Px7jP0" class="commercial-link">
-  <img src="/images/posts/2025-01-15-hw-emb-dev/smd-adapters.webp" alt="SMD Adapters" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: SMD Adapters</span>
-</a>
-</center>
+
+{% include affiliate_link.html
+  url="https://amzn.to/3Px7jP0"
+  image="/images/posts/2025-01-15-hw-emb-dev/smd-adapters.webp"
+  text="SMD Adapters" %}
 
 ### Peripherals
 
@@ -343,12 +309,10 @@ I will only add that if you are looking for hardware to program your first Linux
 
 I covered this in more detail in [this article](/i2c-on-linux) about I2C on Linux, but given that a logic analyzer is a fairly common tool in the embedded world, I would like to mention it here as well. In short, a logic analyzer is a tool used to capture and analyze digital signals, particularly useful in debugging and verifying serial protocols like I2C, SPI, or UART in embedded systems. Oscilloscopes, even those with a serial bus decoder like the last two ones that I mentioned before, are sometimes limited when it comes to trace long transactions, filter packets, and analyze the communication at the protocol level. A cheap option (under $15) is the **AZDelivery Logic Analyzer**:
 
-<center>
-<a href="https://amzn.to/3CnWwU6" class="commercial-link">
-  <img src="/images/posts/2024-01-25-i2c-on-linux/azdelivery-logic-analyzer.webp" alt="AZDelivery Logic Analyzer" class="commercial-link-image">
-  <span style="margin-top: 5px; font-size: 16px; color: #000; font-weight: bold; display: block;">Buy on Amazon: AZDelivery Logic Analyzer</span>
-</a>
-</center>
+{% include affiliate_link.html
+  url="https://amzn.to/3CnWwU6"
+  image="/images/posts/2024-01-25-i2c-on-linux/azdelivery-logic-analyzer.webp"
+  text="AZDelivery Logic Analyzer" %}
 
 This logic analyzer can sniff a bus, and thanks to its USB end, transmit the information to your PC to inspect it by means of some signal analysis software suite. A well-known, open-source option is [sigrok](https://sigrok.org/wiki/Main_Page), that supports different frontends like *PulseView* and *sigrok-cli* for CLI lovers, and it even packages a library to integrate it into your projects. It might be worth mentioning that AZDelivery also provides its own open-source libraries for Raspberry Pi to make things even easier.
 
