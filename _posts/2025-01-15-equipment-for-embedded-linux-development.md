@@ -9,12 +9,11 @@ image:      /images/posts/2025-01-15-hw-emb-dev/hw-emb-dev.webp
 tags:       hardware linux soc tech-equipment
 ---
 
+{% include affiliate_disclaimer.html %}
+
 A few people who follow my articles –especially the [new series](linux-drivers-hardware) about Linux device drivers– have asked me about the hardware they should buy for embedded Linux development. And that did not surprise me, because we all love getting new toys to hack around with. This article addresses such an interesting topic, and walks through the basic components that everyone should have to learn embedded Linux as well as some nice to have stuff that will make your life much easier. I have added some more advanced alternatives for experienced developers as well, so everyone can get something useful out of it.
 
 But I don't want to throw a random list of articles without saying why and when you will need them; instead, I would like to add some value with my own, honest insights. I will explain why and when you will need them, from the point of view of an embedded Linux developer and Linux kernel contributor, both professionally and as a hobbyist, and based on my own experience. I hope you will find something useful!
-
----
-<span style="font-size:0.85em;">To keep more articles available for everyone from the beginning, I have come up with an additional source of support. The links in this article lead to products on Amazon: if you're considering buying any of them, it would be great if you could do so through these links. It won't cost you anything extra, but I'll earn a tiny commission (<u>paid by Amazon, not you</u>) that won't make me rich, but it will help me keep creating open content. Thank you so much, and enjoy the article!</span>
 
 ---
 <h2 class="content-heading">Content:</h2>
