@@ -1,0 +1,48 @@
+.jekyll-linkpreview-wrapper {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  text-decoration: none;
+  background-image: none;
+}
+
+.jekyll-linkpreview-wrapper-inner {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  background-color: #fff;
+  text-decoration: none;
+  background-image: none;
+  color: inherit;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.jekyll-linkpreview-wrapper-inner:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  text-decoration: none;
+  background-image: none;
+}
+
+.jekyll-linkpreview-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  text-decoration: none;
+  background-image: none;
+}
+
+.jekyll-linkpreview-title {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin: 0;
+  text-decoration: none;
+  background-image: none;
+}
+
+.jekyll-linkpreview-title:hover {
+  text-decoration: underline;
+}

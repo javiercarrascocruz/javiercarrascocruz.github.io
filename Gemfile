@@ -13,3 +13,4 @@ gem 'jekyll-sitemap'
 
 gem 'jekyll-target-blank'
 
+gem 'jekyll-linkpreview'
