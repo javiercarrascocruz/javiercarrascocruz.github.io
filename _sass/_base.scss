@@ -33,3 +33,7 @@ body {
      -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
+div#disqus_thread iframe[sandbox] {
+    max-height: 0px !important;
+}
