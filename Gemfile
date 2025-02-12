@@ -13,4 +13,4 @@ gem 'jekyll-sitemap'
 
 gem 'jekyll-target-blank'
 
-gem 'jekyll-linkpreview'
+gem 'jekyll-linkpreview', '~> 0.7.0'
