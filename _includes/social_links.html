@@ -12,6 +12,9 @@
     {% if site.linkedin_username %}
     <a class="fab fa-linkedin" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" aria-label="LinkedIn de {{ site.linkedin_username }}"></a>
     {% endif %}
+    {% if site.strava_username %}
+    <a class="fab fa-strava" href="https://www.strava.com/athletes/{{ site.strava_username }}" aria-label="Strava de {{ site.strava_username }}"></a>
+    {% endif %}
     {% if site.github_username %}
       <a class="fab fa-github" href="https://github.com/{{ site.github_username }}" aria-label="GitHub de {{ site.github_username }}"></a>
     {% endif %}
