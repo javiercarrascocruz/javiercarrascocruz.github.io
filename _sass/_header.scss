@@ -27,9 +27,11 @@ html, body {
 }
 
 .site-header .site-title {
+  font-family: 'Delicious Handrawn', serif;
   display: flex;
   align-items: center;
-  font-size: $h3;
+  font-size: $h2;
+  color: black;
   transition: font-size 0.8s ease, margin 0.8s ease;
 }
 
