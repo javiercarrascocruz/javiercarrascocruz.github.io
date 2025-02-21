@@ -1,11 +1,124 @@
+<style>
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: 0;
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin-left: 0 !important;
+}
+
+/* Hover effect on links */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown when hovering over the parent link (for desktops) */
+@media (hover: hover) {
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+/* Show the dropdown when active on mobile */
+.dropdown.active .dropdown-content {
+  display: block;
+}
+
+/* Bordes de los elementos activos */
+.nav-active, .dropdown.active > a {
+  border-top: 2px solid #ccc; /* O el valor que estés utilizando */
+  border-bottom: 2px solid #ccc; /* O el valor que estés utilizando */
+}
+</style>
+
 {% assign default_paths = site.pages | map: "path" %}
 {% assign page_paths = site.header_pages | default: default_paths %}
 
 {% for path in page_paths %}
     {% assign item = site.pages | where: "path", path | first %}
-    {% if item.title and page.title == item.title %}
-    <a class="nav-active" href="{{ item.url | relative_url }}">{{ item.emoji }} {{ item.title }}</a>
+
+    {% if item.title == "Bikepacking" %}
+        <div class="dropdown">
+            <!-- Asegurarse de aplicar la clase 'nav-active' cuando esté activo -->
+            <a class="nav-link mobile-dropdown {% if page.title == item.title or page.url contains '/bikepacking/' %}nav-active{% endif %}" href="{{ item.url | relative_url }}">{{ item.emoji }} {{ item.title }}</a>
+            <div class="dropdown-content">
+                <a href="/bikepacking/route" class="dropdown-item {% if page.title == "Route" %}nav-active{% endif %}">Route</a>
+                <a href="{{ item.url | relative_url }}" class="dropdown-item {% if page.title == item.title %}nav-active{% endif %}">Blog</a>
+            </div>
+        </div>
+    {% elsif item.title and page.title == item.title %}
+        <a class="nav-active" href="{{ item.url | relative_url }}">{{ item.emoji }} {{ item.title }}</a>
     {% elsif item.title %}
         <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.emoji }} {{ item.title }}</a>
     {% endif %}
 {% endfor %}
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Detectar si el usuario está en móvil
+    function isMobile() {
+        return window.matchMedia("(max-width: 768px)").matches;
+    }
+
+    document.querySelectorAll(".mobile-dropdown").forEach(function (dropdownLink) {
+        dropdownLink.addEventListener("click", function (event) {
+            if (isMobile()) {
+                event.preventDefault(); // Evita que el enlace redireccione
+                let dropdown = this.parentElement;
+                
+                // Cierra otros dropdowns abiertos
+                document.querySelectorAll(".dropdown").forEach(d => {
+                    if (d !== dropdown) {
+                        d.classList.remove("active");
+                    }
+                });
+
+                // Activa/desactiva el dropdown actual
+                dropdown.classList.toggle("active");
+
+                // Asegura que el enlace de Bikepacking obtenga la clase 'nav-active' al hacer clic
+                this.classList.add('nav-active');
+            }
+        });
+    });
+
+    // Mantener la clase "active" en los enlaces del dropdown
+    document.querySelectorAll('.dropdown-item').forEach(function (item) {
+        item.addEventListener('click', function() {
+            document.querySelectorAll('.dropdown-item').forEach(function(dropdownItem) {
+                dropdownItem.classList.remove('nav-active'); // Elimina la clase activa de otros enlaces del dropdown
+            });
+            this.classList.add('nav-active'); // Agrega la clase activa al enlace seleccionado
+        });
+    });
+
+    // Cierra el menú si se hace clic fuera
+    document.addEventListener("click", function (event) {
+        if (!event.target.closest(".dropdown")) {
+            document.querySelectorAll(".dropdown").forEach(function (dropdown) {
+                dropdown.classList.remove("active");
+            });
+        }
+    });
+});
+</script>

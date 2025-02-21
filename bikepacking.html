@@ -5,48 +5,49 @@ emoji: "🚵"
 ---
 
 <h2>
-	<center>🚵 For Bikepackers 🏕️</center>
+  <center>🚵 For Adventurers 🏕️</center>
 </h2>
-<p class="section-description">My articles about bikepacking: my adventure, tips and more</p>
+<p class="section-description">Stories about our bikepacking adventure, tips and more</p>
+
 <center>
-	<div class="home">
-		<div class="posts">
-			{% assign bikepacking_posts = site.posts | where: "categories", "bikepacking" %}
-			{% for post in bikepacking_posts %}
-			<div class="post py3">
-				{% if post.image %}
-				{% assign image_name = post.image | split: '/' | last | remove: '.webp' %}
-				<a href="{{ post.url | relative_url }}" class="post-title-image-link">
-					<img src="{{ post.image }}" class="post-title-image" alt="{{ image_name }}">
-				</a>
-				{% endif %}
-				<p class="post-meta">
-					{% if site.date_format %}
-					{{ post.date | date: site.date_format }}
-					{% else %}
-					{{ post.date | date: "%b %-d, %Y" }}
-					{% endif %}
-					{% if post.updated %}
-					{% if site.date_format %}
-					- updated: {{ post.updated | date: site.date_format }}
-					{% else %}
-					- updated: {{ post.updated | date: "%b %-d, %Y" }}
-					{% endif %}
-					{% endif %}
-				</p>
-				<a href="{{ post.url | relative_url }}" class="post-link">
-					<h3 class="h2 post-title">{{ post.title }}</h3>
-				</a>
-				<span class="post-summary">
-					{% if post.summary %}
-					{{ post.summary }}
-					{% else %}
-					{{ post.excerpt }}
-					{% endif %}
-					{% include tags.html %}
-				</span>
-			</div>
-			{% endfor %}
-		</div>
-	</div>
+  <div class="home">
+    <div class="posts">
+      {% assign bikepacking_posts = site.posts | where: "categories", "bikepacking" %}
+      {% for post in bikepacking_posts %}
+      <div class="post py3">
+        {% if post.image %}
+        {% assign image_name = post.image | split: '/' | last | remove: '.webp' %}
+        <a href="{{ post.url | relative_url }}" class="post-title-image-link">
+          <img src="{{ post.image }}" class="post-title-image" alt="{{ image_name }}">
+        </a>
+        {% endif %}
+        <p class="post-meta">
+          {% if site.date_format %}
+          {{ post.date | date: site.date_format }}
+          {% else %}
+          {{ post.date | date: "%b %-d, %Y" }}
+          {% endif %}
+          {% if post.updated %}
+          {% if site.date_format %}
+          - updated: {{ post.updated | date: site.date_format }}
+          {% else %}
+          - updated: {{ post.updated | date: "%b %-d, %Y" }}
+          {% endif %}
+          {% endif %}
+        </p>
+        <a href="{{ post.url | relative_url }}" class="post-link">
+          <h3 class="h2 post-title">{{ post.title }}</h3>
+        </a>
+        <span class="post-summary">
+          {% if post.summary %}
+          {{ post.summary }}
+          {% else %}
+          {{ post.excerpt }}
+          {% endif %}
+          {% include tags.html %}
+        </span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </center>
