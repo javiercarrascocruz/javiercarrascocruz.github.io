@@ -62,8 +62,9 @@
             <!-- Asegurarse de aplicar la clase 'nav-active' cuando esté activo -->
             <a class="nav-link mobile-dropdown {% if page.title == item.title or page.url contains '/bikepacking/' %}nav-active{% endif %}" href="{{ item.url | relative_url }}">{{ item.emoji }} {{ item.title }}</a>
             <div class="dropdown-content">
-                <a href="/bikepacking/route" class="dropdown-item {% if page.title == "Route" %}nav-active{% endif %}">Route</a>
                 <a href="{{ item.url | relative_url }}" class="dropdown-item {% if page.title == item.title %}nav-active{% endif %}">Blog</a>
+                <a href="/bikepacking/packing-list" class="dropdown-item {% if page.title == "Packing list" %}nav-active{% endif %}">Packing list</a>
+                <a href="/bikepacking/route" class="dropdown-item {% if page.title == "Route" %}nav-active{% endif %}">Route</a>
             </div>
         </div>
     {% elsif item.title and page.title == item.title %}
