@@ -16,3 +16,5 @@ I’m fully committed to sharing knowledge with everyone, for free. All my artic
 If you can’t afford a subscription or simply aren’t interested, you can rest assured that the content will eventually be published with no restrictions. However, if you’d like to help me continue creating content, please consider more affordable options like the Byte Rider subscription or buying me a coffee through BuyMeaCoffee (check out [🌟 Support Me](/support)). Your contributions allow me publishing content regularly on this page, keeping it accessible for everyone.
 
 Your support, in any form, means a lot to me!
+
+<b><u>UPDATE:</u></b> The first article of the series has already been released, and it is available for everyone [here](/linux-drivers-hardware). I hope you will find it useful!

@@ -17,3 +17,4 @@ If you can’t afford a subscription or simply aren’t interested, you can rest
 
 Your support, in any form, means a lot to me!
 
+<b><u>UPDATE:</u></b> The first article of the series has already been released, and it is available for everyone [here](/linux-drivers-hardware). I hope you will find it useful!
