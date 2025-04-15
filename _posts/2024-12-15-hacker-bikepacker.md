@@ -43,7 +43,7 @@ The ultimate success in that respect would be bringing new people to the FOSS co
 The following slide from my presentation at the Open Source Summit Europe 2024 in Vienna summarizes pretty well what I have in mind:
 <figure>
     <center><img src="/images/posts/2024-12-15-hacker-bikepacker/hacker-bikepacker-plan.webp"
-         alt="distcc monitor"></center>
+         alt="The Plan"></center>
 </figure>
 
 ### 3. Can I help you?
