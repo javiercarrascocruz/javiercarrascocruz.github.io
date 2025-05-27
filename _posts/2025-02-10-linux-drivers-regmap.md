@@ -13,7 +13,7 @@ This article is still only available on Patreon for **Early BYTE Explorers** [he
 
 I’m fully committed to sharing knowledge with everyone, for free. All my articles will eventually be published for open access because I believe knowledge should be accessible to all. On the other hand, I would like to show my appreciation to my main supporters with in-depth, detailed articles that they can enjoy fresh off the press. That’s why some of my articles remain exclusive to Patreon for some time before being made available to the public.
 
-<p>10% of the donations I receive are donated to free and open-source projects. Thanks to the support I've received, I've been able to cover some expenses for my bikepacking adventure while spreading FOSS along the way. But the content I create wouldn’t be possible without FOSS, and many of these projects are severely underfunded.</p>
+<p><b>At least 10%</b> of the donations I receive are <b>donated back to free and open-source projects</b>. Thanks to the support I've received, I've been able to cover some expenses for my bikepacking adventure while spreading FOSS along the way. But the content I create wouldn’t be possible without FOSS, and many of these projects are severely underfunded.</p>
 
 <p>Even though 10% of what I get won’t even cover a basic web domain (and in many countries, not even a coffee! 😂), I'll do my best to give these projects visibility, hoping that, with a bit of luck, contributions will grow. I strongly believe in the FOSS community—not just in receiving, but also in giving back.</p>
 
@@ -21,4 +21,4 @@ If you can’t afford a subscription or simply aren’t interested, you can rest
 
 Your support, in any form, means a lot to me!
 
-<b><u>UPDATE:</u></b> The first article of the series has already been released, and it is available for everyone [here](/linux-drivers-hardware). I hope you will find it useful!
+<b><u>UPDATE:</u></b> The first and second articles of the series have already been released, and they are available for everyone [here](/linux-drivers-hardware) and [here](/linux-drivers-layout-and-device-model). I hope you will find them useful!
