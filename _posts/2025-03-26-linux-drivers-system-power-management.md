@@ -21,4 +21,4 @@ If you can’t afford a subscription or simply aren’t interested, you can rest
 
 Your support, in any form, means a lot to me!
 
-<b><u>UPDATE:</u></b> The first and second articles of the series have already been released, and they are available for everyone [here](/linux-drivers-hardware) and [here](/linux-drivers-layout-and-device-model). I hope you will find them useful!
+<b><u>UPDATE:</u></b> The [first](/linux-drivers-hardware), [second](/linux-drivers-layout-and-device-model) and [third](/linux-drivers-regmap) articles of the series have already been released, and they are now available for everyone without restrictions. I hope you will find them useful!
