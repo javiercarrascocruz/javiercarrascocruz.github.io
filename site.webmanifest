@@ -3,12 +3,12 @@
     "short_name": "",
     "icons": [
         {
-            "src": "/images/logos/hacker-bikepacker-logo-192x192.webp",
+            "src": "/images/logos/hacker-bikepacker-simple-192x192.webp",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/images/logos/hacker-bikepacker-logo.webp",
+            "src": "/images/logos/hacker-bikepacker-simple-512x512.webp",
             "sizes": "512x512",
             "type": "image/png"
         }

@@ -7,12 +7,12 @@ layout: null
   "description": "{{ site.description | replace: '"', '\"' }}",
   "icons": [
     {
-      "src": "{{ '/images/logos/hacker-bikepacker-logo.webp' | relative_url }}",
+      "src": "{{ '/images/logos/hacker-bikepacker-simple.webp' | relative_url }}",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "{{ '/images/logos/hacker-bikepacker-logo-192x192.webp' | relative_url }}",
+      "src": "{{ '/images/logos/hacker-bikepacker-simple-192x192.webp' | relative_url }}",
       "type": "image/webp",
       "sizes": "192x192"
     }
