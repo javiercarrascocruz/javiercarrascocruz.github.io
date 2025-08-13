@@ -121,7 +121,7 @@ $ time make -j$(nproc)
 real	47m23.330s
 ```
 
-Does results are much better than the ones I got in the previous section with *LLVM/Clang*. Does that mean that GCC is always faster? Not really. Actually, I have read multiple times that *LLVM/Clang* is often faster, so I suppose that there are many cases where it is. I am just saying that trying both is very easy, and in your particular case choosing one compiler over the other might make a big difference. Just give both a shot!
+These results are much better than the ones I got in the previous section with *LLVM/Clang*. Does that mean that GCC is always faster? Not really. Actually, I have read multiple times that *LLVM/Clang* is often faster, so I suppose that there are many cases where it is. I am just saying that trying both is very easy, and in your particular case choosing one compiler over the other might make a big difference. Just give both a shot!
 
 ### 4. ccache: recycle previous builds to compile faster
 
