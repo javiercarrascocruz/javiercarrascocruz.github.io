@@ -9,7 +9,7 @@ image:      /images/posts/2025-05-01-ldd6-runtime-pm/runtime-pm.webp
 tags:       drivers linux
 ---
 
-This article is still only available on Patreon for **Early BYTE Explorers** [here](https://www.patreon.com/posts/linux-drivers-6-127926144?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link). If you would like to support my work and get early access to my articles, you can do so on my Patreon profile and start reading this article right now.
+This article is still only available on Patreon for **HACKERS** [here](https://www.patreon.com/posts/linux-drivers-6-127926144?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link). If you would like to support my work and get early access to my articles, you can do so on my Patreon profile and start reading this article right now.
 
 I’m fully committed to sharing knowledge with everyone, for free. All my articles will eventually be published for open access because I believe knowledge should be accessible to all. On the other hand, I would like to show my appreciation to my main supporters with in-depth, detailed articles that they can enjoy fresh off the press. That’s why some of my articles remain exclusive to Patreon for some time before being made available to the public.
 
