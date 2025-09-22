@@ -4,6 +4,8 @@ title: "Packing list"
 emoji: "🚵"
 ---
 
+{% include featured_article.html %}
+
 <center><h2>Our packing list</h2></center>
 
 This is all we are carrying on our bikepacking adventure. You can use this list to get an idea of what you might need or maybe find something new you hadn't thought about. But don't let anyone tell you what your list should look like. Every person has different needs, interests, and goals. This is <b><u>our</u></b> packing list, and not <b><u>the ultimate</u></b> packing list (that does not even exist, no matter what others told you), and we hope it will help you somehow!
@@ -120,7 +122,7 @@ This is all we are carrying on our bikepacking adventure. You can use this list 
   <tr>
     <td></td>
     <td>1 x Rain jacket</td>
-    <td>1 x Rain Poncho</td>
+    <td>1 x Rain <del>poncho</del> → jacket</td>
   </tr>
   <tr>
     <td><b>Trousers</b></td>
@@ -226,8 +228,11 @@ This is all we are carrying on our bikepacking adventure. You can use this list 
 
 ### 5. Electronics
 
-- 3 Power banks (2 x 10000 mAh, 1 x 27000 mAh).
-- 1 Multi-port USB-charger (x4 ports).
+- 1 x [Foldable 21W EcoShiner Solar Panel](https://shop.ecoshiner.com/products/16071155075905833318330910?source_type=sales_plugin_af&slt=sales_plugin_af&referral_code=UUDRYR4PDQPT).
+- 1 x [Foldable 14W EcoShiner Solar Panel](https://shop.ecoshiner.com/products/16071085693497875225530910?source_type=sales_plugin_af&slt=sales_plugin_af&referral_code=UUDRYR4PDQPT).
+- 4 x Power banks (2 x 10000 mAh, 1 x 27000 mAh, 1 x 26000 mAh).
+- 1 x Multi-port USB-charger (x4 ports).
+- 1 x PD USB-charger (45W).
 - 2 x second-hand Android smartphones. <u>TODO:</u> switch to a more open operating system!
 - 2 x eBook readers.
 - 1 x Garmin Explorer Edge.
