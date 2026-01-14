@@ -30,7 +30,7 @@ I still think that every kernel contributor should know how to use the canonical
 
 There are several ways to install b4 and they are very well documented [here](https://b4.docs.kernel.org/en/latest/installing.html). I personally like cloning the [repo](https://github.com/mricon/b4) and creating a link to *b4.sh* (described in the "[Running from the checkout dir](https://b4.docs.kernel.org/en/latest/installing.html#running-from-the-checkout-dir)" section) to get the latest version. Your distro probably has **b4** as a package and it can be installed normally, but you might get an old version without the latest features. If you can live without them, that is the easiest way.
 
-Given that b4 uses `git send-patch` under the hood, if you have already configured git to send emails, everything should be ready to send patches with b4. If you don't even know what I am talking about, google first how to configure `git send-email` for your email service provider (Gmail, Outlook, etc.).
+Given that b4 uses `git send-email` under the hood, if you have already configured git to send emails, everything should be ready to send patches with b4. If you don't even know what I am talking about, google first how to configure `git send-email` for your email service provider (Gmail, Outlook, etc.).
 
 ### 3. A simple example to convince you
 
