@@ -8,7 +8,9 @@ html, body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: white;
+  background-color: rgba(240, 248, 245, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   text-align: center;
   padding-top: $space-0;
   padding-bottom: $space-2;
