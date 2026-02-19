@@ -2,14 +2,18 @@ html, body {
   overscroll-behavior: none;
 }
 
+// ─── Header base ──────────────────────────────────────────────────────────────
+
 .site-header {
   position: sticky;
   top: 0;
   z-index: 1000;
   background-color: white;
+  text-align: center;
   padding-top: $space-0;
   padding-bottom: $space-2;
-  transition: all 0.8s ease;
+  // Only animate the properties that actually change on shrink
+  transition: padding 0.6s ease;
 }
 
 .site-header a {
@@ -19,12 +23,15 @@ html, body {
   background-image: none;
 }
 
+// ─── Header shrunk ────────────────────────────────────────────────────────────
+
 .site-header.shrink {
   padding-top: $space-0;
   padding-bottom: $space-1;
-  font-size: 0.6em;
-  transition: all 0.8s ease;
+  // No transition here: it belongs only in the base state
 }
+
+// ─── Site title ───────────────────────────────────────────────────────────────
 
 .site-header .site-title {
   font-family: 'Delicious Handrawn', serif;
@@ -32,14 +39,15 @@ html, body {
   align-items: center;
   font-size: $h2;
   color: black;
-  transition: font-size 0.8s ease, margin 0.8s ease;
+  margin: 0;
+  transition: font-size 0.6s ease;
 }
 
 .site-header.shrink .site-title {
   font-size: $h5;
-  transition: font-size 0.8s ease, margin 0.8s ease;
-  margin: 0;
 }
+
+// ─── Avatar ───────────────────────────────────────────────────────────────────
 
 .site-header .avatar-container {
   display: inline-block;
@@ -48,19 +56,20 @@ html, body {
   height: 124px;
   margin-right: 10px;
   background-color: #f0f8f5;
-  transition: width 0.8s ease, height 0.8s ease;
+  transition: width 0.6s ease, height 0.6s ease;
 }
 
 .site-header .avatar {
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.8s ease;
+  transition: opacity 0.6s ease;
 }
 
 .site-header .avatar[loading="eager"] {
   visibility: visible;
   opacity: 1;
 }
+
 .site-header.shrink .avatar-container {
   width: 40px;
   height: 40px;
@@ -72,26 +81,35 @@ html, body {
   height: 100%;
 }
 
+// ─── Nav ──────────────────────────────────────────────────────────────────────
+
 .site-header .site-nav {
+  text-align: center;
   padding-top: $nav-padding;
+  transition: padding 0.6s ease;
 }
 
 .site-header nav a {
   color: $darker-green;
-  transition: font-size 0.8s ease, padding 0.8s ease, color 0.8s ease;
-}
-
-.site-header.shrink nav a {
-  padding-top: 0;
-  padding-bottom: 0;
-  font-size: $h5;
-  transition: all 0.8s ease;
+  transition: font-size 0.6s ease, padding 0.6s ease, color 0.6s ease, opacity 0.6s ease;
 }
 
 .site-header.shrink .site-nav {
   padding-top: 0;
   padding-bottom: 0;
 }
+
+.site-header.shrink nav a {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: $h5;
+}
+
+.site-nav a + a {
+  margin-left: $nav-link-padding-x;
+}
+
+// ─── Nav active / hover states ────────────────────────────────────────────────
 
 .site-header nav a:hover,
 .site-header nav a:focus,
@@ -109,9 +127,20 @@ html, body {
   border-top: $nav-active-border-top;
 }
 
-.site-nav a + a {
-  margin-left: $nav-link-padding-x;
+// ─── Social icons ─────────────────────────────────────────────────────────────
+// Base styles live in _social-icons.scss. Only shrink overrides go here.
+
+.site-header .social-icons {
+  transition: font-size 0.6s ease, padding 0.6s ease;
 }
+
+.site-header.shrink .social-icons {
+  font-size: 1.0em;
+  padding-top: 0.2em;
+  padding-bottom: 0;
+}
+
+// ─── Post hover effects ───────────────────────────────────────────────────────
 
 .site-header a:hover,
 .posts .post a:hover .post-meta,
@@ -120,17 +149,12 @@ html, body {
 }
 
 .posts .post a:hover .post-title {
-  transition: all 0.8s ease;
+  transition: color 0.6s ease;
   color: $green;
 }
 
-.site-header {
-  text-align: center;
-}
+// ─── Responsive ───────────────────────────────────────────────────────────────
 
-.site-header .site-nav {
-  text-align: center;
-}
 @media (max-width: 600px) {
   .site-header .avatar-container {
     width: 60px;
