@@ -38,7 +38,7 @@ Leaving aside the most direct road between Dushanbe and Kyrgyzstan, which basica
 
 <figure>
     <img src="/images/posts/2026-08-04-tajikistan-bartang/routes.webp"
-         alt="Routes through the Pamirs">
+         alt="Routes through the Pamirs" loading="lazy">
     <center><figcaption><i>The different routes to cross the Pamirs</i></figcaption></center>
 </figure>
 
@@ -102,7 +102,7 @@ As I mentioned before, some people add the Zorkul lake to their route, especiall
 
 <figure>
     <img src="/images/posts/2026-08-04-tajikistan-bartang/zorkul.png"
-         alt="Zorkul extension">
+         alt="Zorkul extension" loading="lazy">
     <center><figcaption><i>Zorkul extension (purple)</i></figcaption></center>
 </figure>
 
@@ -147,7 +147,7 @@ The first day is very easy, and you even ride on asphalt in very good condition 
 <figure>
     <img
     src="/images/posts/2026-08-04-tajikistan-bartang/day1_bartang.webp"
-         alt="Day 1: Bartang">
+         alt="Day 1: Bartang" loading="lazy">
 </figure>
 
 Once you leave the asphalt behind, the dirt road gradually gets worse, though the worst part is still far away and here it is still quite reasonable, even if it starts getting rocky. Although the day started sunny, by the afternoon it got cloudy, and to avoid camping in the rain, we asked a man from the village we had reached (Rajuz) if we could camp under his porch. Of course, he said yes and even invited us for dinner. Since he sold fruit (mainly watermelons, of which we ate a lot) and vegetables, he gave us a bunch of cucumbers for the road. What a difference compared to our experiences in Bosnia and Croatia!
@@ -155,7 +155,7 @@ Once you leave the asphalt behind, the dirt road gradually gets worse, though th
 <figure>
     <img
     src="/images/posts/2026-08-04-tajikistan-bartang/camping_garden.jpg"
-         alt="Camping in somebody's yard">
+         alt="Camping in somebody's yard" loading="lazy">
 </figure>
 
 **<u>Day 2: Rajuz to Yapshorv</u>**
@@ -165,7 +165,7 @@ A day with little elevation gain, the road is in worse condition with some very 
 <figure>
     <img
     src="/images/posts/2026-08-04-tajikistan-bartang/bridge.jpg"
-         alt="Crossing a bridge">
+         alt="Crossing a bridge" loading="lazy">
 </figure>
 
 We reached Yapshorv that day, where there is a tiny magazin (you can skip it if you have enough to reach Ghudara, which has a bit more) and a very basic guesthouse, near the end of the village but not on the main road (one of the last houses, slightly larger than the rest). We continued about one kilometer further to some trees on the right side of the road, where we were well hidden and quite protected from the wind.
@@ -173,7 +173,7 @@ We reached Yapshorv that day, where there is a tiny magazin (you can skip it if 
 <figure>
     <img
     src="/images/posts/2026-08-04-tajikistan-bartang/camping_forest.jpg"
-         alt="Camping in a little forest">
+         alt="Camping in a little forest" loading="lazy">
 </figure>
 
 **<u>Day 3: Yapshorv to Ghudara</u>**
@@ -183,13 +183,13 @@ A tougher day than the previous ones because you have to cross two medium passes
 <figure>
     <img
     src="/images/posts/2026-08-04-tajikistan-bartang/posing_on_the_road.jpg"
-         alt="Posing on the road">
+         alt="Posing on the road" loading="lazy">
 </figure>
 
 <figure>
     <img
     src="/images/posts/2026-08-04-tajikistan-bartang/cloudy_mountain.jpg"
-         alt="Heading to a cloudy mountain">
+         alt="Heading to a cloudy mountain" loading="lazy">
 </figure>
 
 In Ghudara there is a magazin at the beginning of the village on the left that opens on demand, and two homestays: one inside the village that you cannot see from the road (Snow Leopard), and another one at the end of the village also on the left, next to the road. We stayed at the latter because it felt cozier (the family lives in the same building) and people had told us good things about it. The Snow Leopard is also basic but slightly more modern, though less welcoming. Prices are around $15 per person per night in both cases, ours included breakfast and dinner, I do not know about the other one. In ours, they actually ask you to pay what you think is fair, but be reasonable.
@@ -197,7 +197,7 @@ In Ghudara there is a magazin at the beginning of the village on the left that o
 <figure>
     <img
     src="/images/posts/2026-08-04-tajikistan-bartang/homestay_ghudara.jpg"
-         alt="Inside the homestay in Ghudara">
+         alt="Inside the homestay in Ghudara" loading="lazy">
 </figure>
 
 **<u>Day 4: Ghudara</u>**
@@ -207,7 +207,7 @@ A rest day to do some hiking around and socialize with the locals. Besides invit
 <figure>
     <img
     src="/images/posts/2026-08-04-tajikistan-bartang/ghudara_family.jpg"
-         alt="Our hosts in Ghudara">
+         alt="Our hosts in Ghudara" loading="lazy">
 </figure>
 
 Hiking here means following one of the trails leading toward neighboring valleys and mountains, which are generally used by shepherds, and of course, not marked. You will find some trails marked on OSM, and not far from Ghudara begins the one that leads toward the lagoon on the way to the Fedchenko Glacier. We did not hike that one, so I cannot give more details, but I know it is possible and that it more or less starts in the previous village, Pasor, on the north side. In our case, we walked up the valley east of Ghudara after crossing the bridge you use to enter. The first few kilometers are easy, and then it gets a bit trickier with some rock hopping, but nothing technical or dangerous.
@@ -215,7 +215,7 @@ Hiking here means following one of the trails leading toward neighboring valleys
 <figure>
     <img
     src="/images/posts/2026-08-04-tajikistan-bartang/snowy_mountain.jpg"
-         alt="The view of a narrow valley next to Ghudara">
+         alt="The view of a narrow valley next to Ghudara" loading="lazy">
 </figure>
 
 **<u>Day 5: Ghudara to the Plateau</u>**
@@ -225,7 +225,7 @@ Right after leaving Ghudara you face the first steep climb, although it is short
 <figure>
     <img
     src="/images/posts/2026-08-04-tajikistan-bartang/river_crossing.webp"
-         alt="Crossing a cold river">
+         alt="Crossing a cold river" loading="lazy">
 </figure>
 
 The pass is quite steep and longer than it looks on the map or at first glance (about 600 meters of elevation gain that feel like waaaay more), and you will have to push the bike for a long time. It is better to take it easy, enjoy the incredible views, and go slowly with some breaks.
@@ -233,13 +233,14 @@ The pass is quite steep and longer than it looks on the map or at first glance (
 <figure>
     <img
     src="/images/posts/2026-08-04-tajikistan-bartang/before_pass.jpg"
-         alt="Shortly before reaching the beginning of the pass">
+         alt="Shortly before reaching the beginning of the pass"
+	 loading="lazy">
 </figure>
 
 <figure>
     <img
-    src="/images/posts/2026-08-04-tajikistan-bartang/possing_before_pass.jpg"
-         alt="Possing before reaching the pass">
+    src="/images/posts/2026-08-04-tajikistan-bartang/posing_before_pass.jpg"
+         alt="Possing before reaching the pass" loading="lazy">
 </figure>
 
 We had been told to fill up on water before the climb because we would not find any rivers afterward, so we carried no less than 19 liters of water during the entire ascent… for absolutely nothing! The first thing you find when reaching the top of the pass is a couple of clean rivers, perfect for refilling, which somehow our sources had forgotten to mention. It was the first time we carried that much water for no reason, but not the last, as I mention in our [ride across Mongolia between Bulgan and Olgii](mongolia-bulgan-olgii).
@@ -247,7 +248,7 @@ We had been told to fill up on water before the climb because we would not find 
 <figure>
     <img
     src="/images/posts/2026-08-04-tajikistan-bartang/filtering_water.jpg"
-         alt="Filtering water">
+         alt="Filtering water" loading="lazy">
 </figure>
 
 Once you are over the pass, there are a few smaller ups and downs until you reach the plateau itself, where after a while you will not see rivers for several kilometers, nor shelters in case of strong wind or rain. Try to use small hills or slopes to protect your tent from the wind if you need to camp. By the way, shortly after reaching the plateau you will see some shepherds, and there you might be able to get some basic food if you are completely out, though that should not be the case if you stocked up in Ghudara, right?
@@ -255,7 +256,7 @@ Once you are over the pass, there are a few smaller ups and downs until you reac
 <figure>
     <img
     src="/images/posts/2026-08-04-tajikistan-bartang/pass.jpg"
-         alt="View from the pass">
+         alt="View from the pass" loading="lazy">
 </figure>
 
 **<u>Day 6: Plateau</u>**
@@ -265,7 +266,7 @@ On this day with little elevation gain, once on the plateau you will find some o
 <figure>
     <img
     src="/images/posts/2026-08-04-tajikistan-bartang/plateau.jpg"
-         alt="Cycling on the Plateau">
+         alt="Cycling on the Plateau" loading="lazy">
 </figure>
 
 There are still some rivers (you will have to cross one or two), so finding water is not too difficult. Along those rivers there are some green meadows with plenty of marmots running around and, at one point (marked on the map as accommodation, though I do not know if it really is), a couple of yurts near another bridge. Still no shelters though, and since it started getting quite windy in the afternoon, we left the road and went into a small valley between hills to build a little stone wall. Enough for a comfortable night.
@@ -273,7 +274,7 @@ There are still some rivers (you will have to cross one or two), so finding wate
 <figure>
     <img
     src="/images/posts/2026-08-04-tajikistan-bartang/river_crossing2.jpg"
-         alt="Crossing another river">
+         alt="Crossing another river" loading="lazy">
 </figure>
 
 **<u>Day 7: Plateau to Karakul</u>**
@@ -283,7 +284,7 @@ The last day was quite easy because the road is fairly flat (the final stretch t
 <figure>
     <img
     src="/images/posts/2026-08-04-tajikistan-bartang/karakul_lake.jpg"
-         alt="My bike at the Karakul Lake">
+         alt="My bike at the Karakul Lake" loading="lazy">
 </figure>
 
 Another reason for the lack of traffic is that in the only settlement before the border, Karakul, there is practically nothing. It is a medium-sized village with a guesthouse and a hotel, no real shops (a small magazin in the hotel), and a very simple restaurant in the center. We had no reason to stay there, so we ate at the guesthouse and continued another 20 to 25 km to camp next to a dry riverbed, where the road climbs a small step in the terrain, and you are more sheltered from the wind, though we still built a small wall for extra comfort. Maybe part of it is still standing there!
@@ -291,7 +292,7 @@ Another reason for the lack of traffic is that in the only settlement before the
 <figure>
     <img
     src="/images/posts/2026-08-04-tajikistan-bartang/end_tajikistan.jpg"
-         alt="Leaving Tajikistan">
+         alt="Leaving Tajikistan" loading="lazy">
 </figure>
 
 ## And after that, what next?
@@ -309,7 +310,7 @@ There are not many other options unless you have the time and energy to make a l
     <figure>
         <img
         src="/images/posts/2026-08-04-tajikistan-bartang/lenin_peak.jpg"
-             alt="camping under the Lenin Peak">
+             alt="camping under the Lenin Peak loading="lazy"">
     </figure>
 
     Just follow the road from Sary Tash to Sary Mogul and then the dirt road to the Tulpar lake, which is near the Lenin Peak base camp. From there, there are some famous hikes to the Traveler's Pass (4140 m), the Lenin Peak Camp 1, or even to an easy 5000-meter peak called Yukhin Peak (5130 m) that can be climbed with no mountaineering equipment if the weather allows it.
