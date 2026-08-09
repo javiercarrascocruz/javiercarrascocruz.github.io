@@ -2,10 +2,10 @@
 layout:     post
 categories: bikepacking
 title:      Cycling in Mongolia - from Bulgan to Ölgii
-date:       2025-08-27 14:00:00 +0600
+date:       2026-08-09 08:00:00 +0200
 summary:    Off the beaten path through the Altai Mountains
 permalink:  /:title
-image:      /images/posts/2025-08-27-mongolia-bulgan-olgii/mongolia-bulgan-olgii.webp
+image:      /images/posts/2026-08-09-mongolia-bulgan-olgii/mongolia-bulgan-olgii.webp
 tags:       adventure bikepacking mongolia travelling
 ---
 
@@ -45,8 +45,8 @@ We entered Mongolia from Taikeshken (sometimes written Taykeshken), in Xinjiang 
 From the border to Bulgan (just under 50 km / +300 m) there’s a paved road in great condition, very little traffic, views of the lower Altai, and sometimes a helpful westerly wind—usually blowing west to east, i.e., in your direction. Easy stuff before the real adventure!
 
 <figure>
-    <img src="/images/posts/2025-08-27-mongolia-bulgan-olgii/mongolia.webp"
-         alt="Mongolia">
+    <img src="/images/posts/2026-08-09-mongolia-bulgan-olgii/mongolia.webp"
+         alt="Mongolia" loading="lazy">
     <center><figcaption><i>On the paved road from the border to Bulgan</i></figcaption></center>
 </figure>
 
@@ -73,54 +73,54 @@ __Tech notes:__
 The route starts shortly after Bulgan and isn’t marked, but it’s on my map and clearly visible on OpenStreetMap (OSM). You’ll see a little house on the left where you leave the tarmac. Then you’ll face a couple of dirt tracks heading toward the mountains and the riverside trees. Take the right-hand one (the OSM track). We chose the left because it looked better, and it led to a sandy detour through farms and yurts, plus a few stream crossings. We eventually rejoined the main line—but wasted time for nothing.
 
 <figure>
-    <img src="/images/posts/2025-08-27-mongolia-bulgan-olgii/sand.webp"
-         alt="Sand">
+    <img src="/images/posts/2026-08-09-mongolia-bulgan-olgii/sand.webp"
+         alt="Sand" loading="lazy">
     <center><figcaption><i>The track I left on a sandbank while trying to ride straight</i></figcaption></center>
 </figure>
 
 The first 20 km are pretty dry. As soon as the path drops to the tree line along the river, you’ll hit your first sandbanks, and you'll probably spot the first camels hanging around. If you step off the path to reach the water like we did, beware of thorny seeds hidden in the sand—puncture city (my second flat since we left home, the first since the Bartang Valley). After ~20 km along the river those seeds disappear. You’ll still find sandbanks, but rocky terrain starts to pop up, especially where the map shows lots of turns.
 
 <figure>
-    <img src="/images/posts/2025-08-27-mongolia-bulgan-olgii/river.webp"
-         alt="Path by the river">
+    <img src="/images/posts/2026-08-09-mongolia-bulgan-olgii/river.webp"
+         alt="Path by the river" loading="lazy">
     <center><figcaption><i>Following the river through an amazing canyon</i></figcaption></center>
 </figure>
 
 We even met two locals on a motorbike with a flat. We pumped their spare tube with our cheap, low-quality bike pump 😂 It worked, fortunately—they still had 70 km to Small Bulgan, daylight fading, no food, no camping gear, and no jeeps for a couple of hours.
 
 <figure>
-    <img src="/images/posts/2025-08-27-mongolia-bulgan-olgii/motorbike.webp"
-         alt="Helping the locals">
+    <img src="/images/posts/2026-08-09-mongolia-bulgan-olgii/motorbike.webp"
+         alt="Helping the locals" loading="lazy">
     <center><figcaption><i>Some more upper-body training!</i></figcaption></center>
 </figure>
 
 Campsites? Endless! We chose a grassy little “island” midway between the two Bulgans. You will find awesome camping spots every 1-2 km in this area, always close to the river and under some trees. In my opinion, Mongolia is one of the best countries to wild camp because the rivers are always very clean, no one minds if you wild camp, and it is very easy to find nice spots.
 
 <figure>
-    <img src="/images/posts/2025-08-27-mongolia-bulgan-olgii/picnic.webp"
-         alt="A picnic spot by the river">
+    <img src="/images/posts/2026-08-09-mongolia-bulgan-olgii/picnic.webp"
+         alt="A picnic spot by the river" loading="lazy">
     <center><figcaption><i>Countless picnic spots along the river</i></figcaption></center>
 </figure>
 
 <figure>
-    <img src="/images/posts/2025-08-27-mongolia-bulgan-olgii/campsite.webp"
-         alt="Campsite by the river">
+    <img src="/images/posts/2026-08-09-mongolia-bulgan-olgii/campsite.webp"
+         alt="Campsite by the river" loading="lazy">
     <center><figcaption><i>Our first campsite in Mongolia</i></figcaption></center>
 </figure>
 
 Day two is easier: the road improves, especially in the last 20 km as the canyon opens up. You’ll spot single tracks on both sides of the main dirt road. Take them whenever you can. Locals use them to dodge the rough stuff; they’re flat, non-technical, and way smoother than the corrugated main line. We got a bit too playful once and followed one that drifted out of the valley—we had to cut back across fields to rejoin the route. I’m pretty sure that detour shows up on my map near Small Bulgan. You can skip that one 😉
 
 <figure>
-    <img src="/images/posts/2025-08-27-mongolia-bulgan-olgii/camel.webp"
-         alt="Camel">
+    <img src="/images/posts/2026-08-09-mongolia-bulgan-olgii/camel.webp"
+         alt="Camel" loading="lazy">
     <center><figcaption><i>There are many camels throughout the entire route</i></figcaption></center>
 </figure>
 
 We rolled into Small Bulgan in the early evening planning to resupply and ride a few more kilometers before dark. The town has more shops than you’d expect, and a couple of tiny eateries, but we couldn’t find bread. The supermarket owner promised fresh loaves next morning. Meanwhile, the weather turned, so we camped just beyond the bridge—green meadow, trees, out of sight. In our experience mornings are usually great; afternoons get windy (riding S→N it’s often, not always, headwind), evenings turn cloudy and sometimes rainy.
 
 <figure>
-    <img src="/images/posts/2025-08-27-mongolia-bulgan-olgii/landscape-river.webp"
-         alt="Landscape near the river">
+    <img src="/images/posts/2026-08-09-mongolia-bulgan-olgii/landscape-river.webp"
+         alt="Landscape near the river" loading="lazy">
     <center><figcaption><i>Typical landscape in the Bulgan valley</i></figcaption></center>
 </figure>
 
@@ -135,8 +135,8 @@ We rolled into Small Bulgan in the early evening planning to resupply and ride a
 With the promised bread in our bags, we headed for Deluun (also written Delüün). The road is way better here, and the bike-pushing phase is mostly over. You’ll even get long stretches of single track—super fun to ride 😊
 
 <figure>
-    <img src="/images/posts/2025-08-27-mongolia-bulgan-olgii/single-trail.webp"
-         alt="Riding on a single trail">
+    <img src="/images/posts/2026-08-09-mongolia-bulgan-olgii/single-trail.webp"
+         alt="Riding on a single trail" loading="lazy">
     <figcaption><i>Always take the single trails!</i></figcaption>
 </figure>
 
@@ -145,8 +145,8 @@ This section includes longer, steeper climbs and the highest point of the route 
 **The water saga (a.k.a. don’t carry a swimming pool):** We knew the Bulgan River would vanish after ~25 km and had been told that all small creeks were dry and only big rivers on the map carried water. So we loaded 20 liters for two people (yep). I hauled 18.5 liters uphill… for absolutely nothing! A few kilometers later we reached a river we followed up to the plateau, with water on the plateau too 😂 It isn’t on the maps, but it’s real and carries enough flow not to dry out in summer. Some folks like to magnify the “no water” drama; in our case, it was clearly exaggerated. The truth is: there’s no water from the plateau until ~25 km after the high pass—but you don’t need 20 liters for that. Carry what you’d take for a normal day. Trust me on this: bring enough food and water, but don’t waste energy (or torture your spokes) with useless weight 😉
 
 <figure>
-    <img src="/images/posts/2025-08-27-mongolia-bulgan-olgii/bike-river.webp"
-         alt="Helping the locals">
+    <img src="/images/posts/2026-08-09-mongolia-bulgan-olgii/bike-river.webp"
+         alt="Helping the locals" loading="lazy">
     <center><figcaption><i>Always near a clean river during the first 3 days</i></figcaption></center>
 </figure>
 
@@ -155,8 +155,8 @@ We left the pass for the next day and camped on the plateau. It was windy (like 
 The pass to the high point isn’t especially steep or exhausting—about +400 m with almost no U-turns (two near the end, but the straight line was in better shape, so we took it). If you’re fit from previous adventures, you can do it in one go without a foot down 😉 At the top there’s a small arch (photo op!) and a very basic bathroom. Locals sometimes drive up to snap the arch, barely glancing at the vast views—maybe they’re used to them. They’ll probably be more curious about you and your trip (offline translator to the rescue 😁).
 
 <figure>
-    <img src="/images/posts/2025-08-27-mongolia-bulgan-olgii/north-side-pass.webp"
-         alt="North side of the highest pass">
+    <img src="/images/posts/2026-08-09-mongolia-bulgan-olgii/north-side-pass.webp"
+         alt="North side of the highest pass" loading="lazy">
     <center><figcaption><i>The north side of the pass</i></figcaption></center>
 </figure>
 
@@ -175,8 +175,8 @@ Morning weather was great again, so off we went toward Tolbo—the last town bef
 Thankfully it’s short. After the first small pass, things improve. There’s a second pass later—also not steep, similar surface—and on the descents we kept scanning for the best-conditioned track.
 
 <figure>
-    <img src="/images/posts/2025-08-27-mongolia-bulgan-olgii/landscape-dry.webp"
-         alt="Cycling in deep valleys">
+    <img src="/images/posts/2026-08-09-mongolia-bulgan-olgii/landscape-dry.webp"
+         alt="Cycling in deep valleys" loading="lazy">
     <center><figcaption><i>Always surrounded by mountains</i></figcaption></center>
 </figure>
 
@@ -193,26 +193,38 @@ Tolbo is small and unremarkable for cyclists—basic shops, that’s it—but it
 From Tolbo, the adventure is basically over. A pristine paved road links Tolbo and Ölgii, with just two short passes you’ll float over at this point. Views are still great—mountains on both sides and Tolbo Lake sparkling on your left for a few kilometers. Note that there are no sources of water or places to buy food on the way, but apart from that, there are no real challenges left. The very last stretch (around 10–15 km) is a sweet downhill all the way into the center of Ölgii.
 
 <figure>
-    <img src="/images/posts/2025-08-27-mongolia-bulgan-olgii/tolbo-lake.webp"
-         alt="Tolbo lake">
+    <img src="/images/posts/2026-08-09-mongolia-bulgan-olgii/tolbo-lake.webp"
+         alt="Tolbo lake" loading="lazy">
     <center><figcaption><i>The Tolbo lake from the road to Ölgii</i></figcaption></center>
 </figure>
 
 Ölgii is a proper city: loads of ho(s)tels, big supermarkets, cafés, etc. We stayed at *Traveler’s Guesthouse*, well-known among bikepackers and backpackers. You sleep in a yurt (shared or private). We paid ~€13 per person per night for a private one; shared is cheaper. A very basic breakfast is included; no kitchen to cook (at least when we were there). By the way, there is a pretty decent and inexpensive restaurant with local food on the other side of the road, 200 meters away from the guesthouse. Ask the owner (a lady who is often difficult to find), and she'll recommend that one.
 
 <figure>
-    <img src="/images/posts/2025-08-27-mongolia-bulgan-olgii/yurt.webp"
-         alt="Inside a Yurt">
+    <img src="/images/posts/2026-08-09-mongolia-bulgan-olgii/yurt.webp"
+         alt="Inside a Yurt" loading="lazy">
     <center><figcaption><i>Our yurt at the Traveler's Guesthouse</i></figcaption></center>
 </figure>
 
-## Final notes: extensions & opposite direction
+## Final notes: alternatives, extensions & opposite direction
 
-The real adventure does not necessarily need to end in Tolbo. There is an additional off-road track from there to Ölgii over Buyant that we could not follow because we didn't have enough time for it. We talked to a couple who did follow it, but apparently it was so dry over there that they had many problems to find any water out of the villages, and they ended up taking a shortcut back to the main road and skipped the whole route I showed you here. They told us that there is almost zero vegetation over there, and that they only saw one tree in several days 😂 That sounded kind of adventurous, and if I ever come back to that region, I'll explore that area for sure, maybe trying to get even closer to the western border if no one stops me before.
+The real adventure does not necessarily need to end in Tolbo. From there, there is an additional off-road track towards Ölgii over Buyant that we could not follow because we didn't have enough time. We talked to a couple who had ridden it, and although they had found some sections quite dry, they still managed to make it through by finding water along the way.
+
+There is also another option someone told me about after following my route up to Deluun: instead of continuing towards Tolbo, you can leave the main route near Deluun at 47.958464, 90.579314 and head directly towards Tal Lake (some potential bike pushing before and after the lake, apparently not that bad but a bit steep). That cyclist told me it was an amazing alternative, with beautiful grasslands, spectacular views of glaciers and several rivers along the way, with water available for most of the route. This is quite different from what the other cyclists told us, as they did not particularly enjoy the route and had trouble finding water, perhaps because they were there earlier in the season. The snow was still not melting. They had also arrived in Mongolia after travelling through Japan, under much less demanding conditions, and seemed a little overwhelmed by the challenge of this route. Depending on how adventurous you are, one option may suit you better than the other!
+
+<figure>
+    <img
+    src="/images/posts/2026-08-09-mongolia-bulgan-olgii/alternative-tal-lake.jpeg"
+         alt="A view of the alternative route" loading="lazy">
+    <center><figcaption><i>View from the alternative section shared by
+    the cyclist who rode by the Tal Lake</i></figcaption></center>
+</figure>
+
+If you choose the turnoff at Deluun, from Tal Lake the track continues through Altai and Buyant, eventually reaching Ölgii, mostly on unpaved roads. The downside is that you would miss some of the beautiful sections between Deluun and Tolbo, as well as Tolbo Lake itself. On the other hand, you get a more remote route closer to the highest mountains and stay on dirt roads almost all the way to Ölgii. It sounds like a fantastic alternative, and if I ever make it back to western Mongolia, which I hope I will, I'd definitely like to explore this route as well.
 
 We only met 2 cyclists during this part of our trip, an Australian couple who were following the same route but in the opposite direction. We met them near the highest pass, and they were riding high-quality mountain bikes with wider tires. From what they told us, I gather that they were having a similar experience (i.e. a blast!), and they could not say that it would have been better or worse in the opposite direction up to the point where we met. In general, you'll descend a bit more from Ölgii to Bulgan, but the difference will not be that big compared to the total distance, and the single trails (the most fun part to ride) were always rather flat, and you will have some easy descents on some of them in any direction. In my opinion, the only relevant reason to choose one direction over the other should be the logistics to reach either end from where you are.
 
-Once you reach Ölgii, you have multiple options, some of them back to the Altai Mountains. Just make sure that you are allowed to go there without a guide (sometimes it is mandatory), and that there will be enough water, especially by the end of the summer. On our way towards Ulaanbaatar, we continued to Ulaangom over another dirt road by some beautiful big lakes. That extension will add a few days out of the paved roads to your trip, and you will cycle across pretty remote areas. But that’s another story I'll hopeeasyfully share soon!
+Once you reach Ölgii, you have multiple options, some of them back to the Altai Mountains. Just make sure that you are allowed to go there without a guide (sometimes it is mandatory), and that there will be enough water, especially by the end of the summer. On our way towards Ulaanbaatar, we continued to Ulaangom over another dirt road by some beautiful big lakes. That extension will add a few days out of the paved roads to your trip, and you will cycle across pretty remote areas. But that’s another story I'll hopefully share soon!
 
 ## GPX files
 
