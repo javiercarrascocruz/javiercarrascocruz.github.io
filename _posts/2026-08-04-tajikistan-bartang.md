@@ -310,7 +310,7 @@ There are not many other options unless you have the time and energy to make a l
     <figure>
         <img
         src="/images/posts/2026-08-04-tajikistan-bartang/lenin_peak.jpg"
-             alt="camping under the Lenin Peak loading="lazy"">
+             alt="camping under the Lenin Peak" loading="lazy">
     </figure>
 
     Just follow the road from Sary Tash to Sary Mogul and then the dirt road to the Tulpar lake, which is near the Lenin Peak base camp. From there, there are some famous hikes to the Traveler's Pass (4140 m), the Lenin Peak Camp 1, or even to an easy 5000-meter peak called Yukhin Peak (5130 m) that can be climbed with no mountaineering equipment if the weather allows it.
