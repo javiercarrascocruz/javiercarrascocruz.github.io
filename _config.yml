@@ -7,13 +7,12 @@ baseurl:     ""
 url:         "https://hackerbikepacker.com"
 date_format: "%b %-d, %Y"
 header_pages:
- - support.html
- - bikepacking.html
- - tech.html
- - about.html
- - contact.html
- - newsletter.html
- - search.html
+  - bikepacking.html
+  - tech.html
+  - about.html
+  - contact.html
+  - newsletter.html
+  - search.html
 
 # Google services
 google_verification:

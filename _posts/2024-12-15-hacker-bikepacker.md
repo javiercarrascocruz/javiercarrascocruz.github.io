@@ -60,7 +60,7 @@ Although I would love to hear from any bikepacking experience, those who did som
 
 #### Reward my content
 
-If my posts on this site or on social media helped you, and you would like to acknowledge my work, please consider contributing back. You will find a "Buy me a coffee" button at the end of every article as well as in the new [**Support me**](/support) section, where you can also support me via *PayPal*. What I say for your patches to FOSS projects is valid here too: any contribution, no matter its size, is always awesome.
+If my posts on this site or on social media helped you, and you would like to acknowledge my work, please consider contributing back. You will find a "Buy me a coffee" button at the end of every article. What I say for your patches to FOSS projects is valid here too: any contribution, no matter its size, is always awesome.
 
 #### Follow me and share my content
 
