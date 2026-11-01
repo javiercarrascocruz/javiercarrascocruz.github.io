@@ -23,7 +23,7 @@ Working on something that has already been sent upstream is a waste of time you 
 
 Checking the mailing lists and the subsystem tree for such collisions will take you a couple of minutes and can save you from working for nothing. You can also take a look at the [patchwork](https://patchwork.kernel.org/) site of the subsystem to see what is going on.
 
-If someone has already sent a solution upstream, but yours is more complete or somehow better, be nice and give the required feedback to improve the proposed change instead of moving on. Collaborations are also possible for more complex changes, and although they are not common, I can confirm they happen. I had been working on a driver for the hdc302x when I saw that someone sent a series to the mailing list to support that device. The proposed solution could benefit from some development I have already finished, so I emailed the author and asked if we could collaborate. Now the driver is in the mainline kernel and we are both co-authors and co-maintainers. Success story!
+If someone has already sent a solution upstream, but yours is more complete or somehow better, be nice and give the required feedback to improve the proposed change instead of moving on. Collaborations are also possible for more complex changes, and although they are not common, I can confirm they happen. I had been working on a driver for the hdc302x when I saw that someone sent a series to the mailing list to support that device. The proposed solution could benefit from some development I had already finished, so I emailed the author and asked if we could collaborate. Now the driver is in the mainline kernel and we are both co-authors and co-maintainers. Success story!
 
 ### 2. One change, one commit
 
@@ -39,7 +39,7 @@ Let's see an example: you programmed a driver (2000 lines of code), added some n
 
  - The change in the subsystem core does not depend on the driver and it could be used by any other driver in the future. Therefore, an additional patch is required. Moreover, if you commit everything together and the commit gets reverted, the system will break if any other driver uses your new variable.
 
-Would you commit the three changes in the order I listed them? <span style="color:red"> Of course not!</span> Did you already forget, that the patches must be chronologically coherent? If only the driver patch gets applied, the code will not compile because it requires a variable in the core, which has not been added yet. The bindings should also be added before the driver to get rid of warnings in case the driver uses properties described in the bindings. So let's order the series:
+Would you commit the three changes in the order I listed them? <span style="color:red"> Of course not!</span> Did you already forget that the patches must be chronologically coherent? If only the driver patch gets applied, the code will not compile because it requires a variable in the core, which has not been added yet. The bindings should also be added before the driver to get rid of warnings in case the driver uses properties described in the bindings. So let's order the series:
 
 1. Patch for the subsystem core.
 2. Bindings.
@@ -49,11 +49,11 @@ Would you commit the three changes in the order I listed them? <span style="colo
 
 If you follow this guide, you might save a dummy extra version to fix coding-style issues, which is always an opportunity to mess up. So let's get it right from the beginning.
 
-Like most of the projects where code is involved, the Linux kernel has some [coding-style rules](https://docs.kernel.org/process/coding-style.html) that should be observed. Unlike many other projects, those rules may vary among subsystems and might be followed loosely by some of them. Therefore, the easiest way to do things right is following the general coding-style guide and plus any variations required by the subsystem where your patches will be applied. Take a look at existing code in the subsystem to have a grasp of the common patterns (e.g. the variable used to return errors might always be named "error").
+Like most of the projects where code is involved, the Linux kernel has some [coding-style rules](https://docs.kernel.org/process/coding-style.html) that should be observed. Unlike many other projects, those rules may vary among subsystems and might be followed loosely by some of them. Therefore, the easiest way to do things right is following the general coding-style guide plus any variations required by the subsystem where your patches will be applied. Take a look at existing code in the subsystem to have a grasp of the common patterns (e.g. the variable used to return errors might always be named "error").
 
 #### 3.1. Short lines and long tabs: clean and readable code
 
- For anyone who is used to program in languages with 2-space tabs and 100+ symbols per line, this point may not be trivial. The general rule in the kernel code is 8-space tabs and no more than 80 characters per line (which was later extended to 100 characters per line but still 80 is strongly recommended when possible), which some might take for madness. This time I have to disagree because I like the rule.
+ For anyone who is used to programming in languages with 2-space tabs and 100+ symbols per line, this point may not be trivial. The general rule in the kernel code is 8-space tabs and no more than 80 characters per line (which was later extended to 100 characters per line but still 80 is strongly recommended when possible), which some might take for madness. This time I have to disagree because I like the rule.
 
 Sometimes it is a bit challenging if the function you are calling has a long name, but in general it improves readability by avoiding crazy nested statements and endless operations or comparisons in a single line. That is seldom required in the kernel, and usually there is a cleaner solution. Sticking to this coding style will make your code look better, and your changes will be much easier to understand at first sight, which will also increase the chances that they get accepted upstream.
 
@@ -66,7 +66,7 @@ Sometimes it is a bit challenging if the function you are calling has a long nam
 
 #### 3.2. Clang formatting: followed loosely at most
 
-You might have noticed that there is a .clang-format file in the root directory and you might be tempted to apply the rules in there to the whole project. Forget it, your patches are going to be rejected and probably criticized. Those are only general rules that are broken all the time by contributors in general, and maintainers who do not like them in particular. You can still format your code with `clang-format -i *your_file*` to have some clean basis, yet some adjustments might be required (e.g. line breakings). You can compare your code to similar code from the kernel and see what definitely does not follow the clang rules. In my case particular case, I am a **Vim** user and I defined some rules in my *.vimrc* to follow the general rules. I bet there are plugins and other stuff to do the same with Vim or any other editor, so consider using them.
+You might have noticed that there is a .clang-format file in the root directory and you might be tempted to apply the rules in there to the whole project. Forget it, your patches are going to be rejected and probably criticized. Those are only general rules that are broken all the time by contributors in general, and maintainers who do not like them in particular. You can still format your code with `clang-format -i *your_file*` to have some clean basis, yet some adjustments might be required (e.g. line breaks). You can compare your code to similar code from the kernel and see what definitely does not follow the clang rules. I am a **Vim** user and I defined some rules in my *.vimrc* to follow the general rules. I bet there are plugins and other stuff to do the same with Vim or any other editor, so consider using them.
 
 Alright, we are done with this utterly boring topic, let's move on!
 
@@ -74,7 +74,7 @@ Alright, we are done with this utterly boring topic, let's move on!
 
 `WARNING: added, moved or deleted file(s), does MAINTAINERS need updating?` is a message you will often see when you add new files to the kernel and check your patches with **checkpatch.pl**, which you should always do. That is a reminder that the MAINTAINERS file might require a new entry with your new addition. But that is not the only file you might need to update!
 
-Your changes might need an update in the documentation (typical examples: bindings for a new device or specific documentation required by the subsystem, like **hwmon** does) or new elements in other data structures beyond your code (often obvious if you want your code to compile). Make sure that you do not forget other parts involved by comparing your changes to similar ones that go accepted. Did the series include additional patches? Is there a subsystem documentation you ignored that tells you exactly what you should submit? Make sure you don't miss anything and save an extra version.
+Your changes might need an update in the documentation (typical examples: bindings for a new device or specific documentation required by the subsystem, like **hwmon** does) or new elements in other data structures beyond your code (often obvious if you want your code to compile). Make sure that you do not forget other parts involved by comparing your changes to similar ones that got accepted. Did the series include additional patches? Is there subsystem documentation you ignored that tells you exactly what you should submit? Make sure you don't miss anything and save an extra version.
 
 ### 5. Test your changes as if they were not for you
 
@@ -84,7 +84,7 @@ It is also true that you might not have many different architectures to test, or
 
 For example, if you are programming a driver for a light sensor, you do not need to test it with different architectures because that will be out of the scope of your driver. If you do, it is fine, but it should make no difference. On the other hand, you should make sure that the driver works fine as a module and also built-in. You might have always tested it built-in and everything was ok, but that does not mean that no one will ever use it as a module, and if it then crashes straight away... Hmm... not cool, right?
 
-One thing I always do before sending patches upstream is building the kernel with **both gcc and clang**, because sometimes they detect different errors For example, gcc complains a lot about missing headers, and clang finds IMO more serious bugs that gcc misses.
+One thing I always do before sending patches upstream is building the kernel with **both gcc and clang**, because sometimes they detect different errors. For example, gcc complains a lot about missing headers, and clang finds IMO more serious bugs that gcc misses.
 
 ### 6. Bonus: git post-commit hook
 

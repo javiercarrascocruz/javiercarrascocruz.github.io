@@ -12,7 +12,7 @@ tags:       contributor foss kernel linux
 
 This is the third and last episode of my series about how to become a Linux kernel contributor. It is a bit longer than the others because it shows step by step the whole submission process. Nowadays, few people can still read or pay attention for 15 minutes straight, but try your best. Otherwise, be ready to spend hours fixing what you ignored here :wink:
 
-If you are looking for ideas to make your first contribution to the kernel, please take a look at the [first episode](/kernel-contributor-1). If you want to avoid beginner mistakes in your first contribution, the [second episode](/kernel-contributor-2) may be helpful. And if you read the two first episodes, or you think you don't need them (<span style="color:darkorange"><b>you will miserably fail!</b></span>), welcome to the last episode.
+If you are looking for ideas to make your first contribution to the kernel, please take a look at the [first episode](/kernel-contributor-1). If you want to avoid beginner mistakes in your first contribution, the [second episode](/kernel-contributor-2) may be helpful. And if you read the first two episodes, or you think you don't need them (<span style="color:darkorange"><b>you will miserably fail!</b></span>), welcome to the last episode.
 
 Getting your changes accepted upstream might be a complex and frustrating process if you don't know how it works. If you are expecting a simple PR on GitHub, this article was made for you.
 
@@ -24,7 +24,7 @@ Getting your changes accepted upstream might be a complex and frustrating proces
 ---
 ### 1. Understanding the submission process
 
-The process to get changes accepted in the mainline kernel is well known and pretty simple once you learn the few steps involved. On the other hand, it is not a state-of-the-art process, and it is not what new generations are used to. That is actually a common critic, especially among young developers. But in the end it has been around for decades with obvious success (just take a look at the number of contributors involved in every release) and it does not seem that it will change any soon. It is it what it is and the sooner you get used to it, the sooner you will be able to get your changes applied.
+The process to get changes accepted in the mainline kernel is well known and pretty simple once you learn the few steps involved. On the other hand, it is not a state-of-the-art process, and it is not what new generations are used to. That is actually a common criticism, especially among young developers. But in the end it has been around for decades with obvious success (just take a look at the number of contributors involved in every release) and it does not seem that it will change any time soon. It is what it is and the sooner you get used to it, the sooner you will be able to get your changes applied.
 
 In a nutshell, the submission process consists of the following steps:
 
@@ -32,7 +32,7 @@ In a nutshell, the submission process consists of the following steps:
  2. <u>Series submission:</u> your series has to be sent upstream, i.e. you will send your emails to a public **mailing list** where everyone will have the chance to review your changes, propose modifications or ask for missing information. The whole communication runs via public emails. <span style="color:green"><b>Hint:</b></span> always 'reply to all'.
  3. <u>Review and feedback:</u> usually you will get feedback from one or more **reviewers,** either to propose modifications and improvements or to give an OK to your patches. It is perfectly normal that some patches of the series are accepted without further discussion and some others require a new version.
  4. <u>Series versioning:</u> if any of the patches requires a new version, you will be expected to send a new version of the series. The patches that were ok should include the code-review trailers you received (typically *Reviewed-by*, sometimes *Acked-by*) and no further modifications, and the rest should include the modifications agreed in the previous discussions, which will have to be documented (more on that later).
- 5. <u>Series accepted:</u> if the community and especially the subsystem **maintainer** considers that your patches are good to be merged, you will (not always, but almost) receive an email notifying that they were applied to some branch. That branch will not be the master branch of the mainline kernel for a number of reasons, and your patches will be applied with many others from other developers during the **merge window** to the mainline kernel if Linus Torvalds is willing to accept them.
+ 5. <u>Series accepted:</u> if the community and especially the subsystem **maintainer** consider that your patches are good to be merged, you will (not always, but almost) receive an email notifying that they were applied to some branch. That branch will not be the master branch of the mainline kernel for a number of reasons, and your patches will be applied with many others from other developers during the **merge window** to the mainline kernel if Linus Torvalds is willing to accept them.
  6. <u>Patience:</u> in principle, the rest of the process will be transparent to you and will follow the general rules and timings of the kernel life cycle. Annoying the maintainers asking if everything is alright with the patches they accepted from you is obviously not a good idea. Just wait and do whatever you usually do in your daily life. If you annoy maintainers in your daily life, this might help (them): `sudo rm -rf /`
 
 ### 2. Warning: only plain text without frills
@@ -181,7 +181,7 @@ NOTE: If any of the errors are false positives, please report
       them to the maintainer, see CHECKPATCH in MAINTAINERS.
 ```
 
-Oops! If forgot to [sign my work](https://www.kernel.org/doc/html/latest/process/submitting-patches.html?highlight=signed%20off#sign-your-work-the-developer-s-certificate-of-origin) and add a **commit description**, and both are **mandatory**. Use the following command to amend a commit and add the *Signed-off-by:*:
+Oops! I forgot to [sign my work](https://www.kernel.org/doc/html/latest/process/submitting-patches.html?highlight=signed%20off#sign-your-work-the-developer-s-certificate-of-origin) and add a **commit description**, and both are **mandatory**. Use the following command to amend a commit and add the *Signed-off-by:*:
 
 `git commit --amend --signoff`
 
@@ -216,13 +216,13 @@ The last parameter is, once again, the directory where you saved the patches.
 
 ### 5. Getting feedback (or not)
 
-In theory, you should get some feedback within two weeks, but that varies a lot depending on the subsystem and how busy the reviewers and maintainers are. That feedback will consist of public replies (i.e. to you and to the involved mailing list(s)) with either inline comments or summaries and code-review trailers at the bottom. Your replies should follow that pattern as well, removing irrelevant paragraphs in long emails to avoid that your comments are overlooked.
+In theory, you should get some feedback within two weeks, but that varies a lot depending on the subsystem and how busy the reviewers and maintainers are. That feedback will consist of public replies (i.e. to you and to the involved mailing list(s)) with either inline comments or summaries and code-review trailers at the bottom. Your replies should follow that pattern as well, removing irrelevant paragraphs in long emails to avoid having your comments overlooked.
 
 If the feedback you get asks you to modify your patches, feel free to discuss if you disagree or require additional information. That is always better than sending an unnecessary additional version. On the other hand, if you get a trailer like <span style="color:blue">Reviewed-by: some-name &lt;some email&gt;</span>, your patch would be considered good to go. Sometimes a second reviewer finds something that is not completely right, and the first review might not be relevant anymore, so be ready for that as well. But if that does not happen, you can add the trailer to the next version of the patch if the series does not get accepted as it is. Obviously, if the series gets accepted as it is, you do not need to send a new version with the trailers you got and no further changes. In that case, you are basically done.
 
 If you do not get any reply within two weeks (the merge window is a special period of time when you should be more patient, though), do not send your series again. Personally, I would wait a bit longer because kernel communication is not fast unless you are fixing an important bug. But if you can't wait for some good reason, or you have been waiting for way too long (i.e. *many* weeks) just send a respectful email replying to your series and asking for a review, telling that the series is still relevant. Don't send anything like a plain "ping", because no one likes that, and you might get negative feedback. You could get some very polite feedback like [this one](https://lore.kernel.org/all/cd396e7a-3861-42ea-9e02-c4701e684df2@sirena.org.uk/) by Mark Brown, but it could be way less friendly as well.
 
-<u>One reminder that could save your life:</u> I have already mentioned that you **could** get some abrupt reply you did not expect. <span style="color:red"><b>NEVER FIRE BACK!</b></span> There is nothing to win and much to lose, especially because you are a newbie that might have made an obvious mistake, something that is documented, and you should know, but ignored. In the end, no one knows you, you are a newcomer with no experience in the kernel and simply nothing to back you up.
+<u>One reminder that could save your life:</u> I have already mentioned that you **could** get some abrupt reply you did not expect. <span style="color:red"><b>NEVER FIRE BACK!</b></span> There is nothing to win and much to lose, especially because you are a newbie that might have made an obvious mistake, something that is documented, and you should have known, but ignored. In the end, no one knows you, you are a newcomer with no experience in the kernel and simply nothing to back you up.
 If you feel offended, just keep your hands away from the keyboard, drink some water and stay calm. Make sure you did not mess up (you probably did) and always reply politely, but keeping your point if you think you are right. Some maintainers are under stress and pressure (you are involved in a couple of patches, not in hundreds like some of them), and they get fed up with repeating the same things over and over again. Maybe they had a bad day... Who cares, stay focused and work on your next version. You are here to collaborate, not to argue. Even the *not-so-friendly* maintainers are fair, and if your next version is good and useful, they will eventually send you an **applied, thanks**.
 
 ### 6. Second walk-through: patch versioning
@@ -251,7 +251,7 @@ patchwork/dummy-kernel/v2/0000-cover-letter.patch
 patchwork/dummy-kernel/v2/0001-Makefile-update-EXTRAVERSION.patch
 patchwork/dummy-kernel/v2/0002-Makefile-update-NAME.patch
 ```
-You can recycle the content of your first cover letter and add a new section with your modifications. Many people add per-patch modifications, but I prefer having all together in the cover letter like **b4** does. Both are equally accepted, so do whatever you prefer. The standard approach is adding your changes under the `---` separator right below your *Signed-off-by*.
+You can recycle the content of your first cover letter and add a new section with your modifications. Many people add per-patch modifications, but I prefer having them all together in the cover letter like **b4** does. Both are equally accepted, so do whatever you prefer. The standard approach is adding your changes under the `---` separator right below your *Signed-off-by*.
 
 The new cover letter looks like this:
 ```properties
