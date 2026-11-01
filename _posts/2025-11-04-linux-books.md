@@ -74,7 +74,7 @@ This is one of my favorite topics, and I have read a few books about it througho
 
 <center>
   <a href="https://link.amazon/B01C5cytz" class="commercial-link" rel="nofollow" style="margin-bottom: 10px; display: inline-block;">
-    <img src="/images/ldddp_cover.png" alt="Linux Device Driver Development Projects cover" class="commercial-link-image">
+    <img src="/images/ldddp_cover.webp" alt="Linux Device Driver Development Projects cover" class="commercial-link-image">
     <span>Pre-order on Amazon: Linux Device Driver Development Projects</span>
   </a>
 </center>

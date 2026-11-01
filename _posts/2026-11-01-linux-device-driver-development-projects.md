@@ -5,7 +5,7 @@ title:      "My First Book: Linux Device Driver Development Projects"
 date:       2026-11-01 10:00:00 +0100
 summary:    A dream come true
 permalink:  /:title
-image:      /images/ldddp_cover.png
+image:      /images/ldddp_cover.webp
 tags:       books drivers kernel linux qemu
 ---
 
