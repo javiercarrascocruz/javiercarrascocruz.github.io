@@ -3,13 +3,16 @@ layout:     post
 categories: tech
 title:      Books to Master Linux
 date:       2025-11-04 08:00:00 +0900
+updated:    2026-11-02 10:00:00 +0100
 summary:    From basic concepts to kernel programming
 permalink:  /:title
 image:      /images/posts/2025-11-04-linux-books/linux-books.webp
 tags:       books linux
 ---
 
-{% include affiliate_disclaimer.html %}
+<div class="sponsor-suggestion-box book-announcement">
+  <span>⭐ My first book, <b>Linux Device Driver Development Projects</b>, is now available for <a href="https://link.amazon/B01C5cytz">pre-order on Amazon</a>! I wrote a bit more about it <a href="/linux-device-driver-development-projects">here</a>.</span>
+</div>
 
 Although the learning paradigms are moving really fast with the irruption of AI, we have not reached the point where structured material like courses and books has lost its great value. Apart from the obvious mistakes that the AI still makes and its lack of deep details, learning from experts in the field will always give you that edge from their experience that no one else can provide. I am an avid reader, especially of technical books, and even though I have spent many hours reading upstream code, some of those books have been the most important element to learn efficiently, saving a lot of time and hence even money.
 
@@ -56,7 +59,7 @@ The book includes an additional digital chapter to set up a virtual machine that
 I read this book a few months ago, and although it is perfect for complete beginners, medium-level readers will also find a lot of valuable information exposed in a comprehensive and entertaining way. Even though I don't consider myself a kernel expert yet, if you are one, I bet you'll still learn some tricks you didn't know! In my opinion, this book is one of the best ones you can acquire if you want to learn about Linux kernel development.
 
 - **Linux Kernel Programming: Developing kernel architecture and device drivers for character, block, USB, and network interfaces** by Thierry Gayet (2025) is a rather new book (released in June 2025). This book is shorter than the previous one (462 pages) and slightly more affordable, but the most interesting thing is that it places considerable emphasis on device drivers, going a bit deeper into topics such as USB, PCI, and networking, which makes it an ideal choice if you want to learn about the Linux kernel with a stronger focus on device drivers while still covering other important areas.
- 
+
 
 {% include affiliate_link.html
   url="https://amzn.to/4hFkf2t"
@@ -66,6 +69,15 @@ I read this book a few months ago, and although it is perfect for complete begin
 ### Device Drivers
 
 This is one of my favorite topics, and I have read a few books about it throughout my entire career. I will start with the most relevant at the moment, leaving the most outdated one, yet still the most read one, for a number of reasons, for the end.
+
+- **Linux Device Driver Development Projects** by Javier Carrasco, i.e., <b><u>me!</u></b> (available for pre-order). My first book takes a project-based approach: each chapter builds a driver for a different Linux subsystem, introducing the relevant frameworks and APIs along the way. You can develop and test the projects with QEMU and Linux emulation, without needing dedicated hardware, while following upstream conventions and development practices. I am still working on the last chapters, but you can read more about the book [here](/linux-device-driver-development-projects).
+
+<center>
+  <a href="https://link.amazon/B01C5cytz" class="commercial-link" rel="nofollow" style="margin-bottom: 10px; display: inline-block;">
+    <img src="/images/ldddp_cover.png" alt="Linux Device Driver Development Projects cover" class="commercial-link-image">
+    <span>Pre-order on Amazon: Linux Device Driver Development Projects</span>
+  </a>
+</center>
 
 - **Linux Device Driver Development: Everything you need to start with device driver development for Linux kernel and embedded Linux, 2nd Edition** by John Madieu (2022). There are not many modern books covering Linux device drivers in detail at the moment, but this one is (still) an exception. It covers a wide range of topics from the most fundamental concepts like the basics of the Linux kernel development or the **Linux Device Model** up to more advanced aspects like the **Device Tree** and the **IRQ Framework**, all with the current upstream implementations (some very new concepts might be missing, but nothing really fundamental). It also discusses some real kernel subsystems like **Industrial Input/Output (IIO)**, **GPIO**, and **Input**, although the book is more about general concepts, and not about a complete analysis of the different driver subsystems.
 
@@ -92,7 +104,7 @@ I have this book as well, and although it abuses a bit too much of the same code
 Let's be honest, this book was amazing back then, but nowadays, it is pretty much outdated (said by its own authors) and definitely not the best source to learn how to program modern device drivers. I thought of moving it to the **Hall of Fame** you'll find at the end of this article, but many people still like it for a number of reasons, and some of them are, in my opinion, good ones:
 
  1. The authors are renowned experts. Absolutely, no question about that. What they wrote back then was a masterpiece, but that was unfortunately a long time ago, and they have said multiple times that there will not be a 4th edition. But if they ever change their minds, I will be one of the first ones to buy the new edition for sure.
- 2. Key concepts don't change much. That's actually true, and many topics the book covers haven't changed since then, or at least not much. The problem is that you have to know what is still relevant and what is not, and that is time-consuming as well as a possible source of misunderstandings. 
+ 2. Key concepts don't change much. That's actually true, and many topics the book covers haven't changed since then, or at least not much. The problem is that you have to know what is still relevant and what is not, and that is time-consuming as well as a possible source of misunderstandings.
  3. It's free. Many people will not admit that, but if it weren't free, they would not even consider reading such an old book. But I am not here to judge your motivations :laughing: Anyway, it's still a free source to learn the key concepts!
 
 If you are interested in reading this book, or at least some chapters, you can find them [here](https://lwn.net/Kernel/LDD3/).
@@ -144,15 +156,15 @@ This is probably the topic I am less interested in, because I am not a distro-ho
 
 Many concepts are rather basic, so it is suitable for complete beginners, and a few topics are more advanced for those who have been running Ubuntu for some years and want to go a step further in its usage or improve their setup, like I did. It is a rather new book (from August 2025) with more than 350 pages, making it the most complete and up-to-date guide for Ubuntu users right now.
 
-I have to admit that I am not much into Linux servers, and even though I have used them professionally (like almost everyone else in the field), it is not a topic I really know, so I won't cover it in this article. I will just let you know that there is a specific book for the same distro we have just discussed, called **Mastering Ubuntu Server: Explore the versatile, powerful Linux Server distribution Ubuntu 22.04 with this comprehensive guide** by Jay LaCroix (2022), that might help if that is what you are looking for instead of general-purpose distribution concepts.
+I have to admit that I am not much into Linux servers, and even though I have used them professionally (like almost everyone else in the field), it is not a topic I really know, so I won't cover it in this article. I will just let you know that there is a specific book for the same distro we have just discussed, called **Mastering Ubuntu Server, Fifth Edition: Administer, secure, automate, and scale Ubuntu Server 26.04 across on-premises, cloud, AI workloads** by Ken VanDine and Jay LaCroix (2026), which might help if that is what you are looking for instead of general-purpose distribution concepts.
 
 {% include affiliate_link.html
-  url="https://amzn.to/437pJgy"
-  image="/images/posts/2025-11-04-linux-books/mastering-ubuntu-server.webp"
-  text="Mastering Ubuntu Server" %}
+  url="https://link.amazon/B008P2ZMF"
+  image="/images/posts/2025-11-04-linux-books/ubuntu-server-5th.webp"
+  text="Mastering Ubuntu Server, Fifth Edition" %}
 
 To be fair and cover some other popular distribution, let's provide some good reference for **Red Hat Enterprise Linux (RHEL)** in its 9th version (the latest one at the moment of writing is the 10th, but the 9th is still pretty strong, and that will not change for some time). **Red Hat Enterprise Linux 9 for SysAdmins: A technical guide for building secure production systems using RHEL 9 administration** by Jerome Gotangco and Luca Berton is the book you need if you want to get deeper into this distribution.
- 
+
 {% include affiliate_link.html
   url="https://amzn.to/3JH0ZFa"
   image="/images/posts/2025-11-04-linux-books/RHEL9.webp"
@@ -232,3 +244,5 @@ The following list includes some of the most popular Linux books that, unfortuna
 ---
 
 If you purchase (and of course, read! :laughing:) just a couple of the books I have listed in this article, you will be for sure on your way to becoming a **Master of Linux** :wink:
+
+{% include affiliate_disclaimer.html %}

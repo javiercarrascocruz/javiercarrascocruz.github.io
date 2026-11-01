@@ -12,3 +12,13 @@
   align-items: center;
   height: auto;
 }
+
+.book-announcement a,
+.book-announcement a:hover,
+.book-announcement a:focus,
+.book-announcement a:active {
+  color: $blue;
+  font-weight: bold;
+  text-shadow: none;
+  background-image: none;
+}
