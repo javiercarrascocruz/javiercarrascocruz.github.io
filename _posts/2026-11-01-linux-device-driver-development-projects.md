@@ -25,4 +25,4 @@ There is still work to do. The final book will be longer than the current Packt 
 
 Today seems like a particularly good day to share this announcement: the Linux 7.4 merge window has just set a new record with almost 20,000 git commits! For anyone looking to join the growing community of Linux developers, I hope this book will be a useful companion, whether you are taking your first steps or looking to deepen your existing skills.
 
-You can [pre-order Linux Device Driver Development Projects on Amazon](https://link.amazon/B01C5cytz).
+You can [pre-order Linux Device Driver Development Projects on Amazon](https://link.amazon/B01C5cytz), but if you would like to have a paper copy, it can also be pre-ordered [here](https://www.packtpub.com/en-us/product/linux-device-driver-development-projects-9781806703128).
