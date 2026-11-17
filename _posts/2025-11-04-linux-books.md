@@ -3,7 +3,7 @@ layout:     post
 categories: tech
 title:      Books to Master Linux
 date:       2025-11-04 08:00:00 +0900
-updated:    2026-11-02 10:00:00 +0100
+updated:    2026-11-17 08:00:00 +0100
 summary:    From basic concepts to kernel programming
 permalink:  /:title
 image:      /images/posts/2025-11-04-linux-books/linux-books.webp
@@ -36,10 +36,10 @@ If you are new to Linux, I strongly recommend picking up one of the following bo
   image="/images/posts/2025-11-04-linux-books/how-linux-works.webp"
   text="How Linux Works" %}
 
-- **The Linux Bible, 10th Edition** by Christopher Negus (2020) is a legendary book in the Linux community that has introduced thousands of people to the system, now reaching its tenth edition. Although it is already five years old, the fundamental concepts have not changed much, and it remains almost entirely valid today throughout its nearly 900 pages. An eleventh edition would certainly be welcome, but there is no need to wait for it since the updates would (most likely) only bring small changes.
+- **The Linux Bible, 11th Edition** by Christopher Negus (2025) is a legendary book in the Linux community that has introduced thousands of people to the system over the years. Now in its eleventh edition, it continues to be an excellent and comprehensive introduction to Linux, covering almost every aspect of the system across nearly 900 pages. The latest edition brings it up to date, making it a solid reference for anyone looking to learn Linux or deepen their understanding of it. It is a worthwhile addition to any bookshelf for those looking for a comprehensive reference covering the broadest possible range of Linux topics.
 
 {% include affiliate_link.html
-  url="https://amzn.to/4qF87Td"
+  url="https://link.amazon/B0dnjB07j"
   image="/images/posts/2025-11-04-linux-books/linux-bible.webp"
   text="The Linux Bible" %}
 
