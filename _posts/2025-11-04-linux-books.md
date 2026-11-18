@@ -194,17 +194,12 @@ This book explains many different kinds of bugs that you will experience at some
 
 If you don't write shell scripts to automate some of your daily tasks, you're wasting a lot of time! And although it is tempting to use your favorite AI to get them done within a few seconds, you will get in a lot of trouble if the task is slightly complex and the AI hallucinates once again. Instead, you can go the reliable (but unfortunately slower) way, and learn how to write your own scripts, and understand what they are actually doing. At the moment, there are two books that stand out in this underrated aspect of Linux that most of us should know better than we do.
 
-- **Linux Command Line and Shell Scripting Bible, 4th Edition** by Richard Blum and Christine Bresnahan (2021) has been a reference in shell scripting for years, and if you think that a book that was written in 2021 might be slightly outdated, think that shell scripts usually stay around for many years once they are finished. And if you still would like to update yours to include the latest features and good practices, don't worry: **the 5th edition is on its way!** It is planned for February 2026, and you can already pre-order it.
-
-{% include affiliate_link.html
-  url="https://amzn.to/4qEKnyp"
-  image="/images/posts/2025-11-04-linux-books/linux-command-line-shell-scripting-bible-4.webp"
-  text="Linux Command Line and Shell Scripting Bible, 4th Edition" %}
+- **Linux Command Line and Shell Scripting Bible, 5th Edition** by Richard Blum and Christine Bresnahan (2025) has been a reference in shell scripting for years, and it has been updated in the 5th edition to include the latest features and good practices.
 
 {% include affiliate_link.html
   url="https://amzn.to/47GswP3"
   image="/images/posts/2025-11-04-linux-books/linux-command-line-shell-scripting-bible-5.webp"
-  text="Linux Command Line and Shell Scripting Bible, 5th Edition (pre-order)" %}
+  text="Linux Command Line and Shell Scripting Bible, 5th Edition" %}
 
 - **The Ultimate Linux Shell Scripting Guide: Automate, Optimize, and Empower tasks with Linux Shell Scripting** by Donald A. Tevault (2024) is another relatively new alternative that covers a lot of ground in its almost 700 pages. If you want to make the most of your shell scripts, this book is for you. It includes a lot of examples, and it even covers different shells like Z Shell and PowerShell, although it's mainly focused on the ubiquitous Bash.
 
