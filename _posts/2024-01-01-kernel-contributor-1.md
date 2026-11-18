@@ -32,9 +32,9 @@ There is another obvious requirement: **the Linux sources and a toolchain to bui
 
 ### 2. Patches you don't want to send and no one needs
 
-First things first: your contributions should add some value to the user, and you should always bear that in mind. If you do so, it will become clear that some changes are unnecessary and only add extra workload not only to yourself, but also to the reviewers and maintainers with no real profit.
+First things first: your contributions should add some value to users, and you should always bear that in mind. If you do so, it will become clear that some changes are unnecessary and only add extra workload not only to yourself, but also to the reviewers and maintainers with no real benefit.
 
-The most typical examples of unnecessary patches are those that only modify the code from a picky-reader perspective: typos in the name of a variable, trailing white spaces, white spaces versus tabs, etc. You do not want to submit patches to "fix" those for a number of reasons:
+The most typical examples of unnecessary patches are those that only modify the code from a picky-reader perspective: typos in the name of a variable, trailing whitespace, whitespace versus tabs, etc. You do not want to submit patches to "fix" those for a number of reasons:
 
  - **It does not improve the user experience** in any way. If no one benefits from it, what's the point?
 
@@ -44,7 +44,7 @@ The most typical examples of unnecessary patches are those that only modify the 
 
 ### 3. Low-hanging fruit: documentation
 
-The documentation is a good place to look for tasks within everyone's grasp. You will not learn as much as if you fix bugs or develop new code, but it is an easy entry point to get used to the submission workflow. If you are aiming for more valuable contributions from the beginning and feel confident enough, you can skip this section.
+The documentation is a good place to look for tasks within everyone's grasp. You will not learn as much as you would by fixing bugs or developing new code, but it is an easy entry point to get used to the submission workflow. If you are aiming for more valuable contributions from the beginning and feel confident enough, you can skip this section.
 
 Some people think that the kernel documentation is far from perfect, and I would tend to agree with them. Many improvements would require some considerable effort, but others are straightforward and anyone could get them done. Some of the easiest fixes I could imagine are the following:
 
@@ -64,17 +64,17 @@ Another kind of documentation that is still a source of a high number of patches
 
 Many devices supported by the Linux kernel have (or should have) an associated document that defines its properties and how to define it in a device tree. These files or **bindings** used to be simple .txt files that do not support verification, but they are being converted into YAML files, which is a nice improvement.
 
-There are still loads of bindings in the old format waiting for someone to convert them, and learning the YAML syntax is pretty simple as long as nothing weird is required. There are also many examples of bindings in YAML format upstream. And last, but not least: this approach is the most interesting so far because you will learn things you will need if you ever program device drivers.
+There are still loads of bindings in the old format waiting for someone to convert them, and learning the YAML syntax is pretty simple as long as nothing weird is required. There are also many examples of bindings in YAML format upstream. Last but not least: this approach is the most interesting so far because you will learn things you will need if you ever program device drivers.
 
 ### 4. Bug fixing: syzkaller works for you
 
-A good way to make high-value contributions is fixing bugs found by *dynamic analysis* (fuzzing). Bugs found by *static analysis* often fall into the "low impact" category (a good example are unused variables, which will be optimized away by the compiler). Instead, a fix for a bug that happens under certain circumstances and can make the kernel crash is a great patch, and it will be ported to all (affected) stable kernels as soon as possible.
+A good way to make high-value contributions is fixing bugs found by *dynamic analysis* (fuzzing). Bugs found by *static analysis* often fall into the "low impact" category (good examples include unused variables, which will be optimized away by the compiler). Instead, a fix for a bug that happens under certain circumstances and can make the kernel crash is a great patch, and it will be ported to all (affected) stable kernels as soon as possible.
 
 If you want to give it a try, [syzkaller](https://github.com/google/syzkaller) will help you a lot. It is a **fuzzer** to test the kernel under different architectures and configurations thanks to syzbot, which is a higher-level entity that runs multiple instances of syzkaller, collects the bug reports, and tracks the status of the bugs.
 
 When a bug is found, a report is generated and uploaded to the [syzbot report site](https://syzkaller.appspot.com/upstream). The report offers a lot of valuable information such as the setup (arch, .config, last commit), logs and the backtrace with links to the functions in the code. Not only that, it can generate **reproducers**, which are programs to trigger the bug. You can even send patches to syzkaller to test if they fix the issue (actually, if it can't be reproduced anymore). With such an amount of resources, you can just focus on the code where the bug resides and test your solution, both locally and upstream by syzbot. The bugs are sorted by subsystem, so you can focus on your favorite subsystem and learn more about it along the way.
 
-I fixed a couple of syzkaller bugs during my time as a mentee from the [**Linux Kernel Mentorship Program**](/lkmp), and I have written [**this article**](/syzbot) that goes step by step throughout the whole process, from interpreting the logs up to fixing a real bug with Qemu/GDB and sending the patch upstream. Check it out!
+I fixed a couple of syzkaller bugs during my time as a mentee from the [**Linux Kernel Mentorship Program**](/lkmp), and I have written [**this article**](/syzbot) that goes through the whole process step by step, from interpreting the logs up to fixing a real bug with Qemu/GDB and sending the patch upstream. Check it out!
 
 ### 5. Driver development: become a maintainer
 
@@ -82,17 +82,17 @@ You might think that writing a new driver for a piece of hardware would be a mas
 
 If you know something about electronics and have a SoC (Raspi and friends) to test simple pieces of hardware (many sensors are), this approach is in my opinion the most rewarding. You will learn a lot about the subsystem that covers the device, become a driver maintainer (if you thought that by becoming a maintainer I meant a **subsystem** maintainer, you expected too much of both of us) and as the driver will probably require some documentation updates (bindings, ABI, etc.) or modifications in the subsystem core (new helpers, data members, etc.), you will submit several patches at once. Not bad for a first contribution!
 
-If you want me to recommend you a subsystem for this, I would choose **IIO** (Industrial Input Output). Many sensors fall into this subsystem and from my own experience I can say that it is a well-maintained subsystem with nice reviewers. You could look for an unsupported sensor you would like to have for your own projects and start working on its driver. Enjoy!
+If you want me to recommend a subsystem to you for this, I would choose **IIO** (Industrial Input Output). Many sensors fall into this subsystem and from my own experience I can say that it is a well-maintained subsystem with nice reviewers. You could look for an unsupported sensor you would like to have for your own projects and start working on its driver. Enjoy!
 
 ### 6. More options: selftests, static analysis, kernel tools, scripts
 
 Should none of the options I gave you satisfy you, there are some other options you could try. For example, another friendly subsystem is **selftests**, which maintains a number of test programs to validate certain parts of the kernel like user interfaces and specific features. Any contribution that increases test coverage is more than welcome, and there is good documentation to learn about how selftests work and how to program your own tests.
 
-Although I said that dynamic analysis is usually more powerful than static analysis, the latter should not be completely ignored. Build the kernel with both Clang/LLVM and GCC, try static analysis tools like **cppchek** and [smatch](/smatch), or take a look at bug tracking systems like [Coverity](https://scan.coverity.com/projects/linux?tab=overview) or [Bugzilla](https://bugzilla.kernel.org/). Many of the issues you will find will be false positives, but some others will be real bugs. The most important thing here is that you must understand the issue to judge if it is a false positive or not. I have seen a couple of beginners send fixes for fake bugs, providing the existence of a warning message or bug report as the only reason why they should be fixed. But if you go deeper into it and it is really a bug, then you will have found your first task to contribute :ok_hand:
+Although I said that dynamic analysis is usually more powerful than static analysis, the latter should not be completely ignored. Build the kernel with both Clang/LLVM and GCC, try static analysis tools like **cppcheck** and [smatch](/smatch), or take a look at bug tracking systems like [Coverity](https://scan.coverity.com/projects/linux?tab=overview) or [Bugzilla](https://bugzilla.kernel.org/). Many of the issues you will find will be false positives, but some others will be real bugs. The most important thing here is that you must understand the issue to judge if it is a false positive or not. I have seen a couple of beginners send fixes for fake bugs, providing the existence of a warning message or bug report as the only reason why they should be fixed. But if you go deeper into it and it is really a bug, then you will have found your first task to contribute :ok_hand:
 
 You will also find some issues when compiling the kernel tools. And some of them will be trivial and easy to fix. I can give you a recent example: after compiling some selftests, I noticed that my working tree was not clean anymore, and some untracked files had appeared. When you add a new selftest that generates binary objects, you should include a **.gitignore** file to exclude them, as stated in the [selftests documentation](https://docs.kernel.org/dev-tools/kselftest.html). Sometimes people forget, and the fix is as trivial as creating the missing .gitignore and adding the binaries to the list. I can't help it, I am one of those weirdos who get a bit nervous if the working tree is not clean, so maybe the next time you will fix that for me and I will not notice. Or even better, you will review a new test that does not include the .gitignore and there won't be any fix at all :smiley:
 
-What else... oh yeah, if you are a script geek, and you think you could improve existing scripts or write valuable scripts that people would like to use, take a look at the *scripts* directory. Sometimes I have the feeling that some scripts are no longer up-to-date, but to be honest I have never delved into that section. But if you do something valuable there, please let me know!
+What else... oh yeah, if you are a script geek, and you think you could improve existing scripts or write valuable scripts that people would like to use, take a look at the *scripts* directory. Sometimes I have the feeling that some scripts are no longer up to date, but to be honest I have never delved into that section. But if you do something valuable there, please let me know!
 
 #### 6.1. A lot of TODOs
 

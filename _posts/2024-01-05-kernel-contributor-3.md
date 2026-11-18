@@ -10,7 +10,7 @@ image:      /images/posts/2024-01-05-kernel-contributor-3/contribution-cycle.web
 tags:       contributor foss kernel linux
 ---
 
-This is the third and last episode of my series about how to become a Linux kernel contributor. It is a bit longer than the others because it shows step by step the whole submission process. Nowadays, few people can still read or pay attention for 15 minutes straight, but try your best. Otherwise, be ready to spend hours fixing what you ignored here :wink:
+This is the third and last episode of my series about how to become a Linux kernel contributor. It is a bit longer than the others because it shows the whole submission process step by step. Nowadays, few people can still read or pay attention to something for 15 minutes straight, but try your best. Otherwise, be ready to spend hours fixing what you ignored here :wink:
 
 If you are looking for ideas to make your first contribution to the kernel, please take a look at the [first episode](/kernel-contributor-1). If you want to avoid beginner mistakes in your first contribution, the [second episode](/kernel-contributor-2) may be helpful. And if you read the first two episodes, or you think you don't need them (<span style="color:darkorange"><b>you will miserably fail!</b></span>), welcome to the last episode.
 
@@ -28,12 +28,12 @@ The process to get changes accepted in the mainline kernel is well known and pre
 
 In a nutshell, the submission process consists of the following steps:
 
- 1. <u>Patch formatting:</u> your changes should consist of a series of git commits, which must be sent via email in a well-defined format. Every commit will become an email, and you will end up with a **series** covering a specific **topic**. If the series contains multiple patches, you will add a **cover letter** (an informative patch to present your series). For a single patch it is not required because the patch should be self-explanatory.
+ 1. <u>Patch formatting:</u> your changes should consist of a series of git commits, which must be sent via email in a well-defined format. Every commit will become an email, and you will end up with a **series** covering a specific **topic**. If the series contains multiple patches, you will add a **cover letter** (an informative email to present your series). For a single patch it is not required because the patch should be self-explanatory.
  2. <u>Series submission:</u> your series has to be sent upstream, i.e. you will send your emails to a public **mailing list** where everyone will have the chance to review your changes, propose modifications or ask for missing information. The whole communication runs via public emails. <span style="color:green"><b>Hint:</b></span> always 'reply to all'.
- 3. <u>Review and feedback:</u> usually you will get feedback from one or more **reviewers,** either to propose modifications and improvements or to give an OK to your patches. It is perfectly normal that some patches of the series are accepted without further discussion and some others require a new version.
+ 3. <u>Review and feedback:</u> usually you will get feedback from one or more **reviewers**, either to propose modifications and improvements or to give an OK to your patches. It is perfectly normal that some patches of the series are accepted without further discussion and some others require a new version.
  4. <u>Series versioning:</u> if any of the patches requires a new version, you will be expected to send a new version of the series. The patches that were ok should include the code-review trailers you received (typically *Reviewed-by*, sometimes *Acked-by*) and no further modifications, and the rest should include the modifications agreed in the previous discussions, which will have to be documented (more on that later).
- 5. <u>Series accepted:</u> if the community and especially the subsystem **maintainer** consider that your patches are good to be merged, you will (not always, but almost) receive an email notifying that they were applied to some branch. That branch will not be the master branch of the mainline kernel for a number of reasons, and your patches will be applied with many others from other developers during the **merge window** to the mainline kernel if Linus Torvalds is willing to accept them.
- 6. <u>Patience:</u> in principle, the rest of the process will be transparent to you and will follow the general rules and timings of the kernel life cycle. Annoying the maintainers asking if everything is alright with the patches they accepted from you is obviously not a good idea. Just wait and do whatever you usually do in your daily life. If you annoy maintainers in your daily life, this might help (them): `sudo rm -rf /`
+ 5. <u>Series accepted:</u> if the community and especially the subsystem **maintainer** consider that your patches are good to be merged, you will (not always, but almost) receive an email notifying that they were applied to some branch. That branch will not be the master branch of the mainline kernel for a number of reasons. After potentially going through some more merge request on the way up, patches are normally applied to the mainline kernel with many others during the **merge window** if Linus Torvalds is willing to accept them, while fixes can still be applied after the window has closed to the different **release candidates (-rcN)**. Every week (usually on Sunday) there will be a new release candidate with fixes that can't/don't need to wait until the next merge window. And often after `-rc7` (sometimes `-rc8`, rarely beyond that), a new official release will be published.
+ 6. <u>Patience:</u> in principle, the rest of the process will be transparent to you and will follow the general rules and timings of the kernel life cycle I just mentioned. Annoying the maintainers asking if everything is alright with the patches they accepted from you is obviously not a good idea. Just wait and do whatever you usually do in your daily life. If you annoy maintainers in your daily life, this might help (them): `sudo rm -rf /`
 
 ### 2. Warning: only plain text without frills
 
@@ -47,9 +47,9 @@ If that ever happens and your email does not meet the standards, even if you wer
 
 I would recommend you to email a personal address outside the company before emailing a list to make sure that everything looks right. Back to basics and 1990 :grin:
 
-### 3. git configuration
+### 3. Git configuration
 
-The steps to configure git to send emails with your own account will depend on your email service provider. Simply google "git send-email gmail/office365/gmx/whatever" and follow instructions. Usually, you will only need to add a few lines to your **.gitconfig**. Here's an example for office365:
+The steps to configure Git to send emails with your own account will depend on your email service provider. Simply Google "git send-email Gmail/Office 365/GMX/whatever" and follow the instructions. Usually, you will only need to add a few lines to your **.gitconfig**. For Office 365, make sure that SMTP AUTH is enabled for your account and organisation. Some organisations block basic authentication, so check their current instructions if this configuration does not work. Here's an example:
 
 ```
 [sendemail]
@@ -59,11 +59,11 @@ The steps to configure git to send emails with your own account will depend on y
 	smtpserverport = 587
 ```
 
-The configuration for gmail accounts is a bit more tedious because you also have to "allow" git to send emails with your account. I use gmail for my hobbyist-patches and I never had an issue, though.
+For Gmail accounts, you will normally need an app password, which requires two-step verification. Gmail no longer provides a generic option to allow password-based apps. I use Gmail for my hobbyist patches and I have never had an issue, though.
 
 ### 4. First walk-through: formatting and sending patches
 
-The basic tools to format your patches and send them upstream are `git format-patch` and `git send-email`. In my opinion there are more powerful tools that make life easier, and I never use the traditional approach. I use **b4** in my workflow, and I am very happy with it. I will try to convince you that it is way cooler than `git format-patch` and `git send-email` in another post... but for the sake of simplicity, here I will stick to the canonical workflow.
+The basic tools to format your patches and send them upstream are `git format-patch` and `git send-email`. In my opinion, there are more powerful tools that make life easier, and I never use the traditional approach. I use **b4** in my workflow, and I am very happy with it. I will try to convince you that it is way cooler than `git format-patch` and `git send-email` in another post... but for the sake of simplicity, here I will stick to the canonical workflow.
 
 Let's go through a silly example that you can try yourself.
 
@@ -111,13 +111,14 @@ patchwork/dummy-kernel/v1/0001-Makefile-update-EXTRAVERSION.patch
 patchwork/dummy-kernel/v1/0002-Makefile-update-NAME.patch
 ```
 
-Are the arguments not clear?
- - cover-letter: create a cover letter (the *0000-* patch, which will not be applied upstream for obvious reasons).
- - subject-prefix="PATCH": the prefix added to the subject of every patch/email. It is the first version, so "PATCH" is enough.
- - -M HEAD~2: the last two commits from HEAD.
- - -o *some_directory*: optional parameter to specify where the patches will be saved. I like having a directory for all my patches, so I can find them fast if I want to apply them somewhere.
+Are the arguments unclear?
+ - `--cover-letter`: create a cover letter (the *0000-* email, which will not be applied upstream for obvious reasons).
+ - `--subject-prefix="PATCH"`: the prefix added to the subject of every patch/email. It is the first version, so "PATCH" is enough.
+ - `-M`: detect renames.
+ - `HEAD~2`: select the last two commits from HEAD.
+ - `-o <some_directory>`: optional parameter to specify where the patches will be saved. I like having a directory for all my patches, so I can find them fast if I want to apply them somewhere.
 
-As you can see, `git format-patch` created three patches: the cover letter and the two changes I made. Now I can open the cover letter and edit the **subject** and **description**:
+As you can see, `git format-patch` created three email files: the cover letter and the two patches for the changes I made. Now I can open the cover letter and edit the **subject** and **description**:
 
 ```sh
 From af9107409bf7b61fbb8b438e26069759eda81b70 Mon Sep 17 00:00:00 2001
@@ -181,7 +182,7 @@ NOTE: If any of the errors are false positives, please report
       them to the maintainer, see CHECKPATCH in MAINTAINERS.
 ```
 
-Oops! I forgot to [sign my work](https://www.kernel.org/doc/html/latest/process/submitting-patches.html?highlight=signed%20off#sign-your-work-the-developer-s-certificate-of-origin) and add a **commit description**, and both are **mandatory**. Use the following command to amend a commit and add the *Signed-off-by:*:
+Oops! I forgot to [sign my work](https://www.kernel.org/doc/html/latest/process/submitting-patches.html?highlight=signed%20off#sign-your-work-the-developer-s-certificate-of-origin) and add a **commit message**, and both are **mandatory**. Use the following command to amend a commit and add the *Signed-off-by:*:
 
 `git commit --amend --signoff`
 
@@ -203,14 +204,13 @@ Ready to submit and wait for feedback:
 git send-email --dry-run \
 --to=linux-kbuild@vger.kernel.org,\
 linux-kernel@vger.kernel.org \
---cc="Masahiro Yamada <masahiroy@kernel.org>,\
-Nathan Chancellor <nathan@kernel.org>,\
-Nicolas Schier <nicolas@fjasle.eu>" patchwork/dummy-kernel/v1
+--cc="Nathan Chancellor <nathan@kernel.org>,\
+Nicolas Schier <nsc@kernel.org>" patchwork/dummy-kernel/v1
 ```
 
 Note that I used the `--dry-run` argument to simulate the action instead of ruining my career as a Linux kernel developer. If you followed this example, please don't forget `--dry-run`. I would recommend you to always try first with `--dry-run` to make sure that everything is fine (or even send the series to your personal address before populating the command with the real addresses), and then send the series upstream by removing that argument in the next call.
 
-I added the address I got from `get_mainainer` and as you can see, I passed the mailing lists to the `--to` argument and the personal addresses to the `--cc` argument. Actually, there is no reason why you should not do it the other way round (many people do). Just double check that you don't forget any address.
+I added the address I got from `get_maintainer` and as you can see, I passed the mailing lists to the `--to` argument and the personal addresses to the `--cc` argument. Actually, there is no reason why you should not do it the other way round (many people do). Just double check that you don't forget any address.
 
 The last parameter is, once again, the directory where you saved the patches.
 
@@ -222,8 +222,8 @@ If the feedback you get asks you to modify your patches, feel free to discuss if
 
 If you do not get any reply within two weeks (the merge window is a special period of time when you should be more patient, though), do not send your series again. Personally, I would wait a bit longer because kernel communication is not fast unless you are fixing an important bug. But if you can't wait for some good reason, or you have been waiting for way too long (i.e. *many* weeks) just send a respectful email replying to your series and asking for a review, telling that the series is still relevant. Don't send anything like a plain "ping", because no one likes that, and you might get negative feedback. You could get some very polite feedback like [this one](https://lore.kernel.org/all/cd396e7a-3861-42ea-9e02-c4701e684df2@sirena.org.uk/) by Mark Brown, but it could be way less friendly as well.
 
-<u>One reminder that could save your life:</u> I have already mentioned that you **could** get some abrupt reply you did not expect. <span style="color:red"><b>NEVER FIRE BACK!</b></span> There is nothing to win and much to lose, especially because you are a newbie that might have made an obvious mistake, something that is documented, and you should have known, but ignored. In the end, no one knows you, you are a newcomer with no experience in the kernel and simply nothing to back you up.
-If you feel offended, just keep your hands away from the keyboard, drink some water and stay calm. Make sure you did not mess up (you probably did) and always reply politely, but keeping your point if you think you are right. Some maintainers are under stress and pressure (you are involved in a couple of patches, not in hundreds like some of them), and they get fed up with repeating the same things over and over again. Maybe they had a bad day... Who cares, stay focused and work on your next version. You are here to collaborate, not to argue. Even the *not-so-friendly* maintainers are fair, and if your next version is good and useful, they will eventually send you an **applied, thanks**.
+<u>One reminder that could save your life:</u> I have already mentioned that you **could** get some abrupt reply you did not expect. <span style="color:red"><b>NEVER FIRE BACK!</b></span> There is nothing to win and much to lose, especially because you are a newbie who might have made an obvious mistake, something that is documented and that you should have known, but ignored. In the end, no one knows you, you are a newcomer with no experience in the kernel and simply nothing to back you up.
+If you feel offended, just keep your hands away from the keyboard, drink some water and stay calm. Make sure you did not mess up (you probably did) and always reply politely while keeping your point if you think you are right. Some maintainers are under stress and pressure (you are involved in a couple of patches, not in hundreds like some of them), and they get fed up with repeating the same things over and over again. Maybe they had a bad day... Who cares, stay focused and work on your next version. You are here to collaborate, not to argue. Even the *not-so-friendly* maintainers are fair, and if your next version is good and useful, they will eventually send you an **applied, thanks**.
 
 ### 6. Second walk-through: patch versioning
 
@@ -231,16 +231,16 @@ If your changes are not very simple, you will probably not find the perfect solu
 
  - The patch title must reference its current version. The **PATCH X/Y** tag should turn into **PATCH v2 X/Y** for every patch of the series, and so on.
  - You are expected to provide a list of the modifications. People want to know what changed and also if you addressed the feedback you got.
- -  Read the reviews carefully. From the previous point, it should be clear that you should address all the points from the reviewers, not just a few.
+ - Read the reviews carefully. From the previous point, it should be clear that you should address all the points from the reviewers, not just a few.
 
 Let's continue with our little example. The series has been reviewed, and **miraculously** the *EXTRAVERSION* was considered good, and a reviewer replied with the following trailer:
 `Reviewed-by: Dummy Reviewer <dummy-reviewer@foo.com>`
 We were not that lucky with the *NAME* and the reviewer found a mistake: <span style="color:brown">wannabeee</span> instead of <span style="color:green">wannabe</span>. We will have to send a new version.
 
-First, fix the error and **amend the commits**: one with the fix, the other with the trailer. For the `Reviewed-by` trailer, you just have to paste it **under** your *Signed-off-by* trailer.  <span style="color:red">DO NOT</span> add new commits, only amend them.
+First, fix the error and **amend the commits**: one with the fix, the other with the trailer. For the `Reviewed-by` trailer, you just have to paste it **above** your *Signed-off-by* trailer.  <span style="color:red">DO NOT</span> add new commits, only amend them.
 
 
-Now a new patch series can be created. Second version = v2 (third = v3, etc.)
+Now a new patch series can be created. Second version = v2 (third = v3, etc.).
 
 ```properties
 $ git format-patch --cover-letter \
@@ -281,23 +281,22 @@ Javier Carrasco (2):
 
 If you have to send a v3 later, make sure that you add a 'Changes in v3' right above the 'Changes in v2', so everyone can see all changes, but the latest first.
 
-Alright, the patches have been double-checked, (hopefully) no new errors were introduced, and a new `git send-email` will send them upstream. I will keep the `--dry-run` in case you are copying and pasting without paying attention, though...
+Alright, the patches have been double-checked and, hopefully, no new errors were introduced. A new `git send-email` will send them upstream. I will keep the `--dry-run` in case you are copying and pasting without paying attention, though...
 
 ```sh
 git send-email --dry-run \
 --to=linux-kbuild@vger.kernel.org,\
 linux-kernel@vger.kernel.org \
---cc="Masahiro Yamada <masahiroy@kernel.org>,\
-Nathan Chancellor <nathan@kernel.org>,\
-Nicolas Schier <nicolas@fjasle.eu>" patchwork/dummy-kernel/v2
+--cc="Nathan Chancellor <nathan@kernel.org>,\
+Nicolas Schier <nsc@kernel.org>" patchwork/dummy-kernel/v2
 ```
 
 Will the series finally make it to the mainline kernel? Fingers crossed!
 
 ### 7. Code, TEST, submit, feedback, repeat
 
-There is not much left to say about the general submission process. The steps we went through will be the same for every iteration i.e. version until your patches get eventually accepted.
+There is not much left to say about the general submission process. The steps we went through will be the same for every iteration, i.e. version, until your patches eventually get accepted.
 
-If nothing strange happens and your changes are merged into the mainline kernel during the next merge window, a few weeks later your contribution will be available with the next kernel version. Congrats, now you can call yourself a Linux kernel contributor.
+If nothing strange happens and your feature changes are merged into the mainline kernel during the next merge window, a few weeks later your contribution will be available with the next kernel version. Fixes can be merged after the merge window instead. Congrats, now you can call yourself a Linux kernel contributor.
 
 Stay tuned and share knowledge!
